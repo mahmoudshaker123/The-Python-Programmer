@@ -1,6 +1,6 @@
 # main.py
 
-from exercises.exercise_1 import my_function
+from exercises.exercise01 import my_function
 
 
 def main():

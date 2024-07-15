@@ -1,6 +1,6 @@
 # main.py
 
-from chapter01_intro.exercises.exercise_01 import my_function
+from exercises.exercise_01 import my_function
 
 def main():
     # Call the function and print the result

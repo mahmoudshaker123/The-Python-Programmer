@@ -1,4 +1,4 @@
-from ..exercises.exercise01 import my_function
+from ..exercises.exercise_ch3_01 import my_function
 
 
 def test_ch03_e01():

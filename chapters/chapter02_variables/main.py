@@ -1,6 +1,6 @@
 # main.py
 
-from exercises.exercise_01 import my_function
+from chapters.chapter02_variables.exercises.exercise_ch2_04 import my_function
 
 
 def main():

@@ -1,0 +1,13 @@
+from ..exercises.exercise_ch4_01 import check_number
+from ..exercises.exercise_ch4_02 import is_even
+from ..exercises.exercise_ch4_03 import grade_result
+from ..exercises.exercise_ch4_04 import calculator
+from ..exercises.exercise_ch4_05 import sum_numbers_from_1_to_10
+from ..exercises.exercise_ch4_06 import sum_even_numbers_from_1_to_100
+from ..exercises.exercise_ch4_08 import calculate_total_length
+
+
+def test_ch04_e01(): ...
+def test_ch04_e02(): ...
+def test_ch04_e02(): ...
+def test_ch04_e02(): ...

@@ -2,34 +2,75 @@ from ..exercises.exercise_ch4_01 import check_number
 from ..exercises.exercise_ch4_02 import is_even
 from ..exercises.exercise_ch4_03 import grade_result
 from ..exercises.exercise_ch4_04 import calculator
-from ..exercises.exercise_ch4_05 import sum_numbers_from_1_to_10
-from ..exercises.exercise_ch4_06 import sum_even_numbers_from_1_to_100
+from ..exercises.exercise_ch4_05 import sum_numbers_from_start_to_end
+from ..exercises.exercise_ch4_06 import sum_even_numbers_from_start_to_end
 from ..exercises.exercise_ch4_08 import calculate_total_length
+from ..exercises.exercise_ch4_10 import double_elements
+from ..exercises.exercise_ch4_11 import find_first_divisible_by_5
+from ..exercises.exercise_ch4_12 import sum_positive_numbers
 
 
 def test_ch04_e01():
-    assert check_number(5) == "Number is positive"
+    assert check_number(0) == "Zero"
+    assert check_number(5) == "Positive"
+    assert check_number(-5) == "Negative"
 
 
 def test_ch04_e02():
-    assert is_even(4) == "Number is even"
+    assert is_even(2) == True
+    assert is_even(3) == False
+    assert is_even(4) == True
+    assert is_even(5) == False
 
 
 def test_ch04_e03():
-    assert grade_result(80) == "Grade is A"
+    assert grade_result(90) == "A"
+    assert grade_result(80) == "B"
+    assert grade_result(70) == "C"
+    assert grade_result(60) == "Not Pass"
+    assert grade_result(50) == "Not Pass"
 
 
 def test_ch04_e04():
-    assert calculator(4, 5, "+") == 9
+    assert calculator(5, 5, "+") == 10
+    assert calculator(5, 5, "-") == 0
+    assert calculator(5, 5, "*") == 25
+    assert calculator(5, 5, "/") == 1
+    assert calculator(5, 5, "$") == "Invalid Operator"
 
 
 def test_ch04_e05():
-    assert sum_numbers_from_1_to_10() == 55
+    assert sum_numbers_from_start_to_end(0, 2) == 1
+    assert sum_numbers_from_start_to_end(1, 10) == 45
+    assert sum_numbers_from_start_to_end(1, 100) == 4950
 
 
 def test_ch04_e06():
-    assert sum_even_numbers_from_1_to_100() == 2550
+    assert sum_even_numbers_from_start_to_end(0, 2) == 0
+    assert sum_even_numbers_from_start_to_end(1, 10) == 20
+    assert sum_even_numbers_from_start_to_end(1, 100) == 2450
 
 
 def test_ch04_e08():
-    assert calculate_total_length("Hello", "World") == 10
+    assert calculate_total_length(["Hello", "World"]) == 10
+    assert calculate_total_length(["Python", "Programming"]) == 17
+    assert calculate_total_length(["Python", "Programming", "Language"]) == 25
+
+
+def test_ch04_e10():
+    assert double_elements([1, 2, 3]) == [2, 4, 6]
+    assert double_elements([4, 5, 6]) == [8, 10, 12]
+    assert double_elements([7, 8, 9]) == [14, 16, 18]
+
+
+def test_ch04_e11():
+    assert find_first_divisible_by_5([1, 2, 3, 4, 5]) == 5
+    assert find_first_divisible_by_5([5, 10, 15, 20, 25]) == 5
+    assert find_first_divisible_by_5([6, 7, 8, 9, 10]) == 10
+    assert find_first_divisible_by_5([11, 13, 16]) == None
+
+
+def test_ch04_e12():
+    assert sum_positive_numbers([]) == 0
+    assert sum_positive_numbers([1, 2, 3, 4, 5]) == 15
+    assert sum_positive_numbers([1, -2, 3, -4, 5]) == 9

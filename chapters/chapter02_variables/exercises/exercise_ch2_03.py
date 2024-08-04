@@ -1,8 +1,8 @@
-# Write a program that takes an input radius and computes the area of a circle.
+## Exercise 02_03 - Average Grade
+# Write a program that takes three grades from a user and calculate the average grade.
 
 
-def compute_area_of_circle(radius):
-    area = 0
+def compute_average_grade(grade1, grade2, grade3):
     # Your code should go here.
 
-    return area
+    return ...

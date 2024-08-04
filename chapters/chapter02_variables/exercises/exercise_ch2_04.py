@@ -1,8 +1,8 @@
-# Write a Python program that takes three grades from a user and calculate the average grade.
+## Exercise 02_04 - Add Numbers
+# Write a program that adds two numbers (provided as strings) and returns the sum as a string.
 
 
-def compute_average_grade(grade1, grade2, grade3):
-    avg_grade = 0
+def add_numbers(num1: str, num2: str):
     # Your code should go here.
 
-    return avg_grade
+    return ...

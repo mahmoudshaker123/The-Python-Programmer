@@ -2,8 +2,6 @@
 # Can you write this using both a for loop and a while loop?
 
 
-def sum_numbers_from_1_to_10():
-    sum = 0
+def sum_numbers_from_start_to_end(start, end):
     # Your code should go here.
-
-    return sum
+    ...

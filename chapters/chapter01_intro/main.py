@@ -6,7 +6,7 @@
 
 
 def main():
-    print("Hello Python!")
+    print("Hello from Chapter 01!")
 
 
 if __name__ == "__main__":

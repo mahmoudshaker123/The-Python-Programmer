@@ -1,12 +1,10 @@
-# main.py
-
-from exercises.exercise01 import my_function
+# This is your playground.
+# Feel free to experiment with the code under `main()` block and run it as many times as you want.
+# You can also import functions from the and use them here.
 
 
 def main():
-    # Call the function and print the result
-    result = my_function()
-    print(f"Result from my_function: {result}")
+    print("Hello from Chapter 04!")
 
 
 if __name__ == "__main__":

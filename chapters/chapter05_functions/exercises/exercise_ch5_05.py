@@ -1,4 +1,4 @@
-## Exercise 0X - Apply Multiple Functions
+## Exercise 05_05 - Apply Multiple Functions
 # Write a function apply_functions that takes a list of functions and a value,
 # and returns a list of results by applying each function to the value.
 

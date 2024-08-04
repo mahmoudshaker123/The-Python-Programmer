@@ -1,4 +1,4 @@
-## Exercise 4.12 - Skipping Negative Numbers
+## Exercise 04_12 - Skipping Negative Numbers
 # Write a program that sums all positive numbers in a list, skipping any negative numbers.
 
 

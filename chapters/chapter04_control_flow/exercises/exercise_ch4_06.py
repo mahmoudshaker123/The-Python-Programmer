@@ -1,4 +1,5 @@
-# Write a program that calculates the sum of all even numbers between 1 and 100.
+## Exercise 04_06 - Sum Even Numbers
+# Write a program that calculates the sum of all even numbers between start and end.
 # Can you write this using both a for loop and a while loop?
 
 

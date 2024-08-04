@@ -1,4 +1,5 @@
-# Write a program that sums the numbers from 1 to 10.
+## Exercise 04_05 - Sum Numbers
+# Write a program that sums the numbers from start to end.
 # Can you write this using both a for loop and a while loop?
 
 

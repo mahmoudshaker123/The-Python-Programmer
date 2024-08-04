@@ -1,3 +1,4 @@
+## Exercise 04_04 - Calculator
 # Write a program that simulates a basic calculator.
 # It should take two numbers and an operator (+, -, *, /) as input
 # and perform the corresponding operation.

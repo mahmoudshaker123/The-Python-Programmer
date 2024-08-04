@@ -1,4 +1,4 @@
-## Exercise 03 - Grading System
+## Exercise 04_03 - Grade Result
 # Write a Python program that take an integer between 0 and 100
 # and print the output based on the following conditions:
 # 1. Print “A” if grade is between 90 and 100

@@ -1,3 +1,4 @@
+## Exercise 04_08 - Calculate Total Length
 # Write a program that calculates the total length of all words in a list.
 
 

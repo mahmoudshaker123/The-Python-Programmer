@@ -11,5 +11,5 @@ jobs:
       - name: Install Ruff
         run: pip install ruff
       - name: Lint
-        run: ruff check chapters && run format chapters --check
+        run: ruff check chapters && ruff format chapters --check
       

@@ -1,4 +1,4 @@
-## [Challenge] Total Sales for Specific Products
+## [Challenge] Exercise 07_05 - Total Sales for Specific Products
 
 # You are given a list of strings, each representing a line from a CSV file
 # containing information about daily sales transactions.
@@ -8,7 +8,6 @@
 # The function should return the total sales for both products.
 
 
-def get_substring(s: str, start: int, end: int) -> str:
+def calculate_product_sales(sales: list[str]) -> tuple[int, int]:
     # Your code should go here.
-
-    return ...
+    ...

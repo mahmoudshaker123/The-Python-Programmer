@@ -1,3 +1,4 @@
+## Exercise 09_01 - Error Handling
 # Write a function divide that takes two numbers and returns their division.
 # Handle the `ZeroDivisionError` exception if the second number is zero.
 

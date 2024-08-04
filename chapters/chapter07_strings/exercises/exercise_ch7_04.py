@@ -1,4 +1,4 @@
-## [Challenge] Extracting Data from a Log File
+## [Challenge] Exercise 07_04 - Extracting Data from a Log File
 
 # You are given a list of log entries from a server.
 # Each entry is a string that contains:
@@ -8,7 +8,6 @@
 # returns a list of error messages (i.e., the messages associated with the log level "ERROR").
 
 
-def get_substring(s: str, start: int, end: int) -> str:
+def extract_error_messages(log_entries: list[str]) -> list[str]:
     # Your code should go here.
-
-    return ...
+    ...

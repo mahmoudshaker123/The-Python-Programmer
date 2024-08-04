@@ -17,10 +17,10 @@ def test_ch04_e01():
 
 
 def test_ch04_e02():
-    assert is_even(2) == True
-    assert is_even(3) == False
-    assert is_even(4) == True
-    assert is_even(5) == False
+    assert is_even(2) is True
+    assert is_even(3) is False
+    assert is_even(4) is True
+    assert is_even(5) is False
 
 
 def test_ch04_e03():
@@ -67,7 +67,7 @@ def test_ch04_e11():
     assert find_first_divisible_by_5([1, 2, 3, 4, 5]) == 5
     assert find_first_divisible_by_5([5, 10, 15, 20, 25]) == 5
     assert find_first_divisible_by_5([6, 7, 8, 9, 10]) == 10
-    assert find_first_divisible_by_5([11, 13, 16]) == None
+    assert find_first_divisible_by_5([11, 13, 16]) is None
 
 
 def test_ch04_e12():

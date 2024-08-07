@@ -1,5 +1,6 @@
 ## Exercise 02_03 - Average Grade
 # Write a program that takes three grades from a user and calculate the average grade.
+# The average grade should be rounded to two decimal places.
 
 
 def compute_average_grade(grade1, grade2, grade3):

@@ -1,11 +1,41 @@
+import textwrap
+import pytest
 from ..exercises.exercise_ch8_01 import count_errors_from_file
 from ..exercises.exercise_ch8_02 import word_frequency
 from ..exercises.exercise_ch8_03 import FileHandler
 from ..exercises.exercise_ch8_04 import generate_report
 
 
-def test_ch08_e01():
-    assert count_errors_from_file() == 2
+@pytest.mark.parametrize(
+    "file_content, expected",
+    [
+        (
+            textwrap.dedent(
+                """
+                INFO: System started
+                INFO: User logged in
+                ERROR: System crashed
+                INFO: System restarted
+                ERROR: System crashed again
+            """
+            ),
+            2,
+        ),
+        (
+            textwrap.dedent(
+                """
+            INFO: System started
+            INFO: User logged in
+            ERROR: System crashed
+            INFO: System restarted
+            """
+            ),
+            1,
+        ),
+    ],
+)
+def test_ch08_e01(source, expected):
+    assert count_errors_from_file(source) == expected
 
 
 def test_ch08_e02():

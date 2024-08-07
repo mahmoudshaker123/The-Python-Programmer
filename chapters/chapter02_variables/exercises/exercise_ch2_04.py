@@ -2,7 +2,7 @@
 # Write a program that adds two numbers (provided as strings) and returns the sum as a string.
 
 
-def add_numbers(num1: str, num2: str):
+def add_numbers(num1, num2):
     # Your code should go here.
 
     return ...

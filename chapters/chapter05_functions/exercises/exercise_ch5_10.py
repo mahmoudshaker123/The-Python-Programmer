@@ -1,5 +1,13 @@
-## Exercise 05_08 - Multiply Two Numbers
-# Write a lambda function that takes two arguments and returns their product.
-# Assign it to a variable called `multiply`.
+## Exercise 05_10 - Count Character Frequency
+# Write a recursive function that takes a string and a character
+# and returns the number of times the character appears in the string.
 
-multiply = ...
+
+# There is a bug in the code below. Find and fix it.
+def count_char_freq(string: str, target: str) -> int:
+    if not string:
+        return 0
+    if string[0] == target:
+        return count_char_freq(string[1:], target)
+    else:
+        return count_char_freq(string[1:], target)

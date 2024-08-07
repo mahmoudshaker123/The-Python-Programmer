@@ -1,7 +1,8 @@
-## Exercise 04_10 - Double Elements
-# Write a program that doubles each element in a list of numbers.
+## Exercise 04_10 - Find the First Divisible by 5
+# Write a program that finds the first number in a list that is divisible by 5.
+# If a number is found, return it and exit the loop. If no number is found, return None.
 
 
-def double_elements(numbers):
+def find_first_divisible_by_5(numbers):
     # Your code should go here.
     ...

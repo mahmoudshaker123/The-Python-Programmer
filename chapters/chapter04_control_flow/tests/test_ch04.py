@@ -4,10 +4,12 @@ from ..exercises.exercise_ch4_03 import grade_result
 from ..exercises.exercise_ch4_04 import calculator
 from ..exercises.exercise_ch4_05 import sum_numbers_from_start_to_end
 from ..exercises.exercise_ch4_06 import sum_even_numbers_from_start_to_end
+from ..exercises.exercise_ch4_07 import largest_index
 from ..exercises.exercise_ch4_08 import calculate_total_length
-from ..exercises.exercise_ch4_10 import double_elements
-from ..exercises.exercise_ch4_11 import find_first_divisible_by_5
-from ..exercises.exercise_ch4_12 import sum_positive_numbers
+from ..exercises.exercise_ch4_09 import double_elements
+from ..exercises.exercise_ch4_10 import find_first_divisible_by_5
+from ..exercises.exercise_ch4_11 import sum_positive_numbers
+from ..exercises.exercise_ch4_12 import reverse_digits
 
 
 def test_ch04_e01():
@@ -51,26 +53,40 @@ def test_ch04_e06():
     assert sum_even_numbers_from_start_to_end(1, 100) == 2450
 
 
+def test_ch04_e07():
+    assert largest_index([1, 2, 3, 4, 5]) == 4
+    assert largest_index([5, 4, 3, 2, 1]) == 0
+    assert largest_index([1, 2, 5, 4, 3]) == 2
+    assert largest_index([1, 2, 3, 5, 4]) == 3
+
+
 def test_ch04_e08():
     assert calculate_total_length(["Hello", "World"]) == 10
     assert calculate_total_length(["Python", "Programming"]) == 17
     assert calculate_total_length(["Python", "Programming", "Language"]) == 25
 
 
-def test_ch04_e10():
+def test_ch04_e09():
     assert double_elements([1, 2, 3]) == [2, 4, 6]
     assert double_elements([4, 5, 6]) == [8, 10, 12]
     assert double_elements([7, 8, 9]) == [14, 16, 18]
 
 
-def test_ch04_e11():
+def test_ch04_e10():
     assert find_first_divisible_by_5([1, 2, 3, 4, 5]) == 5
     assert find_first_divisible_by_5([5, 10, 15, 20, 25]) == 5
     assert find_first_divisible_by_5([6, 7, 8, 9, 10]) == 10
     assert find_first_divisible_by_5([11, 13, 16]) is None
 
 
-def test_ch04_e12():
+def test_ch04_e11():
     assert sum_positive_numbers([]) == 0
     assert sum_positive_numbers([1, 2, 3, 4, 5]) == 15
     assert sum_positive_numbers([1, -2, 3, -4, 5]) == 9
+
+
+def test_ch04_e12():
+    assert reverse_digits(123) == 321
+    assert reverse_digits(456) == 654
+    assert reverse_digits(789) == 987
+    assert reverse_digits(101) == 101

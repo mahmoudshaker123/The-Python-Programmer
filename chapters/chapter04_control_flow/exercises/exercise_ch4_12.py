@@ -1,7 +1,7 @@
-## Exercise 04_12 - Skipping Negative Numbers
-# Write a program that sums all positive numbers in a list, skipping any negative numbers.
+## Exercise 04_12 - Reverse Digits
+# Write a function reverse_digits that takes an integer as input and returns the integer with its digits reversed.
 
 
-def sum_positive_numbers(numbers):
+def reverse_digits(n: int) -> int:
     # Your code should go here.
     ...

@@ -5,6 +5,7 @@ from ..exercises.exercise_ch2_04 import add_numbers
 from ..exercises.exercise_ch2_05 import total_length_of_words
 from ..exercises.exercise_ch2_06 import area_of_triangle
 from ..exercises.exercise_ch2_07 import convert_binary_to_decimal
+from ..exercises.exercise_ch2_08 import calculate_hypotenuse
 
 
 def test_ch02_e01():
@@ -51,3 +52,10 @@ def test_ch02_e07():
     assert convert_binary_to_decimal("10") == 2
     assert convert_binary_to_decimal("11") == 3
     assert convert_binary_to_decimal("100") == 4
+
+
+def test_ch02_e08():
+    assert calculate_hypotenuse(3, 4) == 5
+    assert calculate_hypotenuse(5, 12) == 13
+    assert calculate_hypotenuse(8, 15) == 17
+    assert calculate_hypotenuse(7, 24) == 25

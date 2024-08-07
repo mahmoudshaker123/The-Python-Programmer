@@ -1,14 +1,18 @@
 ## Exercise 05_05 - Apply Multiple Functions
-# Write a function apply_functions that takes a list of functions and a value,
-# and returns a list of results by applying each function to the value.
+# Write a function apply_vouchers that takes a list of vouchers and a total amount,
+# and returns the total amount after applying each voucher to the total amount.
 
-# Example functions
-# def square(x): ...
-# def cube(x): ...
-# print(apply_functions([square, cube], value))  # Output: [9, 27, 6]
+# Each voucher is a function that takes a total amount and returns the total amount after applying the voucher.
+
+# Example vouchers
+# def ten_percent_discount(price): ...
+# def twenty_percent_discount(price): ...
+# def five_dollar_discount(price): ...
+
+# apply_vouchers([ten_percent_discount, twenty_percent_discount, five_dollar_discount], 100)
+# Expected output: 67
 
 
 # You may need to update the function signature. See tests/test_ch5.py for inspiration.
 # DO NOT CHANGE THE FUNCTION NAME.
-def apply_functions():
-    pass
+def apply_vouchers(): ...

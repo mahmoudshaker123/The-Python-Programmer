@@ -1,7 +1,7 @@
-## Exercise 04_09 - Largest Index
-# Write a program that returns the index of the largest element in the list.
+## Exercise 04_09 - Double Elements
+# Write a program that doubles each element in a list of numbers.
 
 
-def largest_index(elements):
+def double_elements(numbers):
     # Your code should go here.
     ...

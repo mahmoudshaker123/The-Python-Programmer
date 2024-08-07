@@ -1,5 +1,5 @@
 ## Exercise 04_02 - Even or Odd Number
-# Write a program that takes an integer and checks whether its an even or odd number.
+# Write a program that takes an integer and returns whether its an even or odd number.
 
 
 def is_even(number: int) -> bool:

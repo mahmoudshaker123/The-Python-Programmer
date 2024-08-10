@@ -1,6 +1,11 @@
-# exercise1.py
+# Exercise 15_01 - Matrix Addition With Threads
+# Write a function called add_matrices that takes two matrices as arguments and returns the sum of the two matrices.
+# Assume that the matrices are of size 3x3 and are represented as a list of lists.
+# Spin up a new thread for each row in the matrix to calculate the sum of the two matrices.
+# Use the threading module to accomplish this task.
 
 
-def my_function():
-    # Students will write their solution here
-    return "Hello, World!"
+def add_matrices(matrix1: list[list[int]], matrix2: list[list[int]]) -> list[list[int]]:
+    # Your code should go here.
+
+    return ...

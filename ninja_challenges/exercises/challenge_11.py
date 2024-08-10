@@ -1,4 +1,7 @@
-## Challenge 1 - Isomorphic Strings
-# Write a function that takes two strings and returns True if they are isomorphic, False otherwise.
+## Challenge 11 - Tribonacci Sequence
+# Write a function that generates the Tribonacci sequence.
+# The Tribonacci sequence is a sequence of numbers where each number is the sum of the three preceding numbers.
+# The first three numbers are 0, 1, and 1.
 
-# Two strings are isomorphic if the characters in s can be replaced to get t.
+
+def tribonacci(n: int) -> list[int]: ...

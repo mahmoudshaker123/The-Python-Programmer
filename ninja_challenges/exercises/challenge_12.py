@@ -1,7 +1,10 @@
-## Challenge 1 - Matrix Diagonal Sum
-# Given a square matrix, calculate the sum of the diagonal elements.
-# For example, given the matrix:
-# [[1, 2, 3],
-#  [4, 5, 6],
-#  [7, 8, 9]]
-# The function should return 15.
+## Challenge 12 - Pairs of Songs With Total Durations Divisible by 60
+# You are given a list of songs where the ith song has a duration of time[i] seconds.
+# Return the number of pairs of songs for which their total duration in seconds is divisible by 60.
+
+# Example 1:
+# Input: time = [30,20,150,100,40]
+# Output: 3
+
+
+def num_pairs_divisible_by_60(time: list[int]) -> int: ...

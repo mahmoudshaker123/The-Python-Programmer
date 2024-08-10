@@ -1,12 +1,10 @@
-## Challenge 1 - Compute Rows in Pascal's Triangle
+## Challenge 09 - Matrix Diagonal Sum
+# Given a square matrix, calculate the sum of the diagonal elements.
+# For example, given the matrix:
+# [[1, 2, 3],
+#  [4, 5, 6],
+#  [7, 8, 9]]
+# The function should return 15.
 
-# This figure shows the first 5 rows of Pascal's triangle:
-#     1
-#    1 1
-#   1 2 1
-#  1 3 3 1
-# 1 4 6 4 1
-# Each entry in each row before the last one is adjacent to one or two numbers in the row below it.
-# Each entry holds the sum of the numbers in the adjacent positions in the row above it.
 
-# Write a function that takes a positive integer n and returns the first n rows of Pascal's triangle.
+def diagonal_sum(matrix: list[list[int]]) -> int: ...

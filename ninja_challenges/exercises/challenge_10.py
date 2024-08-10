@@ -1,6 +1,5 @@
-## Challenge 1 - UNIX Tail Command
-# The UNIT tail command displays the last part of a file.
-# For this challenge, assume that tail takes two arguments: a file name and
-#  a number of lines, starting from the last line, that are to be printed.
+## Challenge 10 - Element Appearing More Than 25% In An Array
+# Given an integer array sorted in non-decreasing order, there is an element in the array that appears more than 25% of the time. Find that element.
 
-# Write a function that implements the UNIX tail command.
+
+def find_element_more_than_25_percent(nums: list[int]) -> int: ...

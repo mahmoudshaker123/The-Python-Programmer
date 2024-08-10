@@ -1,3 +1,8 @@
-## Challenge 1 - Find The First Missing Positive Entry
-# Write a function that finds the smallest positive integer which is not in the list.
-# E.g., if A = [3,5,4,-1,5,1,-1], the function should return 2.
+## Challenge 08 - UNIX Tail Command
+# The UNIT tail command displays the last part of a file.
+# For this challenge, assume that tail takes two arguments: a file name and
+#  a number of lines, starting from the last line, that are to be printed.
+
+
+# Write a function that implements the UNIX tail command.
+def tail(file_name: str, n: int = 1) -> list[str]: ...

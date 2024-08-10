@@ -1,2 +1,6 @@
-## Challenge 1 - Element Appearing More Than 25% In An Array
-# Given an integer array sorted in non-decreasing order, there is an element in the array that appears more than 25% of the time. Find that element.
+## Challenge 13 - Monotonic Array
+# Write a function that returns True if the given list of integers is monotonic.
+# An array is monotonic if it is either monotone increasing or monotone decreasing.
+
+
+def is_monotonic(nums: list[int]) -> bool: ...

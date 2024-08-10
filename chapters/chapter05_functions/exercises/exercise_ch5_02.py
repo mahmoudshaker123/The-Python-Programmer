@@ -1,8 +1,9 @@
 ## Exercise 05_02 - Palindrome
 # Write a function to check whether a string is palindrome or not
 
-# A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward.
+# A palindrome is a word that reads the same forward and backward.
 # For example, "racecar" is a palindrome.
+
 # Bonus: Can you also solve this using a recursive function?
 
 

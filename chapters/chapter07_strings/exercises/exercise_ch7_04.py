@@ -1,13 +1,20 @@
-## [Challenge] Exercise 07_04 - Extracting Data from a Log File
+## Exercise 07_04 - Extract Error Messages
+# You are given a list of log entries from a server. Each entry is a string that contains:
+# a log level, and a message, separated by spaces.
 
-# You are given a list of log entries from a server.
-# Each entry is a string that contains:
-# timestamp, a log level, and a message, separated by spaces.
+# Write a function that takes this list of log entries and returns a list of error messages
+# which are associated with the log level "ERROR".
 
-# Your task is to write a function extract_error_messages that takes this list of log entries and
-# returns a list of error messages (i.e., the messages associated with the log level "ERROR").
+# For example, given the following list of log entries:
+# log_entries = [
+#     "INFO User logged in",
+#     "ERROR Unable to connect to the server",
+#     "ERROR Server error",
+#     ]
+# The function should return ["Unable to connect to the server", "Server error"].
 
 
 def extract_error_messages(log_entries: list[str]) -> list[str]:
     # Your code should go here.
+
     ...

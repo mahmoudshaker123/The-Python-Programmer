@@ -6,41 +6,82 @@ from ..exercises.exercise_ch7_05 import calculate_product_sales
 
 
 def test_ch07_e01():
+    assert get_substring("Hello", 1, 3) == "el"
     assert get_substring("Hello, World!", 0, 5) == "Hello"
     assert get_substring("Hello, World!", 7, 12) == "World"
+    assert get_substring("Python is fun!", 7, 9) == "is"
+    assert get_substring("Python is fun!", 0, 5) == "Python"
 
 
 def test_ch07_e02():
+    assert reverse_string("") == ""
+    assert reverse_string("Hello") == "olleH"
     assert reverse_string("ABCDEF") == "FEDCBA"
     assert reverse_string("Hello, World!") == "!dlroW ,olleH"
     assert reverse_string("Python") == "nohtyP"
 
 
 def test_ch07_e03():
-    assert replace_spaces_with_hyphens("Hello, World!") == "Hello,-World!"
-    assert replace_spaces_with_hyphens("Python is fun!") == "Python-is-fun!"
-    assert replace_spaces_with_hyphens("This is a test") == "This-is-a-test"
+    assert replace_spaces_with_hyphens("") == ""
+    assert replace_spaces_with_hyphens("HelloWorld") == "HelloWorld"
+    assert replace_spaces_with_hyphens("Hello World") == "Hello-World"
+    assert replace_spaces_with_hyphens("Give Me Some Space") == "Give-Me-Some-Space"
+    assert replace_spaces_with_hyphens("Give Me More-Hyphens") == "Give-Me-More-Hyphens"
 
 
 def test_ch07_e04():
-    log_entries = [
-        "2021-05-10 08:00:00 INFO System started",
-        "2021-05-10 08:01:00 INFO User logged in",
-        "2021-05-10 08:02:00 ERROR Database connection failed",
-        "2021-05-10 08:03:00 ERROR File not found",
-        "2021-05-10 08:04:00 INFO System stopped",
+    assert extract_error_messages([]) == []
+    assert extract_error_messages(["INFO User logged in"]) == []
+    assert extract_error_messages(
+        ["ERROR Unable to connect to the server", "ERROR Server error"]
+    ) == [
+        "Unable to connect to the server",
+        "Server error",
     ]
-    assert extract_error_messages(log_entries) == [
-        "Database connection failed",
-        "File not found",
+    assert extract_error_messages(
+        ["ERROR Unable to connect to the server", "INFO User logged in"]
+    ) == ["Unable to connect to the server"]
+    assert extract_error_messages(
+        [
+            "INFO System started",
+            "DEBUG Sytem running",
+            "ERROR Unable to connect to the server",
+            "ERROR Server error",
+            "INFO User logged in",
+            "ERROR Sytem crashed",
+        ]
+    ) == [
+        "Unable to connect to the server",
+        "Server error",
+        "Sytem crashed",
     ]
 
 
 def test_ch07_e05():
-    sales = [
-        ("ProductA", 100, 10),
-        ("ProductB", 200, 20),
-        ("ProductC", 300, 30),
-        ("ProductD", 400, 40),
-    ]
-    assert calculate_product_sales(sales) == 30000
+    assert calculate_product_sales([]) == []
+    assert calculate_product_sales(
+        [
+            "2021-01-01,Apple,100",
+            "2021-01-02,Banana,200",
+            "2021-01-03,Apple,300",
+            "2021-01-04,Banana,400",
+        ]
+    ) == [("Apple", 400), ("Banana", 600)]
+    assert calculate_product_sales(
+        [
+            "2021-01-01,Apple,100",
+            "2021-01-01,Orange,200",
+            "2021-01-02,Apple,150",
+            "2021-01-02,Orange,250",
+        ]
+    ) == [("Apple", 250), ("Orange", 450)]
+    assert calculate_product_sales(
+        [
+            "2021-01-01,Apple,100",
+            "2021-01-01,Orange,200",
+            "2021-01-02,Banana,150",
+            "2021-01-02,Orange,250",
+            "2021-01-03,Apple,200",
+            "2021-01-03,Banana,300",
+        ]
+    ) == [("Apple", 300), ("Orange", 450), ("Banana", 450)]

@@ -1,8 +1,11 @@
 ## Exercise 04_06 - Sum Even Numbers
-# Write a program that calculates the sum of all even numbers between start and end.
-# Can you write this using both a for loop and a while loop?
+# Write a program that sums the even numbers from start to end.
+# For example, if the start is 1 and the end is 5, the sum is 6 (2 + 4).
+
+# Can you solve this once using a for loop and once using a while loop?
 
 
-def sum_even_numbers_from_start_to_end(start, end):
+def sum_even_numbers(start, end):
     # Your code should go here.
+
     ...

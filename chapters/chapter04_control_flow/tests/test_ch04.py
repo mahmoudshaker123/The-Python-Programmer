@@ -2,8 +2,8 @@ from ..exercises.exercise_ch4_01 import check_number
 from ..exercises.exercise_ch4_02 import is_even
 from ..exercises.exercise_ch4_03 import grade_result
 from ..exercises.exercise_ch4_04 import calculator
-from ..exercises.exercise_ch4_05 import sum_numbers_from_start_to_end
-from ..exercises.exercise_ch4_06 import sum_even_numbers_from_start_to_end
+from ..exercises.exercise_ch4_05 import sum_numbers
+from ..exercises.exercise_ch4_06 import sum_even_numbers
 from ..exercises.exercise_ch4_07 import largest_index
 from ..exercises.exercise_ch4_08 import calculate_total_length
 from ..exercises.exercise_ch4_09 import double_elements
@@ -42,15 +42,15 @@ def test_ch04_e04():
 
 
 def test_ch04_e05():
-    assert sum_numbers_from_start_to_end(0, 2) == 1
-    assert sum_numbers_from_start_to_end(1, 10) == 45
-    assert sum_numbers_from_start_to_end(1, 100) == 4950
+    assert sum_numbers(0, 2) == 1
+    assert sum_numbers(1, 10) == 45
+    assert sum_numbers(1, 100) == 4950
 
 
 def test_ch04_e06():
-    assert sum_even_numbers_from_start_to_end(0, 2) == 0
-    assert sum_even_numbers_from_start_to_end(1, 10) == 20
-    assert sum_even_numbers_from_start_to_end(1, 100) == 2450
+    assert sum_even_numbers(0, 2) == 0
+    assert sum_even_numbers(1, 10) == 20
+    assert sum_even_numbers(1, 100) == 2450
 
 
 def test_ch04_e07():

@@ -6,4 +6,5 @@
 
 def robust_file_reader():
     # Your code should go here.
+
     return ...

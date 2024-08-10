@@ -1,5 +1,7 @@
 ## Exercise 05_03 - Factorial
-# Write a function that computes the factorial of a Number
+# Write a function that computes the factorial of a Number.
+# Factorial is the product of an integer and all the integers below it.
+
 # Bonus: Can you also solve this using a recursive function?
 
 

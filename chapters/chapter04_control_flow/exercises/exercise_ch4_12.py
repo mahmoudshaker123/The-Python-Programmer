@@ -1,7 +1,9 @@
 ## Exercise 04_12 - Reverse Digits
-# Write a function reverse_digits that takes an integer as input and returns the integer with its digits reversed.
+# Write a program that takes an integer as input and returns the integer with its digits reversed.
+# For example, given the integer 123, the function should return 321.
 
 
-def reverse_digits(n: int) -> int:
+def reverse_digits(n):
     # Your code should go here.
+
     ...

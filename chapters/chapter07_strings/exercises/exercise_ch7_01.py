@@ -1,6 +1,8 @@
-## Exercise 07_01 - Substring
-# Write a function get_substring that takes a string and two indices,
+## Exercise 07_01 - Manual Substring
+# Write a function that takes a string and two indices,
 # and returns the substring between those indices.
+# For example, given the string "hello" and the indices 1 and 3,
+# the function should return "el".
 
 
 def get_substring(s: str, start: int, end: int) -> str:

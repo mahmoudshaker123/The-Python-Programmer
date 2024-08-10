@@ -1,19 +1,19 @@
-from ..exercises.exercise_ch5_01 import increment_by
+from ..exercises.exercise_ch5_01 import increment_value_by
 from ..exercises.exercise_ch5_02 import is_palindrome
 from ..exercises.exercise_ch5_03 import factorial
-from ..exercises.exercise_ch5_04 import number_of_1_bits
+from ..exercises.exercise_ch5_04 import fibonacci
 from ..exercises.exercise_ch5_05 import apply_vouchers
 from ..exercises.exercise_ch5_06 import find_max
 from ..exercises.exercise_ch5_07 import sum_digits
 from ..exercises.exercise_ch5_08 import multiply
-from ..exercises.exercise_ch5_09 import reverse_vowels
+from ..exercises.exercise_ch5_09 import count_vowels
 from ..exercises.exercise_ch5_10 import count_char_freq
 
 
 def test_ch05_e01():
-    assert increment_by(5, 5) == 10
-    assert increment_by(10, 2) == 12
-    assert increment_by(10) == 11
+    assert increment_value_by(5, 5) == 10
+    assert increment_value_by(10, 2) == 12
+    assert increment_value_by(10) == 11
 
 
 def test_ch05_e02():
@@ -29,12 +29,12 @@ def test_ch05_e03():
 
 
 def test_ch05_e04():
-    assert number_of_1_bits(0) == 0
-    assert number_of_1_bits(1) == 1
-    assert number_of_1_bits(11) == 3
-    assert number_of_1_bits(255) == 8
-    assert number_of_1_bits(512) == 1
-    assert number_of_1_bits(1023) == 10
+    assert fibonacci(1) == 0
+    assert fibonacci(2) == 1
+    assert fibonacci(3) == 2
+    assert fibonacci(4) == 3
+    assert fibonacci(10) == 55
+    assert fibonacci(20) == 4181
 
 
 def test_ch05_e05():
@@ -75,11 +75,11 @@ def test_ch05_e08():
 
 
 def test_ch05_e09():
-    assert reverse_vowels("hello") == "holle"
-    assert reverse_vowels("world") == "world"
-    assert reverse_vowels("applepie") == "epplapie"
-    assert reverse_vowels("racecar") == "racecar"
-    assert reverse_vowels("headphones") == "heedphonas"
+    assert count_vowels("hello") == 2
+    assert count_vowels("world") == 1
+    assert count_vowels("applepie") == 4
+    assert count_vowels("racecar") == 3
+    assert count_vowels("headphones") == 4
 
 
 def test_ch05_e10():

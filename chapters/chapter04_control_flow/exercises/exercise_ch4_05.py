@@ -1,8 +1,11 @@
 ## Exercise 04_05 - Sum Numbers
 # Write a program that sums the numbers from start to end.
-# Can you write this using both a for loop and a while loop?
+# For example, if the start is 1 and the end is 5, the sum is 15 (1 + 2 + 3 + 4 + 5).
+
+# Can you solve this once using a for loop and once using a while loop?
 
 
-def sum_numbers_from_start_to_end(start, end):
+def sum_numbers(start, end):
     # Your code should go here.
+
     ...

@@ -1,5 +1,5 @@
 ## Exercise 03_01 - FizzBuzz
-# Write a function that takes an integer as input and returns either:
+# Write a program that takes an integer as input and returns either:
 # 1. "Fizz" if the number is divisible by 3,
 # 2. "Buzz" if the number is divisible by 5, and
 # 3. "FizzBuzz" if the number is divisible by both 3 and 5.

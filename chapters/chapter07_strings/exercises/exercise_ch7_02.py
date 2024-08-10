@@ -1,5 +1,5 @@
 ## Exercise 07_01 - Reverse string
-# Write a function reverse_string that takes a string and returns it reversed.
+# Write a function that takes a string and returns it reversed.
 
 # Can you do it once with slicing and once without slicing?
 

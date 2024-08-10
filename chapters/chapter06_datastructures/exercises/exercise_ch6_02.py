@@ -1,10 +1,9 @@
-## Exercise 06_02 - Count occurrences
-# Write a function count_occurrences that takes a list of strings and
-# returns a dictionary where the keys are the strings
-# and the values are the number of occurrences of each string.
+## Exercise 06_02 - Remove Duplicates
+# Write a function that takes a list of integers and returns a new list with duplicates removed.
+# For example, the list [1, 2, 2, 3, 3, 3] should return [1, 2, 3].
 
 
-def count_occurrences(words: list[str]) -> dict[str, int]:
+def remove_duplicates(my_list: list[int]) -> list[int]:
     # Your code should go here.
 
     return ...

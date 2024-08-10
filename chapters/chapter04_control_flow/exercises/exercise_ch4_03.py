@@ -1,5 +1,5 @@
 ## Exercise 04_03 - Grade Result
-# Write a Python program that take an integer between 0 and 100
+# Write a program that take an integer between 0 and 100
 # and returns the grade result based on the following rules:
 # 1. “A” if grade is between 90 and 100
 # 2. “B” if grade is between 80 and 89
@@ -7,6 +7,7 @@
 # 4. “Not Pass” if grade is less than 70
 
 
-def grade_result(grade: int) -> str:
+def grade_result(grade):
     # Your code should go here.
+
     ...

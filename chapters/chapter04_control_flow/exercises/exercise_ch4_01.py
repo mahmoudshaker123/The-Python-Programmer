@@ -7,4 +7,5 @@
 
 def check_number(number):
     # Your code should go here.
+
     ...

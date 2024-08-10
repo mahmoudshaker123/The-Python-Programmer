@@ -25,8 +25,8 @@ def test_ch03_e03():
 
 
 def test_ch03_e04():
-    assert is_prime(2) == True
-    assert is_prime(5) == True
-    assert is_prime(6) == False
-    assert is_prime(21) == False
-    assert is_prime(23) == True
+    assert is_prime(2) is True
+    assert is_prime(5) is True
+    assert is_prime(6) is False
+    assert is_prime(21) is False
+    assert is_prime(23) is True

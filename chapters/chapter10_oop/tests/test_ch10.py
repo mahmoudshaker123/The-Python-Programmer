@@ -31,13 +31,6 @@ def test_ch10_e02():
     assert Calculator.subtract(1, 2) == -1
 
 
-def test_ch10_e02():
-    assert Calculator.add(0, 0) == 0
-    assert Calculator.add(1, 2) == 3
-    assert Calculator.subtract(0, 0) == 0
-    assert Calculator.subtract(1, 2) == -1
-
-
 def test_ch10_e03():
     assert issubclass(Square, Shape)
     assert issubclass(Circle, Shape)
@@ -110,13 +103,17 @@ def test_ch10_e06():
 
 
 def test_ch10_e07():
-    # TODO: Implement test for exercise_ch10_07
-    ...
+    # TODO
+    card = Card("1234", "User A", "2024-12-31", "1234")
+    assert isinstance(card, Card)
+    account = Account("1234", "User A", 1000, [card])
+    assert isinstance(account, Account)
 
 
 def test_ch10_e08():
-    # TODO: Implement test for exercise_ch10_08
-    ...
+    # TODO
+    customer = Customer("John", "Doe")
+    assert isinstance(customer, Customer)
 
 
 def test_ch10_e09():

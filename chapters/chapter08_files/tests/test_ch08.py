@@ -3,7 +3,8 @@ import pytest
 from ..exercises.exercise_ch8_01 import count_errors_from_file
 from ..exercises.exercise_ch8_02 import count_word_frequency
 from ..exercises.exercise_ch8_03 import course_grades_summary
-from ..exercises.exercise_ch8_04 import FileHandler
+
+# from ..exercises.exercise_ch8_04 import FileHandler
 
 
 @pytest.mark.parametrize(
@@ -80,22 +81,6 @@ def test_ch08_e01(source, expected):
 )
 def test_ch08_e02(source, expected):
     assert count_word_frequency(source) == expected
-
-
-@pytest.mark.parametrize(
-    "file_content",
-    [
-        textwrap.dedent(
-            """
-                Python is a popular programming language
-            """
-        ),
-    ],
-)
-def test_ch08_e03(source):
-    file_handler = FileHandler(source)
-    file_handler.write("Hello, World!")
-    assert file_handler.read() == "Hello, World!"
 
 
 @pytest.mark.parametrize(

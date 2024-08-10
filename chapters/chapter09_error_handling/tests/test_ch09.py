@@ -1,7 +1,6 @@
 import pytest
 from ..exercises.exercise_ch9_01 import divide
 from ..exercises.exercise_ch9_02 import check_positive, NegativeValueError
-from ..exercises.exercise_ch9_03 import robust_file_reader
 
 
 def test_ch09_e01():
@@ -19,8 +18,3 @@ def test_ch09_e02():
         check_positive(-1)
     with pytest.raises(NegativeValueError):
         check_positive(-10)
-
-
-def test_ch09_e03():
-    assert robust_file_reader() == "Hello, World!"
-    assert robust_file_reader() == "FileEmptyError"

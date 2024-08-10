@@ -1,7 +1,14 @@
-## [Challenge] Bank Account Management System
-# Write a set of classes to model a simple bank account management system. Implement classes for Bank, Account, and Customer. The Bank class should manage a collection of Account objects and allow Customer objects to open and close accounts, as well as deposit and withdraw money.
+## Exercise 10_09 - Generic Box
+# Given a class called `Box` that can store items of type `int`, modify the class so that it can store items of any type.
+# In other words, the `Box` class should be generic.
 
 
-def my_function():
-    # Students will write their solution here
-    return "Hello, World!"
+class Box:
+    def __init__(self):
+        self.item = None
+
+    def add(self, item: int):
+        self.item = item
+
+    def get(self) -> int:
+        return self.item

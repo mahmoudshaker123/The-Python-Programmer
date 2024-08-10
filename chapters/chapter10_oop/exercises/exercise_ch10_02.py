@@ -1,6 +1,15 @@
-# Write a class Car with an instance variable color and a class variable wheels set to 4. Create two objects of this class with different colors and print their colors and the number of wheels.
+## Exercise 09_02 - Calculator Class
+# Given the following `Calculator` class, there is a bug in the class definition.
+# Find and fix the bug.
+
+# Example of the expected behavior:
+# Calculator.add(1, 2)  # Expected output: 3
+# Calculator.subtract(1, 2)  # Expected output: -1
 
 
-def my_function():
-    # Students will write their solution here
-    return "Hello, World!"
+class Calculator:
+    def add(a: int, b: int) -> int:
+        return a + b
+
+    def subtract(a: int, b: int) -> int:
+        return a - b

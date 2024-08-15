@@ -1,6 +1,6 @@
-# Udemy: Complete Python Course
+# Udemy - Complete Python 2024 Course
 
-This repository contains exercises and tests for the Udemy course [Complete Python Course]() by Shehab Abdel-Salam.
+This repository contains exercises and tests for the Udemy course [Complete Python Course 2024]() designed by Shehab Abdel-Salam.
 
 The course is divided into chapters, each containing exercises and tests. The exercises are designed to help students practice Python programming concepts, while the tests are used to verify the correctness of their solutions.
 
@@ -88,7 +88,9 @@ cd Udemy-Complete-Python
    python main.py
    ```
 
-3. Run the test to verify the correctness of your solution.
+3. Write your solution in the corresponding exercise file. For example, if you are working on exercise 1 in chapter 1, you should write your solution in the `exercise_ch1_01.py` file.
+
+4. Run the test to verify the correctness of your solution.
    > Note: Always use the `-k` flag to run a specific test.
 
    ```bash
@@ -108,11 +110,11 @@ cd Udemy-Complete-Python
    pytest tests/
    ```
 
-4. If the test fails, you will see an error message indicating the reason for the failure. Fix the issue in your code and run the test again.
+5. If the test fails, you will see an error message indicating the reason for the failure. Fix the issue in your code and run the test again.
 
-5. Repeat **steps 2-4** for each exercise in the chapter.
+6. Repeat **steps 2-5** for each exercise in the chapter.
 
-6. Once you have completed all the exercises in the chapter, you can move on to the next chapter and repeat the process.
+7. Once you have completed all the exercises in the chapter, you can move on to the next chapter and repeat the process.
    ```bash
    cd ../chapter02_variables
    ```

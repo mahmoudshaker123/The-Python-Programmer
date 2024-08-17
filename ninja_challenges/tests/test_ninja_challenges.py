@@ -16,6 +16,9 @@ from ..exercises.challenge_15 import transpose_matrix
 from ..exercises.challenge_16 import is_word_in_matrix
 from ..exercises.challenge_17 import compare_versions
 from ..exercises.challenge_18 import NestedIterator
+from ..exercises.challenge_19 import count_servers
+from ..exercises.challenge_20 import integer_to_roman
+from ..exercises.challenge_21 import interval_intersection
 
 
 def test_challenge_01():
@@ -155,3 +158,32 @@ def test_challenge_18():
     assert iterator2.next() == 8
     assert iterator2.next() == 9
     assert iterator2.hasNext() is False
+
+
+def test_challenge_19():
+    assert count_servers([[1, 0], [0, 1]]) == 0
+    assert count_servers([[1, 0], [1, 1]]) == 3
+    assert count_servers([[1, 1, 0, 0], [0, 0, 1, 0], [0, 0, 1, 0], [0, 0, 0, 1]]) == 4
+    assert count_servers([[1, 0, 0], [0, 0, 1], [0, 0, 1]]) == 3
+    assert count_servers([[1, 0, 0], [0, 1, 1], [0, 0, 1]]) == 4
+    assert count_servers([[1, 0, 0], [0, 1, 1], [0, 0, 0]]) == 2
+
+
+def test_challenge_20():
+    assert integer_to_roman(3) == "III"
+    assert integer_to_roman(4) == "IV"
+    assert integer_to_roman(9) == "IX"
+    assert integer_to_roman(58) == "LVIII"
+    assert integer_to_roman(1994) == "MCMXCIV"
+    assert integer_to_roman(3999) == "MMMCMXCIX"
+    assert integer_to_roman(39999) == "MMM"
+
+
+def test_challenge_21():
+    assert interval_intersection(
+        [[0, 2], [5, 10], [13, 23], [24, 25]], [[1, 5], [8, 12], [15, 24], [25, 26]]
+    ) == [[1, 2], [5, 5], [8, 10], [15, 23], [24, 24], [25, 25]]
+    assert interval_intersection([[1, 3], [5, 9]], []) == []
+    assert interval_intersection([[1, 7]], [[3, 10]]) == [[3, 7]]
+    assert interval_intersection([[1, 7]], [[8, 10]]) == []
+    assert interval_intersection([[1, 7]], [[7, 10]]) == [[7, 7]]

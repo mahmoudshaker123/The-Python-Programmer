@@ -13,6 +13,9 @@ from ..exercises.challenge_12 import num_pairs_divisible_by_60
 from ..exercises.challenge_13 import is_monotonic
 from ..exercises.challenge_14 import add_matrices
 from ..exercises.challenge_15 import transpose_matrix
+from ..exercises.challenge_16 import is_word_in_matrix
+from ..exercises.challenge_17 import compare_versions
+from ..exercises.challenge_18 import NestedIterator
 
 
 def test_challenge_01():
@@ -75,3 +78,80 @@ def test_challenge_14():
 
 def test_challenge_15():
     assert transpose_matrix([]) == []
+
+
+def test_challenge_16():
+    assert is_word_in_matrix([], "") is False
+    assert (
+        is_word_in_matrix(
+            [["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "E"]], "ABCCED"
+        )
+        is True
+    )
+    assert (
+        is_word_in_matrix(
+            [["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "E"]], "SEE"
+        )
+        is True
+    )
+    assert (
+        is_word_in_matrix(
+            [["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "E"]], "ABCB"
+        )
+        is False
+    )
+    assert (
+        is_word_in_matrix(
+            [["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "E"]],
+            "ABCESEEDAS",
+        )
+        is True
+    )
+    assert (
+        is_word_in_matrix(
+            [["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "E"]],
+            "ABCESEDAS",
+        )
+        is False
+    )
+
+
+def test_challenge_17():
+    assert compare_versions("1.01", "1.001") == 0
+    assert compare_versions("1.0", "1.0.0") == 0
+    assert compare_versions("0.1", "1.1") == -1
+    assert compare_versions("1.0.1", "1") == 1
+    assert compare_versions("1.0.1", "1.0.10") == -1
+    assert compare_versions("1.0.1", "1.0.1") == 0
+    assert compare_versions("1.0.1", "1.0.2") == -1
+    assert compare_versions("1.0.1", "1.0.0") == 1
+
+
+def test_challenge_18():
+    iterator0 = NestedIterator([[1, [2, [3, [4]]]]])
+    assert iterator0.next() == 1
+    assert iterator0.next() == 2
+    assert iterator0.next() == 3
+    assert iterator0.next() == 4
+    assert iterator0.hasNext() is False
+
+    iterator1 = NestedIterator([[1, 2], [3], [4, 5, 6]])
+    assert iterator1.next() == 1
+    assert iterator1.next() == 2
+    assert iterator1.next() == 3
+    assert iterator1.next() == 4
+    assert iterator1.next() == 5
+    assert iterator1.next() == 6
+    assert iterator1.hasNext() is False
+
+    iterator2 = NestedIterator([[1, 2, 3], [4, [5, 6]], [7, 8, 9]])
+    assert iterator2.next() == 1
+    assert iterator2.next() == 2
+    assert iterator2.next() == 3
+    assert iterator2.next() == 4
+    assert iterator2.next() == 5
+    assert iterator2.next() == 6
+    assert iterator2.next() == 7
+    assert iterator2.next() == 8
+    assert iterator2.next() == 9
+    assert iterator2.hasNext() is False

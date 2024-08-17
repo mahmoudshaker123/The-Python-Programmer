@@ -1,6 +1,6 @@
-# Udemy - Complete Python 2024 Course
+# Udemy - Complete Python Programming Course
 
-This repository contains exercises and tests for the Udemy course [Complete Python Course 2024]() designed by Shehab Abdel-Salam.
+This repository contains exercises and tests for the Udemy course [Complete Python Programming]() designed by Shehab Abdel-Salam.
 
 The course is divided into chapters, each containing exercises and tests. The exercises are designed to help students practice Python programming concepts, while the tests are used to verify the correctness of their solutions.
 

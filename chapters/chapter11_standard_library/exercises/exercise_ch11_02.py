@@ -1,6 +1,19 @@
-# Write a Python script using dataclasses to define a class Student with name and age attributes. Create an instance of this class and print its attributes.
+## Exercise 11_02 - Dataclasses
+# Create two dataclasses, Address and Person.
+# The Person class should contain a field for storing the person's address, which should be an instance of the Address dataclass.
+# The Person class should have the following:
+# - name
+# - age
+# - address (instance of Address)
+# - previous_address (list[Address]) [Hint: use default_factory to initialize this list to an empty list if not provided]
+
+# The Address class should have the following:
+# - street
+# - city
+# - zip code
 
 
-def my_function():
-    # Students will write their solution here
-    return "Hello, World!"
+class Address: ...
+
+
+class Person: ...

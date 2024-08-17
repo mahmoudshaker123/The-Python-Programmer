@@ -1,7 +1,11 @@
-# Write a Python script that prints the current date and time,
-# then calculates and prints the date and time one week from now.
+## Exercise 11_01 - Calculate Days Until Next Birthday
+# Given a birthday represented as a date object,
+# write a function that calculates the number of days until the next birthday.
+
+from datetime import date
 
 
-def my_function():
-    # Students will write their solution here
-    return "Hello, World!"
+def days_until_next_birthday(birthday: date, now: date = date.today()) -> int:
+    # Your code should go here.
+
+    ...

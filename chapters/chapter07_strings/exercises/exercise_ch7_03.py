@@ -1,10 +1,8 @@
-## Exercise 07_03 - Spaces to hyphens
-# Write a function replace_spaces_with_hyphens that takes a string and
-# returns a new string with all spaces replaced by hyphens.
-# Hint: Think about built-in string methods.
+## Exercise 07_03 - Reverse Each Word in a Sentence
+# Write a function that takes a sentence and returns it with each word reversed.
 
 
-def replace_spaces_with_hyphens(s: str) -> str:
+def reverse_each_word(sentence: str) -> str:
     # Your code should go here.
 
-    return ...
+    ...

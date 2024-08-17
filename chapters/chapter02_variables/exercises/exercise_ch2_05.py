@@ -1,9 +1,11 @@
-## Exercise 02_05 - Add Numbers
-# Write a program that returns the total length of two words.
-# For example, given the words "hello" and "world", the total length is 10.
+## Exercise 02_06 - Binary to Decimal
+# Write a program that takes a binary string as input and
+# returns its decimal representation as an integer.
+# For example, given the binary string "1010", the function should return 10.
+# or given the binary string "1101", the function should return 13.
 
 
-def total_length_of_words(word1, word2):
+def convert_binary_to_decimal(binary):
     # Your code should go here.
 
     return ...

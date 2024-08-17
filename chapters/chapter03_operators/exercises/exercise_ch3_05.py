@@ -1,4 +1,4 @@
-## Exercise 02_08 - Pythagorean Theorem
+## Exercise 03_05 - Pythagorean Theorem
 # Write a program that takes the lengths of two sides of a right triangle
 # as input and returns the length of the hypotenuse using the Pythagorean theorem https://en.wikipedia.org/wiki/Pythagorean_theorem.
 # Formula is c^2 = a^2 + b^2. Your program should return the value of c.

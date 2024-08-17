@@ -1,8 +1,9 @@
 from ..exercises.exercise_ch7_01 import get_substring
 from ..exercises.exercise_ch7_02 import reverse_string
-from ..exercises.exercise_ch7_03 import replace_spaces_with_hyphens
-from ..exercises.exercise_ch7_04 import extract_error_messages
-from ..exercises.exercise_ch7_05 import calculate_product_sales
+from ..exercises.exercise_ch7_03 import reverse_each_word
+from ..exercises.exercise_ch7_04 import replace_spaces_with_hyphens
+from ..exercises.exercise_ch7_05 import extract_error_messages
+from ..exercises.exercise_ch7_06 import calculate_product_sales
 
 
 def test_ch07_e01():
@@ -22,6 +23,13 @@ def test_ch07_e02():
 
 
 def test_ch07_e03():
+    assert reverse_each_word("") == ""
+    assert reverse_each_word("HelloWorld") == "HelloWorld"
+    assert reverse_each_word("Hello World") == "olleH dlroW"
+    assert reverse_each_word("I want to reverse this") == "I tnaw ot esrever siht"
+
+
+def test_ch07_e04():
     assert replace_spaces_with_hyphens("") == ""
     assert replace_spaces_with_hyphens("HelloWorld") == "HelloWorld"
     assert replace_spaces_with_hyphens("Hello World") == "Hello-World"
@@ -29,7 +37,7 @@ def test_ch07_e03():
     assert replace_spaces_with_hyphens("Give Me More-Hyphens") == "Give-Me-More-Hyphens"
 
 
-def test_ch07_e04():
+def test_ch07_e05():
     assert extract_error_messages([]) == []
     assert extract_error_messages(["INFO User logged in"]) == []
     assert extract_error_messages(
@@ -57,7 +65,7 @@ def test_ch07_e04():
     ]
 
 
-def test_ch07_e05():
+def test_ch07_e06():
     assert calculate_product_sales([]) == []
     assert calculate_product_sales(
         [

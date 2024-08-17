@@ -1,20 +1,20 @@
-## Exercise 07_05 - Total Sales for Specific Products
+## Exercise 07_05 - Extract Error Messages
+# You are given a list of log entries from a server. Each entry is a string that contains:
+# a log level, and a message, separated by spaces.
 
-# You are given a list of strings, each representing information about daily sales transactions.
-# Each line contains a date, product name, and sales amount, separated by commas.
-# Write a function that takes this list of sales transactions and returns the total sales for each product.
+# Write a function that takes this list of log entries and returns a list of error messages
+# which are associated with the log level "ERROR".
 
-# For example:
-# sales = [
-#     "2021-01-01,apple,100",
-#     "2021-01-01,orange,200",
-#     "2021-01-02,apple,150",
-#     "2021-01-02,orange,250",
-#   ]
-# The function should return: [("apple", 250), ("orange", 450)]
+# For example, given the following list of log entries:
+# log_entries = [
+#     "INFO User logged in",
+#     "ERROR Unable to connect to the server",
+#     "ERROR Server error",
+#     ]
+# The function should return ["Unable to connect to the server", "Server error"].
 
 
-def calculate_product_sales(sales: list[str]) -> list[tuple[str, int]]:
+def extract_error_messages(log_entries: list[str]) -> list[str]:
     # Your code should go here.
 
     ...

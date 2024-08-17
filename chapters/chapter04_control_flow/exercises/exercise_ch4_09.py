@@ -1,9 +1,9 @@
-## Exercise 04_09 - Double Elements
-# Write a program that doubles each element in a list of numbers.
-# For example, given the list [1, 2, 3, 4, 5], the function should return [2, 4, 6, 8, 10].
+## Exercise 04_09 - Calculate Total Length
+# Write a program that calculates the total length of all words in a list.
+# For example, given the list ['hello', 'world'], the total length is 10.
 
 
-def double_elements(numbers):
+def calculate_total_length(words):
     # Your code should go here.
 
-    ...
+    return ...

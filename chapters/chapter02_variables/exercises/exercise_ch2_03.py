@@ -1,9 +1,10 @@
-## Exercise 02_03 - Average Grade
-# Write a program that takes three grades (int or float) from a user and calculate the average grade (float).
-# The average grade should be rounded to two decimal places.
+## Exercise 02_03 - Add Numbers
+# Write a program that adds two numbers (provided as strings) and returns the sum as a string.
+# For example, given the strings "123" and "456", the function should return "579".
+# Hint: Can built-in functions help for type conversion?
 
 
-def compute_average_grade(grade1, grade2, grade3):
+def add_numbers(num1, num2):
     # Your code should go here.
 
     return ...

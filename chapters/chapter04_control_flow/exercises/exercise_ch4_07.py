@@ -1,9 +1,11 @@
-## Exercise 04_07 - Largest Index
-# Write a program that returns the index of the largest element in the list.
-# For example, given the list [1, 2, 3, 4, 5], the function should return 4.
+## Exercise 04_07 - Sum Even Numbers
+# Write a program that sums the even numbers from start to end.
+# For example, if the start is 1 and the end is 5, the sum is 6 (2 + 4).
+
+# Can you solve this once using a for loop and once using a while loop?
 
 
-def largest_index(elements):
+def sum_even_numbers(start, end):
     # Your code should go here.
 
-    ...
+    return ...

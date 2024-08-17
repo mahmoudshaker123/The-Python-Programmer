@@ -1,18 +1,8 @@
-## Exercise 03_01 - FizzBuzz
-# Write a program that takes an integer as input and returns either:
-# 1. "Fizz" if the number is divisible by 3,
-# 2. "Buzz" if the number is divisible by 5, and
-# 3. "FizzBuzz" if the number is divisible by both 3 and 5.
-
-# There is a bug in the code below. Find and fix it.
+## Exercise 03_01 - Area of a Circle
+# Write a program that computes the area of a circle given its radius.
 
 
-def fizzbuzz(number: int) -> str:
-    if number % 3 == 0 or number % 5 == 0:
-        return "FizzBuzz"
-    elif number % 3 == 0:
-        return "Fizz"
-    elif number % 5 == 0:
-        return "Buzz"
-    else:
-        return str(number)
+def compute_area_of_circle(radius):
+    # Your code should go here.
+
+    return ...

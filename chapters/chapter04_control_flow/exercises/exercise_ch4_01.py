@@ -1,11 +1,18 @@
-## Exercise 04_01 - Check Number
-# Write a program that returns:
-# - 'Positive' if the number is greater than 0
-# - 'Negative' if the number is less than 0
-# - 'Zero' if the number is equal to 0
+## Exercise 04_01 - FizzBuzz
+# Write a program that takes an integer as input and returns either:
+# 1. "Fizz" if the number is divisible by 3,
+# 2. "Buzz" if the number is divisible by 5, and
+# 3. "FizzBuzz" if the number is divisible by both 3 and 5.
+
+# There is a bug in the code below. Find it and fix it.
 
 
-def check_number(number):
-    # Your code should go here.
-
-    ...
+def fizzbuzz(number: int) -> str:
+    if number % 3 == 0 or number % 5 == 0:
+        return "FizzBuzz"
+    elif number % 3 == 0:
+        return "Fizz"
+    elif number % 5 == 0:
+        return "Buzz"
+    else:
+        return str(number)

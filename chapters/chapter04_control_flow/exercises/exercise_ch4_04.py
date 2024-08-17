@@ -1,13 +1,9 @@
-## Exercise 04_04 - Calculator
-# Write a program that simulates a basic calculator.
-# It should take two numbers (int) and an operator string (+, -, *, /)
-# and perform the corresponding operation.
-# If the operator is not one of the four specified, return 'Invalid operator'.
-
-# Can you write this once with if-elif-else and once with pattern matching?
+## Exercise 04_04 - Even or Odd Number
+# Write a program that takes an integer and returns whether its an even or odd number.
+# Bonus: can you solve this in a single line of code? (Hint: Search for ternary operator)
 
 
-def calculator(a, b, op):
+def is_even(number):
     # Your code should go here.
 
-    ...
+    return ...

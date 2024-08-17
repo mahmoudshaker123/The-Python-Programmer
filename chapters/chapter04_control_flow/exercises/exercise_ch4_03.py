@@ -1,13 +1,11 @@
-## Exercise 04_03 - Grade Result
-# Write a program that take an integer between 0 and 100
-# and returns the grade result based on the following rules:
-# 1. “A” if grade is between 90 and 100
-# 2. “B” if grade is between 80 and 89
-# 3. “C” if grade is between 70 and 79
-# 4. “Not Pass” if grade is less than 70
+## Exercise 04_03 - Check Number
+# Write a program that returns:
+# - 'Positive' if the number is greater than 0
+# - 'Negative' if the number is less than 0
+# - 'Zero' if the number is equal to 0
 
 
-def grade_result(grade):
+def check_number(number):
     # Your code should go here.
 
-    ...
+    return ...

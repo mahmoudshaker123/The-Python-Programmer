@@ -1,9 +1,10 @@
-## Exercise 02_04 - Add Numbers
-# Write a program that adds two numbers (as strings) and returns the sum as a string.
-# Hint: Can built-in functions help for type conversion?
+## Exercise 02_05 - Difference in Length
+# Write a program that returns the length difference between two words.
+# For example, given the words "Python" and "Programming", the function should return 3.
+# Note: The function should return the absolute value of the difference.
 
 
-def add_numbers(num1, num2):
+def compute_length_difference(word1, word2):
     # Your code should go here.
 
     return ...

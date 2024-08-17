@@ -1,9 +1,9 @@
-## Exercise 04_08 - Calculate Total Length
-# Write a program that calculates the total length of all words in a list.
-# For example, given the list ['hello', 'world'], the total length is 10.
+## Exercise 04_08 - Largest Index
+# Write a program that returns the index of the largest element in the list.
+# For example, given the list [1, 2, 3, 4, 5], the function should return 4.
 
 
-def calculate_total_length(words):
+def largest_index(elements):
     # Your code should go here.
 
-    ...
+    return ...

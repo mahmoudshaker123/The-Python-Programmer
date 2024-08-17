@@ -1,9 +1,9 @@
-## Exercise 04_12 - Reverse Digits
-# Write a program that takes an integer as input and returns the integer with its digits reversed.
-# For example, given the integer 123, the function should return 321.
+## Exercise 04_12 - Skipping Negative Numbers
+# Write a program that sums all positive numbers in a list, skipping any negative numbers.
+# For example, if the list is [1, -2, 3, -4, 5], the sum is 9 (1 + 3 + 5).
 
 
-def reverse_digits(n):
+def sum_positive_numbers(numbers):
     # Your code should go here.
 
-    ...
+    return ...

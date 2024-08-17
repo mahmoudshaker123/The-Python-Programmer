@@ -1,8 +1,11 @@
-## Exercise 04_11 - Skipping Negative Numbers
-# Write a program that sums all positive numbers in a list, skipping any negative numbers.
-# For example, if the list is [1, -2, 3, -4, 5], the sum is 9 (1 + 3 + 5).
+## Exercise 04_11 - Find the First Divisible by 5
+# Write a program that finds the first number in a list that is divisible by 5.
+# If a number is found, return it and exit the loop. If no number is found, return None.
+# For example, given [12, 5, 20, 25], the function should return 5.
+# or given [1, 2, 3, 4, 6], the function should return None.
 
 
-def sum_positive_numbers(numbers):
+def find_first_divisible_by_5(numbers):
     # Your code should go here.
-    ...
+
+    return ...

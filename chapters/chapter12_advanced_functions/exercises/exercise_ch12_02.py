@@ -1,7 +1,10 @@
-# Exercise 12.1 - Generator for Fibonacci Sequence
-# Write a Python generator function to yield Fibonacci numbers up to a specified limit.
+# Exercise 12_01 - Fibonacci Iterator
+# Write a Python class that implements an iterator for generating the first n Fibonacci numbers.
 
 
-def my_function():
-    # Students will write their solution here
-    return "Hello, World!"
+class FibonacciIterator:
+    def __init__(self, n: int): ...
+
+    def __iter__(self): ...
+
+    def __next__(self): ...

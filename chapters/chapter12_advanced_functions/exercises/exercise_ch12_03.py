@@ -1,7 +1,5 @@
-# Exercise 12.1 - Counter Closure
-# Write a Python closure that keeps track of how many times it has been called.
+# Exercise 12_02 - Generator for Even Numbers
+# Write a Python generator to yield the first n even numbers.
 
 
-def my_function():
-    # Students will write their solution here
-    return "Hello, World!"
+def even_numbers_generator(n: int): ...

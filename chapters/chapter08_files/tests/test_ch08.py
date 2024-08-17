@@ -5,6 +5,7 @@ import pytest
 from ..exercises.exercise_ch8_01 import count_errors_from_file
 from ..exercises.exercise_ch8_02 import count_word_frequency
 from ..exercises.exercise_ch8_03 import course_grades_summary
+from ..exercises.exercise_ch8_04 import inventory_management
 
 # from ..exercises.exercise_ch8_04 import FileHandler
 
@@ -126,10 +127,101 @@ def test_ch08_e03(source, expected):
     assert course_grades_summary(source) == expected
 
 
-# TODO: Fix the exercise.
-# def test_ch08_e04(source):
-#     file_handler = FileHandler(source)
-#     file_handler.write("Hello, World!")
-#     assert file_handler.read() == "Hello, World!"
-#     file_handler.close()
-#     assert file_handler.closed
+@pytest.mark.parametrize(
+    "file_content, restock_threshold, expected",
+    [
+        (
+            textwrap.dedent(
+                """
+            """
+            ),
+            0,
+            [],
+        ),
+        (
+            textwrap.dedent(
+                """
+                item_name,item_id,quantity,price
+                Apple,1,100,0.5
+                Banana,2,200,0.3
+                Orange,3,150,0.4
+            """
+            ),
+            200,
+            [
+                {
+                    "item_name": "Apple",
+                    "item_id": 1,
+                    "quantity": 100,
+                    "price": 0.5,
+                },
+                {
+                    "item_name": "Orange",
+                    "item_id": 3,
+                    "quantity": 150,
+                    "price": 0.4,
+                },
+            ],
+        ),
+        (
+            textwrap.dedent(
+                """
+                item_name,item_id,quantity,price
+                Apple,1,100,0.5
+                Banana,2,200,0.3
+                Orange,3,150,0.4
+            """
+            ),
+            100,
+            [
+                {
+                    "item_name": "Apple",
+                    "item_id": 1,
+                    "quantity": 100,
+                    "price": 0.5,
+                },
+            ],
+        ),
+        (
+            textwrap.dedent(
+                """
+                item_name,item_id,quantity,price
+                Apple,1,100,0.5
+                Banana,2,200,0.3
+                Orange,3,150,0.4
+            """
+            ),
+            300,
+            [],
+        ),
+        (
+            textwrap.dedent(
+                """
+                item_name,item_id,quantity,price
+                Apple,1,100,0.5
+                Banana,2,200,0.3
+                Orange,3,150,0.4
+                Pear,4,300,0.6
+                Kiwi,5,400,0.7
+            """
+            ),
+            250,
+            [
+                {
+                    "item_name": "Apple",
+                    "item_id": 1,
+                    "quantity": 100,
+                    "price": 0.5,
+                },
+                {
+                    "item_name": "Orange",
+                    "item_id": 3,
+                    "quantity": 150,
+                    "price": 0.4,
+                },
+            ],
+        ),
+    ],
+)
+def test_ch08_e04(source, restock_threshold, expected):
+    assert inventory_management(source, restock_threshold) == expected

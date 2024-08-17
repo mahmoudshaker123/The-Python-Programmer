@@ -1,7 +1,10 @@
-# Exercise 12.1 - Fibonacci Iterator
-# Write a Python class that implements an iterator for generating the first n Fibonacci numbers.
+# Exercise 12_01 - Even Number Iterator
+# Write a Python class that implements an iterator for generating the first n even numbers.
 
 
-def my_function():
-    # Students will write their solution here
-    return "Hello, World!"
+class EvenNumberIterator:
+    def __init__(self, n: int): ...
+
+    def __iter__(self): ...
+
+    def __next__(self): ...

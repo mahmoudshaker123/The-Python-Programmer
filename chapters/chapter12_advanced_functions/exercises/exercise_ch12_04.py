@@ -1,7 +1,5 @@
-# Exercise 12.1 - Counter Closure
-# Create a decorator timer that measures and prints the time taken for a function to execute.
+# Exercise 12_02 - Generator for Fibonacci Sequence
+# Write a Python generator to yield Fibonacci numbers up to a specified limit.
 
 
-def my_function():
-    # Students will write their solution here
-    return "Hello, World!"
+def fibonacci_generator(limit: int): ...

@@ -1,4 +1,4 @@
-from chapters.chapter14_testing.exercises.exercise_ch14_01 import my_function
+from ..exercises.exercise_ch14_01 import my_function
 
 
 def test_exercise1_my_function():

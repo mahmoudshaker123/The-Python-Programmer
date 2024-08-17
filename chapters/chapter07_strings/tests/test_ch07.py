@@ -4,6 +4,8 @@ from ..exercises.exercise_ch7_03 import reverse_each_word
 from ..exercises.exercise_ch7_04 import replace_spaces_with_hyphens
 from ..exercises.exercise_ch7_05 import extract_error_messages
 from ..exercises.exercise_ch7_06 import calculate_product_sales
+from ..exercises.exercise_ch7_07 import find_longest_word
+from ..exercises.exercise_ch7_08 import compress_string
 
 
 def test_ch07_e01():
@@ -93,3 +95,25 @@ def test_ch07_e06():
             "2021-01-03,Banana,300",
         ]
     ) == [("Apple", 300), ("Orange", 450), ("Banana", 450)]
+
+
+def test_ch07_e07():
+    assert find_longest_word("") == ""
+    assert (
+        find_longest_word(["hello", "world", "python", "programming"]) == "programming"
+    )
+    assert (
+        find_longest_word(["hello", "world", "python", "programming", "language"])
+        == "programming"
+    )
+    assert find_longest_word(["I", "am", "learning", "Python"]) == "learning"
+    assert find_longest_word(["Hello", "World"]) == "Hello"
+
+
+def test_ch07_e08():
+    assert compress_string("") == ""
+    assert compress_string("abcd") == "abcd"
+    assert compress_string("aaabbbbbcc") == "a3b5c2"
+    assert compress_string("aabbbcc") == "a2b3c2"
+    assert compress_string("aaaaaabbbc") == "a6b2c"
+    assert compress_string("aadddcccbb") == "a2d3c3b2"

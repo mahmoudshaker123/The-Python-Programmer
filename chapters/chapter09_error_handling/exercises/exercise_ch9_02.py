@@ -1,4 +1,4 @@
-## Exercise 09_02 - Custom Exception
+# Exercise 09_02 - Custom Exception
 # Write a function that raises a custom exception called `NegativeValueError`
 # if the input number is negative. If the number is positive, return the number.
 

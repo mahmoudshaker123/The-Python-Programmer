@@ -56,7 +56,14 @@ def test_ch11_e03():
 
 def test_ch11_e04():
     assert flatten_list_of_lists([[]]) == []
-    assert flatten_list_of_lists([[1, 2], [3, 4], [5, 6]]) == [1, 2, 3, 4, 5, 6]
+    assert flatten_list_of_lists([[1, 2], [3, 4], [5, 6]]) == [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+    ]
     assert flatten_list_of_lists([[1, 2, 3]]) == [1, 2, 3]
     assert flatten_list_of_lists([[1], [2], [3]]) == [1, 2, 3]
     assert flatten_list_of_lists([[1, 2], [3], [4, 5]]) == [1, 2, 3, 4, 5]

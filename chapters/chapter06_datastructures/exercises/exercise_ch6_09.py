@@ -1,5 +1,6 @@
-## Exercise 06_09 - Spot a duplicate in a matrix
-# Given matrix of size n x m and a target value, write a function that returns True if the target value is duplicated in the matrix.
+# Exercise 06_09 - Spot a duplicate in a matrix
+# Given matrix of size n x m and a target value, write a function that returns
+# True if the target value is duplicated in the matrix.
 # If there are duplicates, the function should return True, otherwise it should return False.
 # For example, given the target value 'X' and the matrix:
 # [['O', 'O', 'O', 'O'],

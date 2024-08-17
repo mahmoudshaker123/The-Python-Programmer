@@ -1,4 +1,4 @@
-## Challenge 07 - Compute Rows in Pascal's Triangle
+# Challenge 07 - Compute Rows in Pascal's Triangle
 
 # This figure shows the first 5 rows of Pascal's triangle:
 #     1

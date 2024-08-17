@@ -1,4 +1,4 @@
-## Exercise 02_06 - Binary to Decimal
+# Exercise 02_06 - Binary to Decimal
 # Write a program that takes a binary string as input and
 # returns its decimal representation as an integer.
 # For example, given the binary string "1010", the function should return 10.

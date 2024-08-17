@@ -1,4 +1,4 @@
-## Exercise 08_03 - File Handler
+# Exercise 08_03 - File Handler
 # Write a custom context manager using a class FileHandler that opens
 # and closes a file. Use it to read from data.txt.
 

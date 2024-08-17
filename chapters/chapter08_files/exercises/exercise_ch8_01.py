@@ -1,4 +1,4 @@
-## Exercise 08_01 - Log File Analysis
+# Exercise 08_01 - Log File Analysis
 # Write a function that reads a log file log.txt and counts the number of occurrences of the word "ERROR".
 # Example log.txt:
 # INFO: System started

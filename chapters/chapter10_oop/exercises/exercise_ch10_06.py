@@ -1,4 +1,4 @@
-## Exercise 10_06 - Library Management System [Part 3/4]
+# Exercise 10_06 - Library Management System [Part 3/4]
 # In the previous two exercises, you defined the core classes for a library management system.
 # In this exercise, you will implement the `Library` class that will hold a collection of shelves.
 

@@ -1,4 +1,4 @@
-## Exercise 10_08 - Banking System [Part 2/3]
+# Exercise 10_08 - Banking System [Part 2/3]
 # So far we've defined the `Card` and `Account` classes. Now, let's define the `Customer` class.
 
 
@@ -20,7 +20,7 @@
 # 6. withdraw(self, account_number: int, amount: float, card_number: int, pin: int) -> None: withdraws money from an account.
 # 7. deposit(self, account_number: int, amount: float) -> None: deposits money into an account.
 
-from exercise_ch10_07 import Card, Account
+from exercise_ch10_07 import Account, Card
 
 
 class Customer:

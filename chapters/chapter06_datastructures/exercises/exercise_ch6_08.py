@@ -1,4 +1,4 @@
-## Exercise 06_08 - Record 'X's in a Matrix
+# Exercise 06_08 - Record 'X's in a Matrix
 # Given a matrix of size n x m, write a function that returns the locations of all 'X's in the matrix.
 # The matrix is represented as a list of lists, where each list represents a row in the matrix.
 # Location is represented as a tuple with the row and column index.

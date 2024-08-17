@@ -1,4 +1,4 @@
-## Exercise 10_07 - Banking System [Part 1/3]
+# Exercise 10_07 - Banking System [Part 1/3]
 # In the next three exercises, you will implement a simple banking system.
 # Let's start first by defining our core classes (Card, Account, and Customer).
 

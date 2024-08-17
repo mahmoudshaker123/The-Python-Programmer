@@ -1,6 +1,8 @@
 # Exercise 15_03 - Thread-Safe Bank Account
-# You are given a simple bank account class that supports deposit and withdraw operations.
-# Modify the class to make it thread-safe so that it can handle concurrent deposits and withdrawals correctly.
+# You are given a simple bank account class that supports deposit
+# and withdraw operations.
+# Modify the class to make it thread-safe so that it can handle
+# concurrent deposits and withdrawals correctly.
 
 
 class BankAccount:

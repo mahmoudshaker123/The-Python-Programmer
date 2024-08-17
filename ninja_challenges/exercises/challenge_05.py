@@ -1,4 +1,4 @@
-## Challenge 05 - Compute All Valid IP Addresses
+# Challenge 05 - Compute All Valid IP Addresses
 # A decimal string is a string consisting of digits from 0 to 9.
 # Internet Protocols (IP) addresses can be written as four decimal strings separated by periods,
 # e.g., 192.168.0.1.

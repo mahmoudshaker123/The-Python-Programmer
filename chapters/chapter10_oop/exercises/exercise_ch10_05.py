@@ -1,4 +1,4 @@
-## Exercise 10_05 - Library Management System [Part 2/4]
+# Exercise 10_05 - Library Management System [Part 2/4]
 # In the previous exercise, you defined the core classes for a library management system.
 # In this exercise, you will implement the `BookShelf` class that will hold a collection of books.
 

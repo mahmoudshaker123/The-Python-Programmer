@@ -1,4 +1,4 @@
-## Exercise 09_02 - Calculator Class
+# Exercise 09_02 - Calculator Class
 # Given the following `Calculator` class, there is a bug in the class definition.
 # Find and fix the bug.
 

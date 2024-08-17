@@ -21,7 +21,15 @@ def test_ch06_e02():
     assert remove_duplicates([]) == []
     assert remove_duplicates([1, 2, 2, 3, 3, 3]) == [1, 2, 3]
     assert remove_duplicates([1, 1, 1, 1, 1, 1, 1, 1, 1]) == [1]
-    assert remove_duplicates([1, 2, 3, 4, 4, 5, 6, 6, 7]) == [1, 2, 3, 4, 5, 6, 7]
+    assert remove_duplicates([1, 2, 3, 4, 4, 5, 6, 6, 7]) == [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+    ]
     assert remove_duplicates([1, 2, 3, 4, 5, 6, 7]) == [1, 2, 3, 4, 5, 6, 7]
 
 
@@ -39,12 +47,24 @@ def test_ch06_e04():
     assert unique_elements([1, 2, 3], [1, 2, 3]) == {1, 2, 3}
     assert unique_elements([1, 2, 2, 3], [2, 1, 4]) == {1, 2, 3, 4}
     assert unique_elements([1, 2, 3], [4, 5, 6]) == {1, 2, 3, 4, 5, 6}
-    assert unique_elements([1, 6, 7, 8], [2, 3, 4, 5]) == {1, 2, 3, 4, 5, 6, 7, 8}
+    assert unique_elements([1, 6, 7, 8], [2, 3, 4, 5]) == {
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+    }
 
 
 def test_ch06_e05():
     assert sum_of_freq_tuples([]) == {}
-    assert sum_of_freq_tuples([("a", 1), ("b", 2), ("a", 3)]) == {"a": 4, "b": 2}
+    assert sum_of_freq_tuples([("a", 1), ("b", 2), ("a", 3)]) == {
+        "a": 4,
+        "b": 2,
+    }
     assert sum_of_freq_tuples([("a", 1), ("b", 2), ("a", 3), ("b", 1)]) == {
         "a": 4,
         "b": 3,

@@ -1,4 +1,4 @@
-## Exercise 07_06 - Total Sales for Specific Products
+# Exercise 07_06 - Total Sales for Specific Products
 
 # You are given a list of strings, each representing information about daily sales transactions.
 # Each line contains a date, product name, and sales amount, separated by commas.

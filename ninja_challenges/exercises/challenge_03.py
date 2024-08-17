@@ -1,6 +1,7 @@
-## Challenge 03 - Merge list of Receipts
+# Challenge 03 - Merge list of Receipts
 # You are given a list of receipts. Each receipt is a tuple of the form (name, amount).
-# Write a function that merges the list of receipts into a dictionary, where the key is the name and the value is the total amount for that name.
+# Write a function that merges the list of receipts into a dictionary,
+# where the key is the name and the value is the total amount for that name.
 
 # For example, given the following list of receipts:
 # receipts = [

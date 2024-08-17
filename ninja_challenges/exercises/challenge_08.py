@@ -1,4 +1,4 @@
-## Challenge 08 - UNIX Tail Command
+# Challenge 08 - UNIX Tail Command
 # The UNIT tail command displays the last part of a file.
 # For this challenge, assume that tail takes two arguments: a file name and
 #  a number of lines, starting from the last line, that are to be printed.

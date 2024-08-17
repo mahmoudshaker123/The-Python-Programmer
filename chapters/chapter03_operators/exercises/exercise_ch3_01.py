@@ -1,4 +1,4 @@
-## Exercise 03_01 - Area of a Circle
+# Exercise 03_01 - Area of a Circle
 # Write a program that computes the area of a circle given its radius.
 
 

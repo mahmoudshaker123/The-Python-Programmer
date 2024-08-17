@@ -1,4 +1,4 @@
-## Exercise 04_12 - Skipping Negative Numbers
+# Exercise 04_12 - Skipping Negative Numbers
 # Write a program that sums all positive numbers in a list, skipping any negative numbers.
 # For example, if the list is [1, -2, 3, -4, 5], the sum is 9 (1 + 3 + 5).
 

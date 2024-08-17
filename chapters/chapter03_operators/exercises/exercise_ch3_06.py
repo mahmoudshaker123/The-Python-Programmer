@@ -1,4 +1,4 @@
-## Exercise 03_06 - Stats Report
+# Exercise 03_06 - Stats Report
 # Given three numbers that represent the number of wins, losses, and draws of a football team,
 # write a program that generates a report with the following information:
 # 1- The total number of games played.
@@ -19,4 +19,4 @@ def generate_stats_report(wins, losses, draws):
     draws_percentage = None
     # Your code should go here.
 
-    return f"The team played {total_games} games. They won {wins_percentage}% of the games, lost {losses_percentage}% of the games, and drew {draws_percentage}% of the games."
+    return f"The team played {total_games} games. They won {wins_percentage}% of the games, lost {losses_percentage}% of the games, and drew {draws_percentage}% of the games."  # noqa

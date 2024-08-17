@@ -1,4 +1,4 @@
-## Challenge 04 - Reverse a Matrix
+# Challenge 04 - Reverse a Matrix
 # Write a function that reverses a matrix.
 
 # For example, given the following matrix:

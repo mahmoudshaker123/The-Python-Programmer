@@ -1,4 +1,4 @@
-## Exercise 02_04 - May The Force Be With You
+# Exercise 02_04 - May The Force Be With You
 # Write a program that calculates the force of gravity between two objects.
 # The formula to calculate the force of gravity is:
 # F = G * (m1 * m2) / r^2

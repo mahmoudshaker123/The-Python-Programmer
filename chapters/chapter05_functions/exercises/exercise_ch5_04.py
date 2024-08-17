@@ -1,4 +1,4 @@
-## Exercise 05_04 - Fibonacci Sequence
+# Exercise 05_04 - Fibonacci Sequence
 # Write a function that takes a number n and returns the nth number in the Fibonacci sequence.
 # The Fibonacci sequence is a series of numbers in which each number is the sum of the two preceding ones.
 # The first few numbers in the sequence are 0, 1, 1, 2, 3, 5, 8, 13, 21, and so on.

@@ -1,4 +1,4 @@
-## Challenge 02 - Image Blurrer
+# Challenge 02 - Image Blurrer
 # Write a program that takes an image and blurs the image.
 # The image is represented as a list of lists, where each list represents a row of the image.
 # Each element in the list is an integer representing a pixel value.

@@ -1,4 +1,4 @@
-## Exercise 07_04 - Spaces to hyphens
+# Exercise 07_04 - Spaces to hyphens
 # Write a function replace_spaces_with_hyphens that takes a string and
 # returns a new string with all spaces replaced by hyphens.
 # Hint: Think about built-in string methods.

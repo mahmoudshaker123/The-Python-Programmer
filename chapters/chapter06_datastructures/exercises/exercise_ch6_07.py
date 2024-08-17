@@ -1,4 +1,4 @@
-## Exercise 06_07 - Valid Parentheses
+# Exercise 06_07 - Valid Parentheses
 # Write a function that takes a string containing only parentheses '(', ')', '{', '}', '[' and ']'
 # and returns True if the parentheses are valid, and False otherwise.
 # For example, the string "([])" should return True, and the string "())" should return False.

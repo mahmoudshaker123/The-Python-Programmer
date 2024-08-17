@@ -1,4 +1,4 @@
-## Exercise 05_07 - Sum Array (Recursive)
+# Exercise 05_07 - Sum Array (Recursive)
 # Write a recursive function that takes a string of digits and returns its sum.
 # For example, the string "123" should return 6.
 

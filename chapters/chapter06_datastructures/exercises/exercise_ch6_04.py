@@ -1,4 +1,4 @@
-## Exercise 06_04 - Unique elements
+# Exercise 06_04 - Unique elements
 # Write a function unique_elements that takes two lists and
 # returns a set of unique elements that are in either of the two lists.
 # For example, given the lists [1, 2, 2, 3] and [2, 1, 4],

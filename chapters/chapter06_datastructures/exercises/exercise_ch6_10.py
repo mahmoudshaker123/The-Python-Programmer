@@ -1,4 +1,4 @@
-## Exercise 06_10 - Rolling Sum
+# Exercise 06_10 - Rolling Sum
 # Write a function that takes a list of integers and a fixed window size N
 # and returns the rolling sum of the list.
 # The rolling sum is calculated by adding the elements in the window size N.

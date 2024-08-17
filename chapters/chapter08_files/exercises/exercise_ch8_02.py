@@ -1,4 +1,4 @@
-## Exercise 08_02 - File Word Frequency
+# Exercise 08_02 - File Word Frequency
 # Write a function that reads a text file, and counts the frequency of each word,
 #  and returns a dictionary with the word as the key and the frequency as the value.
 # For example, given the text file words.txt with the following content:

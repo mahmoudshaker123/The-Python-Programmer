@@ -1,4 +1,4 @@
-## Exercise 04_02 - Is Prime
+# Exercise 04_02 - Is Prime
 # Write a program that takes an integer as input and returns True if the number is prime, False otherwise.
 # A prime number is a number that is only divisible by 1 and itself.
 # For example, 2, 3, 5, 7, 11, 13, and 17 are prime numbers.

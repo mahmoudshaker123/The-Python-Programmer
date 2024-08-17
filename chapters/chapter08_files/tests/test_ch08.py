@@ -1,5 +1,7 @@
 import textwrap
+
 import pytest
+
 from ..exercises.exercise_ch8_01 import count_errors_from_file
 from ..exercises.exercise_ch8_02 import count_word_frequency
 from ..exercises.exercise_ch8_03 import course_grades_summary
@@ -99,10 +101,14 @@ def test_ch08_e02(source, expected):
                 Math: 90, 85, 88, 92, 95
                 Science: 78, 85, 88, 92, 95
                 History: 88, 85, 88, 92, 95
-                English: 98, 85, 88, 92, 95   
-            """
+                English: 98, 85, 88, 92, 95"""
             ),
-            [("Math", 90.0), ("Science", 87.6), ("History", 89.6), ("English", 91.6)],
+            [
+                ("Math", 90.0),
+                ("Science", 87.6),
+                ("History", 89.6),
+                ("English", 91.6),
+            ],
         ),
         (
             textwrap.dedent(

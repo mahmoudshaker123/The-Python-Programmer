@@ -1,4 +1,4 @@
-## Exercise 05_10 - Count Character Frequency
+# Exercise 05_10 - Count Character Frequency
 # Write a function that takes a string and a character
 # and returns the number of times the character appears in the string.
 

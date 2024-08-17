@@ -1,4 +1,4 @@
-## Exercise 01_01 - Hello World!
+# Exercise 01_01 - Hello World!
 # Fill in the blank below to pass the test.
 
 

@@ -1,4 +1,4 @@
-## Challenge 15 - Transpose a Matrix
+# Challenge 15 - Transpose a Matrix
 # Write a function that transposes a matrix.
 
 # For example, given the following matrix:

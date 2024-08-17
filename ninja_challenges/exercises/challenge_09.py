@@ -1,4 +1,4 @@
-## Challenge 09 - Matrix Diagonal Sum
+# Challenge 09 - Matrix Diagonal Sum
 # Given a square matrix, calculate the sum of the diagonal elements.
 # For example, given the matrix:
 # [[1, 2, 3],

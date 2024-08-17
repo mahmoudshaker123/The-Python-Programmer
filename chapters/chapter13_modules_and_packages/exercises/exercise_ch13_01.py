@@ -1,4 +1,4 @@
-## Exercise 13_01 - Module
+# Exercise 13_01 - Module
 # Given these working Python functions, we want to create a module called string_tools.py
 # that contains these functions. The module should be placed in a package called tools.
 # The package should be placed in the same directory as the main program.

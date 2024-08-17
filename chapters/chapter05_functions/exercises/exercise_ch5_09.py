@@ -1,4 +1,4 @@
-## Exercise 05_09 - Count Vowels Of A String
+# Exercise 05_09 - Count Vowels Of A String
 # Write a function that takes a string and returns the total number of vowels in the string.
 # For example, the string "hello" should return 2.
 

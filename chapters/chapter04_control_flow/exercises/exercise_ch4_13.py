@@ -1,4 +1,4 @@
-## Exercise 04_13 - Reverse Digits
+# Exercise 04_13 - Reverse Digits
 # Write a program that takes an integer as input and returns the integer with its digits reversed.
 # For example, given the integer 123, the function should return 321.
 

@@ -1,13 +1,11 @@
-# Exercise 02_04 - May The Force Be With You
-# Write a program that calculates the force of gravity between two objects.
-# The formula to calculate the force of gravity is:
-# F = G * (m1 * m2) / r^2
-# https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation
-
-G = 6.674 * 10**-11  # Gravitational constant
+# Exercise 02_06 - Binary to Decimal
+# Write a program that takes a binary string as input and
+# returns its decimal representation as an integer.
+# For example, given the binary string "1010", the function should return 10.
+# or given the binary string "1101", the function should return 13.
 
 
-def calculate_gravity_force(mass1, mass2, distance):
+def convert_binary_to_decimal(binary):
     # Your code should go here.
 
     return ...

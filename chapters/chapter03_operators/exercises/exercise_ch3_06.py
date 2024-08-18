@@ -1,22 +1,15 @@
-# Exercise 03_06 - Stats Report
-# Given three numbers that represent the number of wins, losses, and draws of a football team,
-# write a program that generates a report with the following information:
-# 1- The total number of games played.
-# 2- The percentage of games won.
-# 3- The percentage of games lost.
-# 4- The percentage of games drawn.
-# The function should return a string with the report.
-# For example, given the numbers 3, 2, and 1, the function should return:
-# "The team played 6 games. They won 50.0% of the games, lost 33.3% of the games, and drew 16.7% of the games."
-# Note: The percentages should be rounded to one decimal place.
-# You can assume that the input numbers are > 0.
+# Exercise 03_06 - ISBN Verifier
+# Write a program that checks if a given ISBN number is valid.
+# The ISBN is valid if:
+# - It consists of 10 digits.
+# - The first 9 digits are numbers.
+# - The last digit is a number or an uppercase X.
+# - The ISBN is valid if the sum of the 10 digits multiplied by their position modulo 11 is 0.
+# The program should return True if the ISBN is valid and False otherwise.
+# formula: (d1*1 + d2*2 + d3*3 + d4*4 + d5*5 + d6*6 + d7*7 + d8*8 + d9*9 + d10*10) % 11 == 0
 
 
-def generate_stats_report(wins, losses, draws):
-    total_games = None
-    wins_percentage = None
-    losses_percentage = None
-    draws_percentage = None
+def is_valid_isbn(isbn):
     # Your code should go here.
 
-    return f"The team played {total_games} games. They won {wins_percentage}% of the games, lost {losses_percentage}% of the games, and drew {draws_percentage}% of the games."  # noqa
+    return ...

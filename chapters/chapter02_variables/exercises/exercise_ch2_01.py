@@ -1,9 +1,10 @@
-# Exercise 02_01 - Temperature Conversion
-# Write a program that converts a temperature from Celsius to Fahrenheit.
-# Hint: The formula is: F = C * 9/5 + 32
+# Exercise 02_01 - Convert Hours to Seconds
+# Write a program that converts hours to seconds.
+
+# For example, given the number of hours 2, the function should return 7200.
 
 
-def celsius_to_fahrenheit(celsius):
+def hours_to_seconds(hours):
     # Your code should go here.
 
     return ...

@@ -1,11 +1,9 @@
-# Exercise 02_06 - Binary to Decimal
-# Write a program that takes a binary string as input and
-# returns its decimal representation as an integer.
-# For example, given the binary string "1010", the function should return 10.
-# or given the binary string "1101", the function should return 13.
+# Exercise 02_05 - Temperature Conversion
+# Write a program that converts a temperature from Celsius to Fahrenheit.
+# Hint: The formula is: F = C * 9/5 + 32
 
 
-def convert_binary_to_decimal(binary):
+def celsius_to_fahrenheit(celsius):
     # Your code should go here.
 
     return ...

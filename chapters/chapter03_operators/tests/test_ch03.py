@@ -3,7 +3,8 @@ from ..exercises.exercise_ch3_02 import compute_slope
 from ..exercises.exercise_ch3_03 import bitwise_operations
 from ..exercises.exercise_ch3_04 import area_of_triangle
 from ..exercises.exercise_ch3_05 import calculate_hypotenuse
-from ..exercises.exercise_ch3_06 import generate_stats_report
+from ..exercises.exercise_ch3_06 import is_valid_isbn
+from ..exercises.exercise_ch3_07 import generate_stats_report
 
 
 def test_ch03_e01():
@@ -40,6 +41,15 @@ def test_ch03_e05():
 
 
 def test_ch03_e06():
+    assert is_valid_isbn("123456789X") is True
+    assert is_valid_isbn("987654321X") is True
+    assert is_valid_isbn("1234567890") is False
+    assert is_valid_isbn("1234567891") is False
+    assert is_valid_isbn("1234567892") is False
+    assert is_valid_isbn("1234567893") is False
+
+
+def test_ch03_e07():
     assert (
         generate_stats_report(1, 0, 0)
         == r"The team played 1 games. They won 100.0% of the games, lost 0.0% of the games, and drew 0.0% of the games."

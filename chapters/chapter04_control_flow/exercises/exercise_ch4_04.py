@@ -1,9 +1,11 @@
-# Exercise 04_04 - Even or Odd Number
-# Write a program that takes an integer and returns whether its an even or odd number.
-# Bonus: can you solve this in a single line of code? (Hint: Search for ternary operator)
+# Exercise 04_03 - Check Number
+# Write a program that returns:
+# - 'Positive' if the number is greater than 0
+# - 'Negative' if the number is less than 0
+# - 'Zero' if the number is equal to 0
 
 
-def is_even(number):
+def check_number(number):
     # Your code should go here.
 
     return ...

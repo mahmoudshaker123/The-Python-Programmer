@@ -12,6 +12,7 @@ from ..exercises.exercise_ch4_11 import double_elements
 from ..exercises.exercise_ch4_12 import find_first_divisible_by_5
 from ..exercises.exercise_ch4_13 import sum_positive_numbers
 from ..exercises.exercise_ch4_14 import reverse_digits
+from ..exercises.exercise_ch4_15 import gpa_calculator
 
 
 def test_ch04_e01():
@@ -107,3 +108,12 @@ def test_ch04_e14():
     assert reverse_digits(456) == 654
     assert reverse_digits(789) == 987
     assert reverse_digits(101) == 101
+
+
+def test_ch04_e15():
+    assert gpa_calculator([]) == 0
+    assert gpa_calculator([4, 3, 2]) == 3.0
+    assert gpa_calculator([4, 3, 2, 1]) == 2.5
+    assert gpa_calculator([4, 4, 4, 4]) == 4.0
+    assert gpa_calculator([3, 3, 3, 3]) == 3.0
+    assert gpa_calculator([3.2, 3.5, 3.8, 4]) == 3.625

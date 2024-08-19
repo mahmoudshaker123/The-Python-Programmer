@@ -1,8 +1,8 @@
 from ..exercises.exercise_ch2_01 import hours_to_seconds
-from ..exercises.exercise_ch2_02 import compute_average_grade
+from ..exercises.exercise_ch2_02 import celsius_to_fahrenheit
 from ..exercises.exercise_ch2_03 import add_numbers
 from ..exercises.exercise_ch2_04 import compute_length_difference
-from ..exercises.exercise_ch2_05 import celsius_to_fahrenheit
+from ..exercises.exercise_ch2_05 import compute_average_grade
 from ..exercises.exercise_ch2_06 import convert_binary_to_decimal
 from ..exercises.exercise_ch2_07 import calculate_gravity_force
 

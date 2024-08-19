@@ -1,6 +1,22 @@
-# Exercise 08_05 - File Handler
-# Write a custom context manager using a class FileHandler that opens
-# and closes a file. Use it to read from data.txt.
+# Exercise 08_05 - File Checker
+# Check if the numbers in the file are sorted in ascending order.
+
+# Example: file1.txt
+# 1
+# 2
+# 3
+#
+# should return True.
+
+# Example: file2.txt
+# 1
+# 3
+# 2
+#
+# should return False.
 
 
-class FileHandler: ...
+def is_file_sorted(file_name: str) -> bool:
+    # Your code should go here.
+
+    ...

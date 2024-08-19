@@ -1,9 +1,9 @@
-# Exercise 02_02 - Average Grade
-# Write a program that takes three grades (int or float) from a user and calculate the average grade (float).
-# The average grade should be **rounded to two decimal places**.
+# Exercise 02_02 - Temperature Conversion
+# Write a program that converts a temperature from Celsius to Fahrenheit.
+# Hint: The formula is: F = C * 9/5 + 32
 
 
-def compute_average_grade(grade1, grade2, grade3):
+def celsius_to_fahrenheit(celsius):
     # Your code should go here.
 
     return ...

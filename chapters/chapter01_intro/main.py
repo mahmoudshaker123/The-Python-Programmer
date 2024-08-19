@@ -1,4 +1,3 @@
-# no
 # This is your playground.
 # Feel free to experiment with the code under `main()` block and run it as many times as you want.
 # Try to run `python main.py` in the terminal from the current directory (chapter01_intro).

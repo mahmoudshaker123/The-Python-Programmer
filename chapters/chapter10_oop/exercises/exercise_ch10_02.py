@@ -1,15 +1,6 @@
 # Exercise 09_02 - Calculator Class
-# Given the following `Calculator` class, there is a bug in the class definition.
-# Find and fix the bug.
-
-# Example of the expected behavior:
-# Calculator.add(1, 2)  # Expected output: 3
-# Calculator.subtract(1, 2)  # Expected output: -1
+# Create a class called Calculator. The class should have two methods: add and subtract.
+# The two methods should be class methods and should take two arguments each.
 
 
-class Calculator:
-    def add(a: int, b: int) -> int:
-        return a + b
-
-    def subtract(a: int, b: int) -> int:
-        return a - b
+class Calculator: ...

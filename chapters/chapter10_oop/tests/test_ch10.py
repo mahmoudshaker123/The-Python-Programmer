@@ -1,10 +1,10 @@
 from ..exercises.exercise_ch10_01 import Vector3D
 from ..exercises.exercise_ch10_02 import Calculator
-from ..exercises.exercise_ch10_03 import Shape, Square, Circle
-from ..exercises.exercise_ch10_04 import Book, Author, Genre
+from ..exercises.exercise_ch10_03 import Circle, Shape, Square
+from ..exercises.exercise_ch10_04 import Author, Book, Genre
 from ..exercises.exercise_ch10_05 import BookShelf
 from ..exercises.exercise_ch10_06 import Library
-from ..exercises.exercise_ch10_07 import Card, Account
+from ..exercises.exercise_ch10_07 import Account, Card
 from ..exercises.exercise_ch10_08 import Customer
 from ..exercises.exercise_ch10_09 import Box
 
@@ -110,8 +110,8 @@ def test_ch10_e07():
     assert isinstance(account, Account)
 
 
+# TODO
 def test_ch10_e08():
-    # TODO
     customer = Customer("John", "Doe")
     assert isinstance(customer, Customer)
 

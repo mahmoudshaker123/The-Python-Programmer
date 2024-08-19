@@ -7,8 +7,6 @@ from ..exercises.exercise_ch8_02 import count_word_frequency
 from ..exercises.exercise_ch8_03 import course_grades_summary
 from ..exercises.exercise_ch8_04 import inventory_management
 
-# from ..exercises.exercise_ch8_04 import FileHandler
-
 
 @pytest.mark.parametrize(
     "file_content, expected",
@@ -49,7 +47,8 @@ def test_ch08_e01(source, expected):
             """
             ),
             {},
-        )(
+        ),
+        (
             textwrap.dedent(
                 """
                 python is a popular programming language

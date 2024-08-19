@@ -1,11 +1,13 @@
-# Udemy - Complete Python Programming Course
+# Udemy - The Python Programmer
 
-This repository contains exercises and tests for the Udemy course [Complete Python Programming]() designed by Shehab Abdel-Salam.
+This repository contains exercises and tests for the Udemy course [The Python Programmer]() designed and maintained by Shehab Abdel-Salam.
 
 The course is divided into chapters, each containing exercises and tests. The exercises are designed to help students practice Python programming concepts, while the tests are used to verify the correctness of their solutions.
 
 ## 1. Structure
+
 The repository has the following structure:
+
 ```
 ├── chapters/
 │   ├── chapter1/
@@ -39,8 +41,11 @@ The `ninja_challenges` directory contains additional challenges for you to pract
 ---
 
 ## 2. Getting Started
+
 ### 2.1 Prerequisites
+
 Before you begin, ensure you have the following installed on your machine:
+
 - Python **3.12** or higher
 - `pip` package manager
 - `pytest` testing framework
@@ -51,29 +56,46 @@ To check if you have Python installed, run the following command in your termina
 python --version
 ```
 
+If you get a `command not found: python`, you can download and install Python from the official website: [Python Downloads](https://www.python.org/downloads/)
+
 To check if you have `pip` installed, run the following command in your terminal:
 
 ```bash
 pip --version
 ```
 
+If you get a `command not found: pip`, you can install `pip` by following the instructions on the official website: [Installing pip](https://pip.pypa.io/en/stable/installation/)
+
 To install **`pytest`**, run the following command in your terminal:
 
 ```bash
 pip install pytest
 ```
+
+This will install the latest version of `pytest` on your machine.
+
+> This repository was last tested with `pytest` version **8.3.2**.
+
+> Note that you may need to use `pip3` instead of `pip` depending on your Python installation.
+
 ---
+
 ### 2.2 Setup
+
 First, make sure to clone the repository to your local machine using the following command:
+
 ```bash
 git clone https://github.com/shehab-as/Udemy-Complete-Python.git
 ```
 
 Afterwards, navigate to the repository directory:
+
 ```bash
-cd Udemy-Complete-Python
+cd The-Python-Programmer
 ```
+
 ---
+
 ### 2.3 Running the Exercises
 
 1. Navigate to the chapter you are working on:
@@ -91,18 +113,33 @@ cd Udemy-Complete-Python
 3. Write your solution in the corresponding exercise file. For example, if you are working on exercise 1 in chapter 1, you should write your solution in the `exercise_ch1_01.py` file.
 
 4. Run the test to verify the correctness of your solution.
+
    > Note: Always use the `-k` flag to run a specific test.
 
    ```bash
    pytest -k ch01_e01
    ```
-   You should see the following output if the test passes:
+
+   <details><summary>Click to see the following output if the test fails:</summary>
+
+   ```bash
+   tests/test_ch01.py:5: AssertionError
+   =========================================== short test summary info ===========================================
+   FAILED tests/test_ch01.py::test_ch01_e01 - AssertionError: assert 'I am ready to learn ______!' == 'I am ready to learn Python!'
+   =========================================== 1 failed in 0.01s ===========================================
+   ```
+
+   </details>
+
+   <details><summary>Click to see the following output if the test passes:</summary>
 
    ```bash
    tests/test_ch_01.py .                                                                                [100%]
 
    =========================================== 1 passed in 0.01s =============================================
    ```
+
+   </details>
 
    **Optional: You can run all the tests for the chapter you are currently working on:**
 
@@ -120,6 +157,7 @@ cd Udemy-Complete-Python
    ```
 
 ---
+
 ## 3. [Optional] Running the Ninja Challenges
 
 1. Navigate to the ninja challenges directory:
@@ -127,12 +165,15 @@ cd Udemy-Complete-Python
    ```bash
    cd ninja_challenges/
    ```
+
 2. Edit the main.py file to write your solution or test your code.
 
    ```bash
    python main.py
    ```
+
 3. Run the test to verify the correctness of your solution.
+
    > Note: Always use the `-k` flag to run a specific test.
 
    ```bash
@@ -140,6 +181,7 @@ cd Udemy-Complete-Python
    ```
 
 ---
+
 ## 4. Contributing
 
 If you have any questions or would like to report an issue, feel free to raise an issue on the repository.

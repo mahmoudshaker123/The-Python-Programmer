@@ -2,6 +2,7 @@
 # Feel free to experiment with the code under `main()` block and run it as many times as you want.
 
 # You can also import functions from the exercises and use them here.
+# For example:
 # from exercises.challenge_01 import find_peak
 
 

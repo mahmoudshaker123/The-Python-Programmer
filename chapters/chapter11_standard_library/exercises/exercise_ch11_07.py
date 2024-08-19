@@ -5,8 +5,6 @@
 
 # Can you fix this?
 
-from datetime import datetime
-
 
 class Transaction:
     timestamp: str  # Replace with `datetime`

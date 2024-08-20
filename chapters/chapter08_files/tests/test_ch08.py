@@ -2,10 +2,13 @@ import textwrap
 
 import pytest
 
-from ..exercises.exercise_ch8_01 import count_errors_from_file
-from ..exercises.exercise_ch8_02 import count_word_frequency
-from ..exercises.exercise_ch8_03 import course_grades_summary
-from ..exercises.exercise_ch8_04 import inventory_management
+from ..exercises.exercise_58 import count_errors_from_file
+from ..exercises.exercise_59 import count_word_frequency
+from ..exercises.exercise_60 import course_grades_summary
+from ..exercises.exercise_61 import inventory_management
+from ..exercises.exercise_62 import is_file_sorted
+
+# from ..exercises.exercise_63 import
 
 
 @pytest.mark.parametrize(
@@ -34,7 +37,7 @@ from ..exercises.exercise_ch8_04 import inventory_management
         ),
     ],
 )
-def test_ch08_e01(source, expected):
+def test_e58(source, expected):
     assert count_errors_from_file(source) == expected
 
 
@@ -81,7 +84,7 @@ def test_ch08_e01(source, expected):
         ),
     ],
 )
-def test_ch08_e02(source, expected):
+def test_e59(source, expected):
     assert count_word_frequency(source) == expected
 
 
@@ -122,7 +125,7 @@ def test_ch08_e02(source, expected):
         ),
     ],
 )
-def test_ch08_e03(source, expected):
+def test_e60(source, expected):
     assert course_grades_summary(source) == expected
 
 
@@ -222,5 +225,65 @@ def test_ch08_e03(source, expected):
         ),
     ],
 )
-def test_ch08_e04(source, restock_threshold, expected):
+def test_e61(source, restock_threshold, expected):
     assert inventory_management(source, restock_threshold) == expected
+
+
+@pytest.mark.parametrize(
+    "file_content, expected",
+    [
+        (
+            textwrap.dedent(
+                """
+            """
+            ),
+            True,
+        ),
+        (
+            textwrap.dedent(
+                """
+                1
+                2
+                3
+            """
+            ),
+            True,
+        ),
+        (
+            textwrap.dedent(
+                """
+                1
+                3
+                2
+            """
+            ),
+            False,
+        ),
+        (
+            textwrap.dedent(
+                """
+                1
+                2
+                3
+                4
+                5
+            """
+            ),
+            True,
+        ),
+        (
+            textwrap.dedent(
+                """
+                1
+                2
+                3
+                5
+                4
+            """
+            ),
+            False,
+        ),
+    ],
+)
+def test_e62(source, expected):
+    assert is_file_sorted(source) is expected

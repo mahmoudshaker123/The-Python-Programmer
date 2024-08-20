@@ -20,7 +20,7 @@
 # 6. withdraw(self, account_number: int, amount: float, card_number: int, pin: int) -> None: withdraws money from an account.
 # 7. deposit(self, account_number: int, amount: float) -> None: deposits money into an account.
 
-from .exercise_ch10_07 import Account, Card
+from .exercise_74 import Account, Card
 
 
 class Customer:

@@ -1,15 +1,18 @@
-from ..exercises.exercise_ch10_01 import Vector3D
-from ..exercises.exercise_ch10_02 import Calculator
-from ..exercises.exercise_ch10_03 import Circle, Shape, Square
-from ..exercises.exercise_ch10_04 import Author, Book, Genre
-from ..exercises.exercise_ch10_05 import BookShelf
-from ..exercises.exercise_ch10_06 import Library
-from ..exercises.exercise_ch10_07 import Account, Card
-from ..exercises.exercise_ch10_08 import Customer
-from ..exercises.exercise_ch10_09 import Box
+from ..exercises.exercise_68 import Vector3D
+from ..exercises.exercise_69 import Calculator
+from ..exercises.exercise_70 import Circle, Shape, Square
+from ..exercises.exercise_71 import Author, Book, Genre
+from ..exercises.exercise_72 import BookShelf
+from ..exercises.exercise_73 import Library
+from ..exercises.exercise_74 import Account, Card
+from ..exercises.exercise_75 import Customer
+from ..exercises.exercise_76 import Box
+
+# from ..exercises.exercise_77 import
+# from ..exercises.exercise_78 import
 
 
-def test_ch10_e01():
+def test_e68():
     v1 = Vector3D(1, 2, 3)
     v2 = Vector3D(4, 5, 6)
     v3 = v1 + v2
@@ -24,14 +27,14 @@ def test_ch10_e01():
     assert v4.z == -3
 
 
-def test_ch10_e02():
+def test_e69():
     assert Calculator.add(0, 0) == 0
     assert Calculator.add(1, 2) == 3
     assert Calculator.subtract(0, 0) == 0
     assert Calculator.subtract(1, 2) == -1
 
 
-def test_ch10_e03():
+def test_e70():
     assert issubclass(Square, Shape)
     assert issubclass(Circle, Shape)
     square = Square(5)
@@ -40,7 +43,7 @@ def test_ch10_e03():
     assert circle.area() == 78.54
 
 
-def test_ch10_e04():
+def test_e71():
     author = Author("John", "Doe")
     assert author.first_name == "John"
     assert author.last_name == "Doe"
@@ -51,7 +54,7 @@ def test_ch10_e04():
     assert book.genre == Genre.Fiction
 
 
-def test_ch10_e05():
+def test_e72():
     author = Author("John", "Doe")
     book = Book("The Book", author, 2024, Genre.Fiction)
 
@@ -72,7 +75,7 @@ def test_ch10_e05():
     assert shelf.get_books_by_genre(Genre.History) == [book]
 
 
-def test_ch10_e06():
+def test_e73():
     shelf_A_books = [
         Book("The Book", Author("John", "Doe"), 2024, Genre.Fiction),
         Book("Another Book", Author("John", "Doe"), 2024, Genre.Fiction),
@@ -102,7 +105,7 @@ def test_ch10_e06():
     assert library.get_books() == shelf_B_books
 
 
-def test_ch10_e07():
+def test_e74():
     # TODO
     card = Card("1234", "User A", "2024-12-31", "1234")
     assert isinstance(card, Card)
@@ -111,12 +114,12 @@ def test_ch10_e07():
 
 
 # TODO
-def test_ch10_e08():
+def test_e75():
     customer = Customer("John", "Doe")
     assert isinstance(customer, Customer)
 
 
-def test_ch10_e09():
+def test_e76():
     box1 = Box[int]()
     box1.add(5)
     assert isinstance(box1.get(), int)

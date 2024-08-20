@@ -1,11 +1,15 @@
 from datetime import date
-from ..exercises.exercise_ch11_01 import days_until_next_birthday
-from ..exercises.exercise_ch11_02 import Address, Person
-from ..exercises.exercise_ch11_03 import multiply_by_10
-from ..exercises.exercise_ch11_04 import flatten_list_of_lists
+from ..exercises.exercise_79 import days_until_next_birthday
+from ..exercises.exercise_80 import Address, Person
+from ..exercises.exercise_81 import multiply_by_10
+from ..exercises.exercise_82 import flatten_list_of_lists
+
+# from ..exercises.exercise_83 import
+# from ..exercises.exercise_84 import
+# from ..exercises.exercise_85 import
 
 
-def test_ch11_e01():
+def test_e79():
     assert (
         days_until_next_birthday(birthday=date(2021, 1, 1), now=date(2021, 1, 1)) == 364
     )
@@ -21,7 +25,7 @@ def test_ch11_e01():
     )
 
 
-def test_ch11_e02():
+def test_e80():
     address = Address(street="123 Main St", city="Springfield", zip_code="12345")
     person = Person(name="John Doe", age=30, address=address)
     assert person.name == "John Doe"
@@ -47,14 +51,14 @@ def test_ch11_e02():
     assert person_2.previous_address == [address_2, address_3]
 
 
-def test_ch11_e03():
+def test_e81():
     assert multiply_by_10(5) == 50
     assert multiply_by_10(10) == 100
     assert multiply_by_10(15) == 150
     assert multiply_by_10(0) == 0
 
 
-def test_ch11_e04():
+def test_e82():
     assert flatten_list_of_lists([[]]) == []
     assert flatten_list_of_lists([[1, 2], [3, 4], [5, 6]]) == [
         1,

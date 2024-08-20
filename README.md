@@ -110,14 +110,14 @@ cd The-Python-Programmer
    python main.py
    ```
 
-3. Write your solution in the corresponding exercise file. For example, if you are working on exercise 1 in chapter 1, you should write your solution in the `exercise_ch1_01.py` file.
+3. Write your solution in the corresponding exercise file. For example, if you are working on exercise 1 in chapter 1, you should write your solution in the `exercise_00.py` file.
 
 4. Run the test to verify the correctness of your solution.
 
    > Note: Always use the `-k` flag to run a specific test.
 
    ```bash
-   pytest -k ch01_e01
+   pytest -k e00
    ```
 
    <details><summary>Click to see the following output if the test fails:</summary>
@@ -125,7 +125,7 @@ cd The-Python-Programmer
    ```bash
    tests/test_ch01.py:5: AssertionError
    =========================================== short test summary info ===========================================
-   FAILED tests/test_ch01.py::test_ch01_e01 - AssertionError: assert 'I am ready to learn ______!' == 'I am ready to learn Python!'
+   FAILED tests/test_ch01.py::test_e00 - AssertionError: assert 'I am ready to learn ______!' == 'I am ready to learn Python!'
    =========================================== 1 failed in 0.01s ===========================================
    ```
 

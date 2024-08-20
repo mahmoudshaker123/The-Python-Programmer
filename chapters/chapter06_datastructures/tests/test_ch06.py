@@ -1,23 +1,23 @@
-from ..exercises.exercise_ch6_01 import is_anagram
-from ..exercises.exercise_ch6_02 import remove_duplicates
-from ..exercises.exercise_ch6_03 import count_letters
-from ..exercises.exercise_ch6_04 import unique_elements
-from ..exercises.exercise_ch6_05 import sum_of_freq_tuples
-from ..exercises.exercise_ch6_06 import count_words
-from ..exercises.exercise_ch6_07 import valid_parentheses
-from ..exercises.exercise_ch6_08 import record_x_in_matrix
-from ..exercises.exercise_ch6_09 import is_target_duplicate_in_matrix
-from ..exercises.exercise_ch6_10 import rolling_sum
+from ..exercises.exercise_40 import is_anagram
+from ..exercises.exercise_41 import remove_duplicates
+from ..exercises.exercise_42 import count_letters
+from ..exercises.exercise_43 import unique_elements
+from ..exercises.exercise_44 import sum_of_freq_tuples
+from ..exercises.exercise_45 import count_words
+from ..exercises.exercise_46 import valid_parentheses
+from ..exercises.exercise_47 import record_x_in_matrix
+from ..exercises.exercise_48 import is_target_duplicate_in_matrix
+from ..exercises.exercise_49 import rolling_sum
 
 
-def test_ch06_e01():
+def test_e40():
     assert is_anagram("apple", "papel") is True
     assert is_anagram("banana", "ananab") is True
     assert is_anagram("hello", "world") is False
     assert is_anagram("rat", "cat") is False
 
 
-def test_ch06_e02():
+def test_e41():
     assert remove_duplicates([]) == []
     assert remove_duplicates([1, 2, 2, 3, 3, 3]) == [1, 2, 3]
     assert remove_duplicates([1, 1, 1, 1, 1, 1, 1, 1, 1]) == [1]
@@ -33,7 +33,7 @@ def test_ch06_e02():
     assert remove_duplicates([1, 2, 3, 4, 5, 6, 7]) == [1, 2, 3, 4, 5, 6, 7]
 
 
-def test_ch06_e03():
+def test_e42():
     assert count_letters("") == {}
     assert count_letters("hello") == {"h": 1, "e": 1, "l": 2, "o": 1}
     assert count_letters("apple") == {"a": 1, "p": 2, "l": 1, "e": 1}
@@ -41,7 +41,7 @@ def test_ch06_e03():
     assert count_letters("word") == {"w": 1, "o": 1, "r": 1, "d": 1}
 
 
-def test_ch06_e04():
+def test_e43():
     assert unique_elements([], []) == set()
     assert unique_elements([1], [1]) == {1}
     assert unique_elements([1, 2, 3], [1, 2, 3]) == {1, 2, 3}
@@ -59,7 +59,7 @@ def test_ch06_e04():
     }
 
 
-def test_ch06_e05():
+def test_e44():
     assert sum_of_freq_tuples([]) == {}
     assert sum_of_freq_tuples([("a", 1), ("b", 2), ("a", 3)]) == {
         "a": 4,
@@ -80,7 +80,7 @@ def test_ch06_e05():
     ) == {"a": 10, "b": 10, "d": 10}
 
 
-def test_ch06_e06():
+def test_e45():
     assert count_words([]) == {}
     assert count_words(["hello", "world"]) == {"hello": 1, "world": 1}
     assert count_words(["hello", "world", "hello"]) == {"hello": 2, "world": 1}
@@ -97,7 +97,7 @@ def test_ch06_e06():
     }
 
 
-def test_ch06_e07():
+def test_e46():
     assert valid_parentheses("()") is True
     assert valid_parentheses("()[]{}") is True
     assert valid_parentheses("(]") is False
@@ -107,7 +107,7 @@ def test_ch06_e07():
     assert valid_parentheses("(([[{([({{})])}]]))") is False
 
 
-def test_ch06_e08():
+def test_e47():
     assert (
         record_x_in_matrix(
             [
@@ -145,7 +145,7 @@ def test_ch06_e08():
     ) == [(0, 0), (0, 3), (1, 1), (1, 2), (2, 1), (2, 2), (3, 0), (3, 3)]
 
 
-def test_ch06_e09():
+def test_e48():
     assert is_target_duplicate_in_matrix([], "X") is False
     assert (
         is_target_duplicate_in_matrix(
@@ -191,7 +191,7 @@ def test_ch06_e09():
     )
 
 
-def test_ch06_e10():
+def test_e49():
     assert rolling_sum([], 2) == []
     assert rolling_sum([1, 2, 3, 4, 5], 1) == [1, 2, 3, 4, 5]
     assert rolling_sum([1, 2, 3, 4, 5], 2) == [3, 5, 7, 9]

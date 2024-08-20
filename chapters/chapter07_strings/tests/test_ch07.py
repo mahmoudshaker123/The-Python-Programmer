@@ -1,14 +1,14 @@
-from ..exercises.exercise_ch7_01 import get_substring
-from ..exercises.exercise_ch7_02 import reverse_string
-from ..exercises.exercise_ch7_03 import reverse_each_word
-from ..exercises.exercise_ch7_04 import replace_spaces_with_hyphens
-from ..exercises.exercise_ch7_05 import extract_error_messages
-from ..exercises.exercise_ch7_06 import calculate_product_sales
-from ..exercises.exercise_ch7_07 import find_longest_word
-from ..exercises.exercise_ch7_08 import compress_string
+from ..exercises.exercise_50 import get_substring
+from ..exercises.exercise_51 import reverse_string
+from ..exercises.exercise_52 import reverse_each_word
+from ..exercises.exercise_53 import replace_spaces_with_hyphens
+from ..exercises.exercise_54 import extract_error_messages
+from ..exercises.exercise_55 import calculate_product_sales
+from ..exercises.exercise_56 import find_longest_word
+from ..exercises.exercise_57 import compress_string
 
 
-def test_ch07_e01():
+def test_e50():
     assert get_substring("Hello", 1, 3) == "el"
     assert get_substring("Hello, World!", 0, 5) == "Hello"
     assert get_substring("Hello, World!", 7, 12) == "World"
@@ -16,7 +16,7 @@ def test_ch07_e01():
     assert get_substring("Python is fun!", 0, 5) == "Python"
 
 
-def test_ch07_e02():
+def test_e51():
     assert reverse_string("") == ""
     assert reverse_string("Hello") == "olleH"
     assert reverse_string("ABCDEF") == "FEDCBA"
@@ -24,14 +24,14 @@ def test_ch07_e02():
     assert reverse_string("Python") == "nohtyP"
 
 
-def test_ch07_e03():
+def test_e52():
     assert reverse_each_word("") == ""
     assert reverse_each_word("HelloWorld") == "HelloWorld"
     assert reverse_each_word("Hello World") == "olleH dlroW"
     assert reverse_each_word("I want to reverse this") == "I tnaw ot esrever siht"
 
 
-def test_ch07_e04():
+def test_e53():
     assert replace_spaces_with_hyphens("") == ""
     assert replace_spaces_with_hyphens("HelloWorld") == "HelloWorld"
     assert replace_spaces_with_hyphens("Hello World") == "Hello-World"
@@ -39,7 +39,7 @@ def test_ch07_e04():
     assert replace_spaces_with_hyphens("Give Me More-Hyphens") == "Give-Me-More-Hyphens"
 
 
-def test_ch07_e05():
+def test_e54():
     assert extract_error_messages([]) == []
     assert extract_error_messages(["INFO User logged in"]) == []
     assert extract_error_messages(
@@ -67,7 +67,7 @@ def test_ch07_e05():
     ]
 
 
-def test_ch07_e06():
+def test_e55():
     assert calculate_product_sales([]) == []
     assert calculate_product_sales(
         [
@@ -97,7 +97,7 @@ def test_ch07_e06():
     ) == [("Apple", 300), ("Orange", 450), ("Banana", 450)]
 
 
-def test_ch07_e07():
+def test_e56():
     assert find_longest_word("") == ""
     assert (
         find_longest_word(["hello", "world", "python", "programming"]) == "programming"
@@ -110,7 +110,7 @@ def test_ch07_e07():
     assert find_longest_word(["Hello", "World"]) == "Hello"
 
 
-def test_ch07_e08():
+def test_e57():
     assert compress_string("") == ""
     assert compress_string("abcd") == "abcd"
     assert compress_string("aaabbbbbcc") == "a3b5c2"

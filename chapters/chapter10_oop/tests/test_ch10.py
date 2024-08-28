@@ -117,6 +117,10 @@ def test_e74():
 def test_e75():
     customer = Customer("John", "Doe")
     assert isinstance(customer, Customer)
+    assert customer.add_account(Account("1234", "User A", 1000, [])) is None
+    assert customer.add_card(Card("1234", "User A", "2024-12-31", "1234")) is None
+    assert customer.get_total_balance() == 1000
+    assert customer.withdraw(1234, 500, 1234, 1234) is None
 
 
 def test_e76():

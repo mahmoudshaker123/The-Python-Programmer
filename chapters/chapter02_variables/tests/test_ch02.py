@@ -29,10 +29,10 @@ def test_e03():
 
 
 def test_e04():
-    compute_length_difference("", "") == 0
-    compute_length_difference("Hello", "World") == 0
-    compute_length_difference("Python", "Java") == 2
-    compute_length_difference("Python", "Programming") == 5
+    assert compute_length_difference("", "") == 0
+    assert compute_length_difference("Hello", "World") == 0
+    assert compute_length_difference("Python", "Java") == 2
+    assert compute_length_difference("Python", "Programming") == 5
 
 
 def test_e05():

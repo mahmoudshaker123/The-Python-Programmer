@@ -8,4 +8,4 @@
 def compute_length_difference(word1, word2):
     # Your code should go here.
 
-    return ...
+    return -1

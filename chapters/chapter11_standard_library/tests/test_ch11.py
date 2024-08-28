@@ -1,12 +1,15 @@
-from datetime import date
+import textwrap
+from pathlib import Path
+import pytest
+import tempfile
+from datetime import date, datetime
 from ..exercises.exercise_79 import days_until_next_birthday
 from ..exercises.exercise_80 import Address, Person
 from ..exercises.exercise_81 import multiply_by_10
 from ..exercises.exercise_82 import flatten_list_of_lists
-
-# from ..exercises.exercise_83 import
-# from ..exercises.exercise_84 import
-# from ..exercises.exercise_85 import
+from ..exercises.exercise_83 import compute_fibonacci
+from ..exercises.exercise_84 import RateInterestCalculator
+from ..exercises.exercise_85 import parse_transactions, Transaction
 
 
 def test_e79():
@@ -72,3 +75,82 @@ def test_e82():
     assert flatten_list_of_lists([[1], [2], [3]]) == [1, 2, 3]
     assert flatten_list_of_lists([[1, 2], [3], [4, 5]]) == [1, 2, 3, 4, 5]
     assert flatten_list_of_lists([[1], [2, 3], [4]]) == [1, 2, 3, 4]
+
+
+def test_e83():
+    assert compute_fibonacci(3) == 2
+    assert compute_fibonacci(4) == 3
+    assert compute_fibonacci(5) == 5
+    assert compute_fibonacci(6) == 8
+    assert compute_fibonacci(7) == 13
+
+
+def test_e84():
+    assert RateInterestCalculator().calculate_total() == 0
+
+
+@pytest.fixture
+def source(file_content):
+    with tempfile.NamedTemporaryFile(suffix=".txt") as tmp_file:
+        source_path = Path(tmp_file.name)
+        source_path.write_text(file_content)
+        yield source_path
+
+
+@pytest.mark.parametrize(
+    "file_content, expected",
+    [
+        (
+            textwrap.dedent(
+                """
+                2021-01-01, Sold 100 shares of AAPL
+                2021-01-02, Bought 200 shares of MSFT
+                2021-01-03, Sold 50 shares of AAPL
+            """
+            ),
+            [
+                Transaction(
+                    timestamp=datetime(2021, 1, 1),
+                    description="Sold 100 shares of AAPL",
+                ),
+                Transaction(
+                    timestamp=datetime(2021, 1, 2),
+                    description="Bought 200 shares of MSFT",
+                ),
+                Transaction(
+                    timestamp=datetime(2021, 1, 3), description="Sold 50 shares of AAPL"
+                ),
+            ],
+        ),
+        (
+            textwrap.dedent(
+                """
+                2024-09-01, Sold 100 shares of AAPL
+                2024-10-01, Bought 200 shares of MSFT
+                2024-11-01, Sold 50 shares of AAPL
+                2024-12-01, Bought 100 shares of TSLA
+            """
+            ),
+            [
+                Transaction(
+                    timestamp=datetime(2024, 9, 1),
+                    description="Sold 100 shares of AAPL",
+                ),
+                Transaction(
+                    timestamp=datetime(2024, 10, 1),
+                    description="Bought 200 shares of MSFT",
+                ),
+                Transaction(
+                    timestamp=datetime(2024, 11, 1),
+                    description="Sold 50 shares of AAPL",
+                ),
+                Transaction(
+                    timestamp=datetime(2024, 12, 1),
+                    description="Bought 100 shares of TSLA",
+                ),
+            ],
+        ),
+    ],
+)
+def test_e85(source, expected):
+    assert parse_transactions(source) == expected

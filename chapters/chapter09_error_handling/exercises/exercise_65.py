@@ -7,7 +7,7 @@
 class NegativeValueError: ...
 
 
-def check_positive(number):
+def check_positive(number: int):
     # Your code should go here.
 
     return ...

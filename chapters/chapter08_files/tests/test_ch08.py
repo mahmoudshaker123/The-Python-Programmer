@@ -7,8 +7,7 @@ from ..exercises.exercise_59 import count_word_frequency
 from ..exercises.exercise_60 import course_grades_summary
 from ..exercises.exercise_61 import inventory_management
 from ..exercises.exercise_62 import is_file_sorted
-
-# from ..exercises.exercise_63 import
+from ..exercises.exercise_63 import count_emails
 
 
 @pytest.mark.parametrize(
@@ -287,3 +286,44 @@ def test_e61(source, restock_threshold, expected):
 )
 def test_e62(source, expected):
     assert is_file_sorted(source) is expected
+
+
+@pytest.mark.parametrize(
+    "file_content, expected",
+    [
+        (
+            textwrap.dedent(
+                """
+                username1
+                username2
+            """
+            ),
+            0,
+        ),
+        (
+            textwrap.dedent(
+                """
+                username1
+                test1@abc.com
+                username2
+            """
+            ),
+            1,
+        ),
+        (
+            textwrap.dedent(
+                """
+                username1
+                username2
+                user1@abc.com
+                user2@abc.com
+                username3
+                user3@abc.com
+                """
+            ),
+            3,
+        ),
+    ],
+)
+def test_e63(source, expected):
+    assert count_emails(source) == expected

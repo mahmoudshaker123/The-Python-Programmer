@@ -1,4 +1,4 @@
-# Exercise 08_03 - Course Grades Summary
+# Exercise 60 - Course Grades Summary
 # Write a function that reads a file and returns the average grade for each course.
 # Each line in the file contains the course name followed by a colon and a list of grades separated by commas.
 # The result should be a list of tuples where the first element is the course name

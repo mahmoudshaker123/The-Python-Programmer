@@ -1,4 +1,4 @@
-# Exercise 12_02 - Generator for Fibonacci Sequence
+# Exercise 89 - Generator for Fibonacci Sequence
 # Write a Python generator to yield Fibonacci numbers up to a specified limit.
 
 

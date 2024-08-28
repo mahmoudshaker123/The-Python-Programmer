@@ -1,14 +1,21 @@
-# Challenge 05 - Compute All Valid IP Addresses
-# A decimal string is a string consisting of digits from 0 to 9.
-# Internet Protocols (IP) addresses can be written as four decimal strings separated by periods,
-# e.g., 192.168.0.1.
+# Challenge 21 - Interval List Intersections
+# Given two lists of closed intervals, each list of intervals is pairwise disjoint and in sorted order.
+# Return the intersection of these two interval lists.
+# A closed interval [a, b] (with a < b) denotes the set of real numbers x with a <= x <= b.
+# The intersection of two closed intervals is a set of real numbers that are either empty or represented as a closed interval.
+# For example, the intersection of [1, 3] and [2, 4] is [2, 3].
+#
+# Example 1:
+# Input: first_list = [[0,2],[5,10],[13,23],[24,25]],
+#        second_list = [[1,5],[8,12],[15,24],[25,26]]
+# Output: [[1,2],[5,5],[8,10],[15,23],[24,24],[25,25]]
+#
+# Example 2:
+# Input: first_list = [[1,3],[5,9]],
+#        second_list = []
+# Output: []
 
-# Write a function that determines where to add periods to a decimal string so that the resulting
-# string is a valid IP address. There may be more than one valid IP address corresponding to a
-# decimal string, in which case you should return all possibilities.
 
-# For example, if the mangled string is "19216811", then the resulting IP addresses could be
-# ["192.168.1.1", "19.216.81.1"]
-
-
-def compute_ip_addresses(s: str) -> list[str]: ...
+def interval_intersection(
+    first_list: list[list[int]], second_list: list[list[int]]
+) -> list[list[int]]: ...

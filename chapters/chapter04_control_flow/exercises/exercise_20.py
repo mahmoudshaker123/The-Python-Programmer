@@ -1,4 +1,4 @@
-# Exercise 04_05 - Grade Result
+# Exercise 20 - Grade Result
 # Write a program that take an integer between 0 and 100
 # and returns the grade result based on the following rules:
 # 1. “A” if grade is between 90 and 100

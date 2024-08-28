@@ -1,4 +1,4 @@
-# Exercise 04_03 - Check Number
+# Exercise 18 - Check Number
 # Write a program that returns:
 # - 'Positive' if the number is greater than 0
 # - 'Negative' if the number is less than 0

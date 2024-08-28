@@ -1,4 +1,4 @@
-# Exercise 15_01 - Matrix Addition With Threads
+# Exercise 97 - Matrix Addition With Threads
 # Write a function called add_matrices that takes two matrices as arguments and
 # returns the sum of the two matrices.
 # Assume that the matrices size is 3x3 and are represented as a list of lists.

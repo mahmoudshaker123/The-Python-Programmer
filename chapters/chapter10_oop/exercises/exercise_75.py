@@ -1,4 +1,4 @@
-# Exercise 10_08 - Banking System [Part 2/3]
+# Exercise 75 - Banking System [Part 2/3]
 # So far we've defined the `Card` and `Account` classes. Now, let's define the `Customer` class.
 
 

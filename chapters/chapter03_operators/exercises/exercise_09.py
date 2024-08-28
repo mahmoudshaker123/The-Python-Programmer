@@ -1,4 +1,4 @@
-# Exercise 03_02 - Slope of a Line
+# Exercise 09 - Slope of a Line
 # Write a program that computes the slope of a line given two points.
 
 

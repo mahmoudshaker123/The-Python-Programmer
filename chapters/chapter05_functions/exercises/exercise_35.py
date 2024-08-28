@@ -1,4 +1,4 @@
-# Exercise 05_06 - Find Max
+# Exercise 35 - Find Max
 # Write a function that takes any number of arguments and returns the maximum value.
 # Hint: Consider using *args syntax to handle a variable number of arguments.
 

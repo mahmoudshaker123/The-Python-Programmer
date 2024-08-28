@@ -1,4 +1,4 @@
-# Exercise 05_05 - Multiple Vouchers
+# Exercise 34 - Multiple Vouchers
 # Write a function that takes a list of vouchers and a total amount,
 # and returns the total amount after applying each voucher to the total amount.
 

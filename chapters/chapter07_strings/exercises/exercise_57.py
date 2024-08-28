@@ -1,4 +1,4 @@
-# Exercise 07_08 - String Compression
+# Exercise 57 - String Compression
 # Write a function that compresses a string using a simple compression algorithm.
 # If a character appears more than once in a row, replace the sequence with
 # the character followed by the number of times it appears.

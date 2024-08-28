@@ -1,4 +1,4 @@
-# Exercise 08_05 - File Checker
+# Exercise 62 - File Checker
 # Check if the numbers in the file are sorted in ascending order.
 
 # Example: file1.txt

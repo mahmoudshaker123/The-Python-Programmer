@@ -1,4 +1,4 @@
-# Exercise 10_09 - Generic Box
+# Exercise 76 - Generic Box
 # Given a class called `Box` that can store items of type `int`, modify the class so that it can store items of any type.
 # In other words, the `Box` class should be generic.
 

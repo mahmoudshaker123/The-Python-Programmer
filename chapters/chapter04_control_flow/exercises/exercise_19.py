@@ -1,4 +1,4 @@
-# Exercise 04_04 - Even or Odd Number
+# Exercise 19 - Even or Odd Number
 # Write a program that takes an integer and returns whether its an even or odd number.
 # Bonus: can you solve this in a single line of code? (Hint: Search for ternary operator)
 

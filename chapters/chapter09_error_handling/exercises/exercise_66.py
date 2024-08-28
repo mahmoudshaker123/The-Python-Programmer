@@ -1,1 +1,1 @@
-# Exercise 09_02 - Custom Exception
+# Exercise 66 - Custom Exception

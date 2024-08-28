@@ -1,4 +1,4 @@
-# Exercise 15_02 - URL Fetching With asyncio
+# Exercise 98 - URL Fetching With asyncio
 # Write a Python program that uses asyncio to download multiple web
 # pages concurrently.
 

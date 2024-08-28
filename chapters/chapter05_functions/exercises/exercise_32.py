@@ -1,4 +1,4 @@
-# Exercise 05_03 - Factorial
+# Exercise 32 - Factorial
 # Write a function that computes the factorial of a Number.
 # Factorial is the product of an integer and all the integers below it.
 

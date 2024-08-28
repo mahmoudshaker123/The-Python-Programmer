@@ -1,4 +1,4 @@
-# Exercise 05_02 - Palindrome
+# Exercise 31 - Palindrome
 # Write a function to check whether a string is palindrome or not
 
 # A palindrome is a word that reads the same forward and backward.

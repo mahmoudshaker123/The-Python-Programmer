@@ -1,4 +1,4 @@
-# Exercise 12_02 - Generator for Even Numbers
+# Exercise 88 - Generator for Even Numbers
 # Write a Python generator to yield the first n even numbers.
 
 

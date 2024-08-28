@@ -1,4 +1,4 @@
-# Exercise 12_01 - Even Number Iterator
+# Exercise 86 - Even Number Iterator
 # Write a Python class that implements an iterator for generating the first n even numbers.
 
 

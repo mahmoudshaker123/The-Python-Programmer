@@ -2,7 +2,7 @@ from exercises.challenge_01 import find_peak
 from exercises.challenge_02 import blur_image
 from exercises.challenge_03 import merge_receipts
 from exercises.challenge_04 import reverse_matrix
-from exercises.challenge_05 import compute_ip_addresses
+from exercises.challenge_05 import interval_intersection
 from exercises.challenge_06 import find_first_missing_positive
 from exercises.challenge_07 import pascals_triangle
 from exercises.challenge_08 import tail
@@ -18,7 +18,7 @@ from exercises.challenge_17 import compare_versions
 from exercises.challenge_18 import NestedIterator
 from exercises.challenge_19 import count_servers
 from exercises.challenge_20 import integer_to_roman
-from exercises.challenge_21 import interval_intersection
+from exercises.challenge_21 import compute_ip_addresses
 
 
 def test_challenge_01():

@@ -1,4 +1,4 @@
-# Exercise 07_03 - Reverse Each Word in a Sentence
+# Exercise 52 - Reverse Each Word in a Sentence
 # Write a function that takes a sentence and returns it with each word reversed.
 
 

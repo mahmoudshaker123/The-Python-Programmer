@@ -1,4 +1,4 @@
-# Exercise 11_01 - Calculate Days Until Next Birthday
+# Exercise 79 - Calculate Days Until Next Birthday
 # Given a birthday represented as a date object,
 # write a function that calculates the number of days until the next birthday.
 

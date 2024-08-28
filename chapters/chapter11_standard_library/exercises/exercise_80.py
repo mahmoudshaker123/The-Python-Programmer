@@ -1,4 +1,4 @@
-# Exercise 11_02 - Dataclasses
+# Exercise 80 - Dataclasses
 # Create two dataclasses, Address and Person.
 # The Person class should contain a field for storing the person's address, which should be an instance of the Address dataclass.
 # The Person class should have the following:

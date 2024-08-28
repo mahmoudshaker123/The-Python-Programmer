@@ -1,4 +1,4 @@
-# Exercise 07_05 - Extract Error Messages
+# Exercise 54 - Extract Error Messages
 # You are given a list of log entries from a server. Each entry is a string that contains:
 # a log level, and a message, separated by spaces.
 

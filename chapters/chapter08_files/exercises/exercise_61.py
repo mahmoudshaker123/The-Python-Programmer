@@ -1,4 +1,4 @@
-# Exercise 08_04 - Inventory Management System
+# Exercise 61 - Inventory Management System
 # Write a CSV file containing inventory data and generates a report on stock levels and restock alerts.
 # The CSV file contains columns: item_name, item_id, quantity, and price.
 # Read the CSV file and calculate the total value of the inventory.

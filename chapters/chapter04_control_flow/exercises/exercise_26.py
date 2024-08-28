@@ -1,4 +1,4 @@
-# Exercise 04_11 - Find the First Divisible by 5
+# Exercise 26 - Find the First Divisible by 5
 # Write a program that finds the first number in a list that is divisible by 5.
 # If a number is found, return it and exit the loop. If no number is found, return None.
 # For example, given [12, 5, 20, 25], the function should return 5.

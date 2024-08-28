@@ -1,4 +1,4 @@
-# Exercise 06_05 - Sum of Frequency Tuples
+# Exercise 44 - Sum of Frequency Tuples
 # Write a function that takes a list of tuples where each tuple
 # contains a name (string) and a frequency (integer) and returns a dictionary that
 # contains the sum of the frequencies for each name.

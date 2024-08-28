@@ -1,4 +1,4 @@
-# Exercise 06_09 - Spot a duplicate in a matrix
+# Exercise 48 - Spot a duplicate in a matrix
 # Given matrix of size n x m and a target value, write a function that returns
 # True if the target value is duplicated in the matrix.
 # If there are duplicates, the function should return True, otherwise it should return False.

@@ -1,4 +1,4 @@
-# Exercise 11_06 - Log This
+# Exercise 84 - Log This
 # Given this "RateInterestCalculator" class with two methods,
 # we need to replace the print() messages with log statements instead with
 # the appropriate Log Level.

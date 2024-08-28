@@ -1,4 +1,4 @@
-# Exercise 12_07 - repeat_it Decorator
+# Exercise 92 - repeat_it Decorator
 # Create a decorator @repeat_it that repeats the execution of a function n times.
 
 # Example:

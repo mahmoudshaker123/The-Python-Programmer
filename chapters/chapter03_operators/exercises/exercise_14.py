@@ -1,4 +1,4 @@
-# Exercise 03_07 - Stats Report
+# Exercise 14 - Stats Report
 # Given three numbers that represent the number of wins, losses, and draws of a football team,
 # write a program that generates a report with the following information:
 # 1- The total number of games played.

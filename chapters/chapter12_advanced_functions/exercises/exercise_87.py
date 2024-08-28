@@ -1,4 +1,4 @@
-# Exercise 12_01 - Fibonacci Iterator
+# Exercise 87 - Fibonacci Iterator
 # Write a Python class that implements an iterator for generating the first n Fibonacci numbers.
 
 

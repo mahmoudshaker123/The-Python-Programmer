@@ -1,4 +1,4 @@
-# Exercise 02_02 - Temperature Conversion
+# Exercise 02 - Temperature Conversion
 # Write a program that converts a temperature from Celsius to Fahrenheit.
 # Hint: The formula is: F = C * 9/5 + 32
 

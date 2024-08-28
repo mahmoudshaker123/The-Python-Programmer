@@ -1,4 +1,4 @@
-# Exercise 03_06 - ISBN Verifier
+# Exercise 13 - ISBN Verifier
 # Write a program that checks if a given ISBN number is valid.
 # The ISBN is valid if:
 # - It consists of 10 digits.

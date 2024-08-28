@@ -1,4 +1,4 @@
-# Exercise 11_03 - Functools
+# Exercise 81 - Functools
 # Write a function that uses `functools.partial` to create a function that always multiplies by 10.
 
 

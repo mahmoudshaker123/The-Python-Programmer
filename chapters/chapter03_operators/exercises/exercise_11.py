@@ -1,4 +1,4 @@
-# Exercise 03_04 - Area of a Triangle
+# Exercise 11 - Area of a Triangle
 # Write a program that calculates the area of a triangle.
 
 

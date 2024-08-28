@@ -1,4 +1,4 @@
-# Exercise 04_03 - Alice and Mark
+# Exercise 17 - Alice and Mark
 # Alice has scored X marks in her test and Bob has scored Y marks in the same test.
 # Alice is happy if she scored at least twice the marks of Bob’s score.
 

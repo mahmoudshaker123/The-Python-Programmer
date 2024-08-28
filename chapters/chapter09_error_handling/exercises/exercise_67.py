@@ -14,10 +14,10 @@ def process_strings(strings: list[str]):
             # Operation 2: Access First Character
             print(f"First character of '{string}' is '{string[0]}'")
 
-        except ValueError as e:
+        except ValueError:
             print("TODO: Cannot convert to integer")
 
-        except IndexError as e:
+        except IndexError:
             print("TODO: Cannot access first character")
 
     if exceptions:

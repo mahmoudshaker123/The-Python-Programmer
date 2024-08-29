@@ -29,12 +29,14 @@ def test_e32():
 
 
 def test_e33():
-    assert fibonacci(1) == 0
+    assert fibonacci(1) == 1
     assert fibonacci(2) == 1
     assert fibonacci(3) == 2
     assert fibonacci(4) == 3
+    assert fibonacci(5) == 5
+    assert fibonacci(6) == 8
     assert fibonacci(10) == 55
-    assert fibonacci(20) == 4181
+    assert fibonacci(20) == 6765
 
 
 def test_e34():
@@ -47,17 +49,21 @@ def test_e34():
     def five_dollar(x: int):
         return x - 5
 
-    assert apply_vouchers(ten_percent, total=100) == 90
-    assert apply_vouchers(fifteen_percent, total=100) == 85
-    assert apply_vouchers(five_dollar, total=100) == 95
-    assert apply_vouchers(ten_percent, fifteen_percent, total=100) == 76.5
-    assert apply_vouchers(ten_percent, fifteen_percent, five_dollar, total=100) == 71.5
+    assert apply_vouchers([ten_percent], total=100) == 90
+    assert apply_vouchers([fifteen_percent], total=100) == 85
+    assert apply_vouchers([five_dollar], total=100) == 95
+    assert apply_vouchers([ten_percent, fifteen_percent], total=100) == 76.5
+    assert (
+        apply_vouchers([ten_percent, fifteen_percent, five_dollar], total=100) == 71.5
+    )
 
 
 def test_e35():
-    assert find_max([1, 2, 3, 4, 5]) == 5
-    assert find_max([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) == 10
-    assert find_max([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0]) == 10
+    assert find_max(1) == 1
+    assert find_max(-1, -10, 8, 5) == 8
+    assert find_max(1, 2, 3) == 3
+    assert find_max(10, 20, 30) == 30
+    assert find_max(100, 200, 300) == 300
 
 
 def test_e36():

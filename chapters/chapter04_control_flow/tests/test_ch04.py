@@ -60,15 +60,20 @@ def test_e20():
 
 
 def test_e21():
-    assert sum_numbers(0, 2) == 1
-    assert sum_numbers(1, 10) == 45
-    assert sum_numbers(1, 100) == 4950
+    assert sum_numbers(0, 0) == 0
+    assert sum_numbers(0, 1) == 1
+    assert sum_numbers(0, 2) == 3
+    assert sum_numbers(10, 15) == 75
+    assert sum_numbers(1, 10) == 55
+    assert sum_numbers(1, 100) == 5050
 
 
 def test_e22():
-    assert sum_even_numbers(0, 2) == 0
-    assert sum_even_numbers(1, 10) == 20
-    assert sum_even_numbers(1, 100) == 2450
+    assert sum_even_numbers(1, 5) == 6
+    assert sum_even_numbers(1, 10) == 30
+    assert sum_even_numbers(1, 20) == 110
+    assert sum_even_numbers(1, 30) == 240
+    assert sum_even_numbers(1, 40) == 420
 
 
 def test_e23():
@@ -91,6 +96,7 @@ def test_e25():
 
 
 def test_e26():
+    assert find_first_divisible_by_5([]) is None
     assert find_first_divisible_by_5([1, 2, 3, 4, 5]) == 5
     assert find_first_divisible_by_5([5, 10, 15, 20, 25]) == 5
     assert find_first_divisible_by_5([6, 7, 8, 9, 10]) == 10
@@ -111,7 +117,7 @@ def test_e28():
 
 
 def test_e29():
-    assert gpa_calculator([]) == 0
+    assert gpa_calculator([1]) == 1.0
     assert gpa_calculator([4, 3, 2]) == 3.0
     assert gpa_calculator([4, 3, 2, 1]) == 2.5
     assert gpa_calculator([4, 4, 4, 4]) == 4.0

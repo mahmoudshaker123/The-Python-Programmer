@@ -35,14 +35,14 @@ def test_e66():
 
 
 def test_e67():
-    test_strings = ["123", "", "abc", "456", "789", ""]
+    test_strings = ["123", "1", "abc", "456", "789", "0"]
 
     with pytest.raises(ExceptionGroup) as exc_info:
         process_strings(test_strings)
 
     exceptions = exc_info.value.exceptions
     assert len(exceptions) == 3
-
+    print(exceptions)
     value_error_raised = any(isinstance(e, ValueError) for e in exceptions)
     assert value_error_raised, "ValueError was not raised as expected"
 

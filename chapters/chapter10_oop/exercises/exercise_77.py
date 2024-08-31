@@ -11,7 +11,6 @@ class ContentCreator(Protocol):
 
 
 class Blogger:
-
     def add_post(self, title: str):
         return f"Creating a new post: {title}"
 
@@ -19,7 +18,6 @@ class Blogger:
 
 
 class Vlogger:
-
     def add_video(self, title: str) -> None:
         return f"Creating a new video: {title} with path: /videos/{title}.mp4"
 

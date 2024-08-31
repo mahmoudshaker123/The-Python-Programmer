@@ -1,15 +1,8 @@
-# Exercise 75 - Banking System [Part 2/3]
-# So far we've defined the `Card` and `Account` classes. Now, let's define the `Customer` class.
+# Exercise 75 - Banking System [Part 2/2]
+# So far we've defined the `Card` and `Account` classes. Now, let's define the `BankCustomer` class.
 
 
-# The `Customer` class should have the following attributes:
-# 1. first_name
-# 2. last_name
-# 3. accounts (a list of `Account` instances)
-# 4. cards (a list of `Card` instances)
-# 5. total_balance (a float)
-
-# The `Customer` class should also have the following methods:
+# The `BankCustomer` class should also have the following methods:
 # 1. add_account(self, account: Account) -> None: adds an account to the accounts list.
 # 2. remove_account(self, account_number: int) -> None: removes an account from the accounts list.
 # 3. add_card(self, card: Card) -> None: adds a card to the cards list.
@@ -20,7 +13,7 @@
 # 6. withdraw(self, account_number: int, amount: float, card_number: int, pin: int) -> None: withdraws money from an account.
 # 7. deposit(self, account_number: int, amount: float) -> None: deposits money into an account.
 
-from .exercise_74 import Account, Card
+from .exercise_74 import Account, Card, Customer
 
 
 class Customer:

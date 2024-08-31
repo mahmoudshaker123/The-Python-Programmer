@@ -1,5 +1,4 @@
-# Exercise 72 - Library Management System [Part 2/4]
-# In the previous exercise, you defined the core classes for a library management system.
+# Exercise 72 - Library Management System [Part 2/3]
 # In this exercise, you will implement the `BookShelf` class that will hold a collection of books.
 
 # The `BookShelf` class should have the following methods:
@@ -9,9 +8,10 @@
 # 3. `get_books() -> List[Book]`: Return a list of all the books on the shelf.
 # 4. `get_books_by_genre(genre: Genre) -> List[Book]`: Return a list of books by genre.
 
-# Note: Define any additional methods or attributes that you think are necessary for the `Shelf` class.
+# Note: Feel free to define any additional methods or attributes that
+# you think are necessary for the `BookShelf` class.
 
-# Example of the expected behavior:
+# Example:
 # author = Author("John", "Doe")
 # book1 = Book("The Book", author, 2021, Genre.Fiction)
 # shelf = BookShelf([book1])
@@ -19,6 +19,9 @@
 # shelf.add_book(book2)
 # assert shelf.get_books() == [book1, book2]
 # assert shelf.get_books_by_genre(Genre.Fiction) == [book1, book2]
+# shelf.remove_book(book1)
+
+from .exercise_71 import Book, Genre
 
 
 class BookShelf:

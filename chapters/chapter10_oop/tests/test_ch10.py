@@ -1,14 +1,15 @@
+import pytest
 from ..exercises.exercise_68 import Vector3D
-from ..exercises.exercise_69 import Calculator
+from ..exercises.exercise_69 import TaxCalculator
 from ..exercises.exercise_70 import Circle, Shape, Square
 from ..exercises.exercise_71 import Author, Book, Genre
 from ..exercises.exercise_72 import BookShelf
 from ..exercises.exercise_73 import Library
-from ..exercises.exercise_74 import Account, Card
-from ..exercises.exercise_75 import Customer
+from ..exercises.exercise_74 import Account, Card, Customer
+from ..exercises.exercise_75 import BankCustomer
 from ..exercises.exercise_76 import Box
+from ..exercises.exercise_77 import create_content, Blogger, Vlogger
 
-# from ..exercises.exercise_77 import
 # from ..exercises.exercise_78 import
 
 
@@ -28,10 +29,14 @@ def test_e68():
 
 
 def test_e69():
-    assert Calculator.add(0, 0) == 0
-    assert Calculator.add(1, 2) == 3
-    assert Calculator.subtract(0, 0) == 0
-    assert Calculator.subtract(1, 2) == -1
+    tax_calculator = TaxCalculator()
+    assert tax_calculator.calculate_tax(0) == 0
+    assert tax_calculator.calculate_tax(10_000) == 0
+    assert tax_calculator.calculate_tax(10_001) == 1000.1
+    assert tax_calculator.calculate_tax(50_000) == 5000
+    assert tax_calculator.calculate_tax(50_001) == 10_000.2
+    assert tax_calculator.calculate_tax(100_000) == 20_000
+    assert tax_calculator.calculate_tax(150_000) == 45_000
 
 
 def test_e70():
@@ -59,20 +64,23 @@ def test_e72():
     book = Book("The Book", author, 2024, Genre.Fiction)
 
     shelf = BookShelf()
-    shelf.add_book(book)
     assert shelf.get_books() == []
-    assert shelf.get_books_by_genre(Genre.Fiction) == []
+    shelf.add_book(book)
     assert shelf.get_books() == [book]
+    assert shelf.get_books_by_genre(Genre.History) == []
+    assert shelf.get_books_by_genre(Genre.NonFiction) == []
     assert shelf.get_books_by_genre(Genre.Fiction) == [book]
 
     shelf.remove_book(book)
     assert shelf.get_books() == []
     assert shelf.get_books_by_genre(Genre.Fiction) == []
-    shelf.add_book(Book("Biography Book", author, 2024, Genre.Biography))
-    shelf.add_book(Book("History Book", author, 2024, Genre.History))
+    book2 = Book("Biography Book", author, 2024, Genre.Biography)
+    book3 = Book("History Book", author, 2024, Genre.History)
+    shelf.add_book(book2)
+    shelf.add_book(book3)
     assert shelf.get_books_by_genre(Genre.Fiction) == []
-    assert shelf.get_books_by_genre(Genre.Biography) == [book]
-    assert shelf.get_books_by_genre(Genre.History) == [book]
+    assert shelf.get_books_by_genre(Genre.Biography) == [book2]
+    assert shelf.get_books_by_genre(Genre.History) == [book3]
 
 
 def test_e73():
@@ -93,7 +101,8 @@ def test_e73():
     assert library.get_books() == []
     library.add_shelf(shelfA)
     library.add_shelf(shelfB)
-    assert library.get_books() == shelf_A_books + shelf_B_books
+    assert set(library.get_books()) == set(shelf_A_books + shelf_B_books)
+
     assert library.is_book_in_library(shelf_A_books[0]) is True
     assert (
         library.is_book_in_library(
@@ -102,25 +111,48 @@ def test_e73():
         is False
     )
     library.remove_shelf(shelfA)
-    assert library.get_books() == shelf_B_books
+    assert set(library.get_books()) == set(shelf_B_books)
 
 
 def test_e74():
-    # TODO
-    card = Card("1234", "User A", "2024-12-31", "1234")
-    assert isinstance(card, Card)
-    account = Account("1234", "User A", 1000, [card])
-    assert isinstance(account, Account)
-
-
-# TODO
-def test_e75():
     customer = Customer("John", "Doe")
-    assert isinstance(customer, Customer)
-    assert customer.add_account(Account("1234", "User A", 1000, [])) is None
-    assert customer.add_card(Card("1234", "User A", "2024-12-31", "1234")) is None
+    card = Card(
+        card_number="1234",
+        customer=customer,
+        expiry_date="2024-12-31",
+        pin="1234",
+    )
+    assert isinstance(card, Card)
+    account = Account("1234", customer, 1000, [card])
+    assert isinstance(account, Account)
+    assert account.account_number == "1234"
+
+
+def test_e75():
+    customer = BankCustomer("John", "Doe")
+    card1 = Card("1234", customer, "2024-12-31", "1234")
+    card2 = Card("5678", customer, "2024-12-31", "5678")
+    account1 = Account("acc-1234", customer, 1000, [card1])
+    account2 = Account("acc-5678", customer, 2000, [card2])
+
+    assert customer.get_total_balance() == 0.0
+    customer.add_account(account1)
     assert customer.get_total_balance() == 1000
-    assert customer.withdraw(1234, 500, 1234, 1234) is None
+    customer.add_account(account2)
+    assert customer.get_total_balance() == 3000
+    assert customer.get_card("1234") == card1
+    assert customer.get_card("5678") == card2
+    assert customer.get_account("acc-1234") == account1
+    assert customer.get_account("acc-5678") == account2
+
+    assert customer.deposit("acc-1234", 500) is None
+    assert customer.get_account("acc-1234").balance == 1500
+    assert customer.get_total_balance() == 3500
+
+    with pytest.raises(ValueError):
+        customer.withdraw("acc-1234", 1_000_000, "1234", "1234")
+    with pytest.raises(ValueError):
+        customer.withdraw("acc-1234", 1_000, "1234", "WRONG_PIN")
 
 
 def test_e76():
@@ -137,3 +169,8 @@ def test_e76():
     box3.add("Hello")
     assert isinstance(box3.get(), str)
     assert box3.get() == "Hello"
+
+
+def test_e77():
+    assert create_content(Blogger()) == "Blogger is creating content"
+    assert create_content(Vlogger()) == "Vlogger is creating content"

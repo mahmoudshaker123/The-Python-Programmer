@@ -10,6 +10,7 @@
 # v2 = Vector(4, 5, 6)
 # v3 = v1 + v2
 # v4 = v1 - v2
+from __future__ import annotations
 
 
 class Vector3D:

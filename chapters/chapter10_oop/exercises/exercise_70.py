@@ -10,6 +10,10 @@
 # circle = Circle(5)
 # assert circle.area() == 78.54
 
+from abc import ABC, abstractmethod
+
+PI = 3.14159
+
 
 class Shape:
     # Your code should go here.

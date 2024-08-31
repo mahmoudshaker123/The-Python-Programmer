@@ -1,4 +1,4 @@
-# Exercise 71 - Library Management System [Part 1/4]
+# Exercise 71 - Library Management System [Part 1/3]
 # In the next three exercises, you will implement a simple library management system.
 # Let's start first by defining our core classes (Book and Author).
 

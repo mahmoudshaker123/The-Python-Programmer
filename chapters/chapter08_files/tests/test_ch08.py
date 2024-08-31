@@ -208,8 +208,7 @@ def test_e61(source, restock_threshold, expected):
         ),
         (
             textwrap.dedent(
-                """
-                1
+                """1
                 2
                 3
                 5

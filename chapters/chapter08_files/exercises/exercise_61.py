@@ -7,9 +7,9 @@
 
 # Example data.txt:
 # item_name,quantity,price
-# Apple,1,100,0.5
-# Banana,2,200,0.3
-# Orange,3,150,0.4
+# Apple,100,0.5
+# Banana,200,0.3
+# Orange,150,0.4
 
 # With restock threshold of 200. The function should return:
 # {

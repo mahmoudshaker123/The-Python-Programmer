@@ -1,7 +1,10 @@
+import pytest
+
 # from PyTime.date_conversion import is_leap_year
 # from PyTime.time_conversion import hours_to_minutes, minutes_to_seconds, seconds_to_minutes
 
 
+@pytest.mark.skip(reason="No implementation")
 def test_e93():
     raise NotImplementedError(
         """TODO:

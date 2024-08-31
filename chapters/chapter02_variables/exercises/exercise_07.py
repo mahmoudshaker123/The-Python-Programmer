@@ -1,13 +1,19 @@
-# Exercise 07 - May The Force Be With You
-# Write a program that calculates the force of gravity between two objects.
-# The formula to calculate the force of gravity is:
-# F = G * (m1 * m2) / r^2
-# https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation
+# Exercise 07 - Midpoint Calculation
+# Write a program that calculates the midpoint between two points.
+# The program should take the x and y coordinates of two points as input
+# and return the midpoint as a tuple.
 
-G = 6.674 * 10**-11  # Gravitational constant
+# The formula for calculating the midpoint is as follows:
+# midpoint_x = (x1 + x2) / 2
+# midpoint_y = (y1 + y2) / 2
+# The midpoint is the point that is exactly halfway between two points.
+# For example, given the points (1, 2) and (3, 4), the midpoint should be (2, 3).
 
 
-def calculate_gravity_force(mass1, mass2, distance):
+# Note: you can return more than one value by separating them with a comma.
+
+
+def calculate_midpoint(x1, y1, x2, y2):
     # Your code should go here.
 
     return ...

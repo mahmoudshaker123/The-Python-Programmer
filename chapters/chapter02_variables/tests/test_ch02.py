@@ -4,7 +4,7 @@ from ..exercises.exercise_03 import add_numbers
 from ..exercises.exercise_04 import compute_length_difference
 from ..exercises.exercise_05 import compute_average_grade
 from ..exercises.exercise_06 import convert_binary_to_decimal
-from ..exercises.exercise_07 import calculate_gravity_force
+from ..exercises.exercise_07 import calculate_midpoint
 
 
 def test_e01():
@@ -49,7 +49,7 @@ def test_e06():
 
 
 def test_e07():
-    assert calculate_gravity_force(1, 1) == 9.8
-    assert calculate_gravity_force(5, 2) == 19.6
-    assert calculate_gravity_force(10, 5) == 49
-    assert calculate_gravity_force(100, 10) == 980
+    assert calculate_midpoint(0, 0, 0, 0) == (0.0, 0.0)
+    assert calculate_midpoint(1, 2, 3, 4) == (2.0, 3.0)
+    assert calculate_midpoint(5, 10, 15, 20) == (10.0, 15.0)
+    assert calculate_midpoint(-5, -10, -15, -20) == (-10.0, -15.0)

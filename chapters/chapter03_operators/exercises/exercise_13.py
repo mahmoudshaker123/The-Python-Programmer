@@ -1,15 +1,16 @@
-# Exercise 13 - ISBN Verifier
-# Write a program that checks if a given ISBN number is valid.
-# The ISBN is valid if:
-# - It consists of 10 digits.
-# - The first 9 digits are numbers.
-# - The last digit is a number or an uppercase X.
-# - The ISBN is valid if the sum of the 10 digits multiplied by their position modulo 11 is 0.
-# The program should return True if the ISBN is valid and False otherwise.
-# formula: (d1*1 + d2*2 + d3*3 + d4*4 + d5*5 + d6*6 + d7*7 + d8*8 + d9*9 + d10*10) % 11 == 0
+# Exercise 13 - Add Without Plus Operator
+# This program below adds two numbers without using the '+' operator.
+
+# There is a bug in the code below. Find it and fix it.
 
 
-def is_valid_isbn(isbn):
-    # Your code should go here.
+def add_without_plus_operator(a, b):
+    # Continue the loop until the carry (b) becomes zero.
+    while b != 0:
+        # Calculate the bitwise AND of 'a' and 'b'.
+        data = a & b
+        # XOR 'a' and 'b' to get the sum without considering carry.
+        a = a ^ b
+        b = data >> 1
 
-    return ...
+    return a

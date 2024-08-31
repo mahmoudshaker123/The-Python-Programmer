@@ -3,7 +3,7 @@ from ..exercises.exercise_09 import compute_slope
 from ..exercises.exercise_10 import bitwise_operations
 from ..exercises.exercise_11 import area_of_triangle
 from ..exercises.exercise_12 import calculate_hypotenuse
-from ..exercises.exercise_13 import is_valid_isbn
+from ..exercises.exercise_13 import add_without_plus_operator
 from ..exercises.exercise_14 import generate_stats_report
 
 
@@ -41,12 +41,11 @@ def test_e12():
 
 
 def test_e13():
-    assert is_valid_isbn("123456789X") is True
-    assert is_valid_isbn("987654321X") is True
-    assert is_valid_isbn("1234567890") is False
-    assert is_valid_isbn("1234567891") is False
-    assert is_valid_isbn("1234567892") is False
-    assert is_valid_isbn("1234567893") is False
+    assert add_without_plus_operator(0, 0) == 0
+    assert add_without_plus_operator(10, 2) == 12
+    assert add_without_plus_operator(2, 10) == 12
+    assert add_without_plus_operator(-20, 10) == -10
+    assert add_without_plus_operator(-10, -20) == -30
 
 
 def test_e14():

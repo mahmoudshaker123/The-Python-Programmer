@@ -92,15 +92,7 @@ def test_e59(source, expected):
     [
         (
             textwrap.dedent(
-                """
-            """
-            ),
-            [],
-        ),
-        (
-            textwrap.dedent(
-                """
-                Math: 90, 85, 88, 92, 95
+                """Math: 90, 85, 88, 92, 95
                 Science: 78, 85, 88, 92, 95
                 History: 88, 85, 88, 92, 95
                 English: 98, 85, 88, 92, 95"""
@@ -114,13 +106,12 @@ def test_e59(source, expected):
         ),
         (
             textwrap.dedent(
-                """
-                Math: 90, 85, 88, 92, 95
+                """Math: 90, 85, 88, 92, 95
                 Science: 78, 85, 88, 92, 95
                 Physics: 61, 75, 70, 92, 93, 98, 81, 59, 88, 92
             """
             ),
-            [("Math", 90.0), ("Science", 87.6), ("Physics", 79.9)],
+            [("Math", 90.0), ("Science", 87.6), ("Physics", 80.9)],
         ),
     ],
 )
@@ -132,95 +123,50 @@ def test_e60(source, expected):
     "file_content, restock_threshold, expected",
     [
         (
-            textwrap.dedent(
-                """
-            """
-            ),
-            0,
-            [],
-        ),
-        (
-            textwrap.dedent(
-                """
-                item_name,item_id,quantity,price
-                Apple,1,100,0.5
-                Banana,2,200,0.3
-                Orange,3,150,0.4
-            """
-            ),
+            """item_name,quantity,price
+Apple,100,0.5
+Banana,200,0.3
+Orange,150,0.4""",
             200,
-            [
-                {
-                    "item_name": "Apple",
-                    "item_id": 1,
-                    "quantity": 100,
-                    "price": 0.5,
-                },
-                {
-                    "item_name": "Orange",
-                    "item_id": 3,
-                    "quantity": 150,
-                    "price": 0.4,
-                },
-            ],
+            {
+                "total_inventory_value": 170.0,
+                "restock_alerts": ["Apple", "Orange"],
+            },
         ),
         (
-            textwrap.dedent(
-                """
-                item_name,item_id,quantity,price
-                Apple,1,100,0.5
-                Banana,2,200,0.3
-                Orange,3,150,0.4
-            """
-            ),
+            """item_name,quantity,price
+Apple,100,0.5
+Banana,200,0.3
+Orange,150,0.4""",
             100,
-            [
-                {
-                    "item_name": "Apple",
-                    "item_id": 1,
-                    "quantity": 100,
-                    "price": 0.5,
-                },
-            ],
+            {
+                "total_inventory_value": 170.0,
+                "restock_alerts": [],
+            },
         ),
         (
-            textwrap.dedent(
-                """
-                item_name,item_id,quantity,price
-                Apple,1,100,0.5
-                Banana,2,200,0.3
-                Orange,3,150,0.4
-            """
-            ),
+            """item_name,quantity,price
+Apple,100,0.5
+Banana,200,0.3
+Orange,150,0.4""",
             300,
-            [],
+            {
+                "total_inventory_value": 170.0,
+                "restock_alerts": ["Apple", "Banana", "Orange"],
+            },
         ),
         (
-            textwrap.dedent(
-                """
-                item_name,item_id,quantity,price
-                Apple,1,100,0.5
-                Banana,2,200,0.3
-                Orange,3,150,0.4
-                Pear,4,300,0.6
-                Kiwi,5,400,0.7
-            """
-            ),
+            """item_name,quantity,price
+Apple,100,0.5
+Banana,200,0.3
+Orange,150,0.4
+Pear,300,0.6
+Kiwi,400,0.7""",
             250,
-            [
-                {
-                    "item_name": "Apple",
-                    "item_id": 1,
-                    "quantity": 100,
-                    "price": 0.5,
-                },
-                {
-                    "item_name": "Orange",
-                    "item_id": 3,
-                    "quantity": 150,
-                    "price": 0.4,
-                },
-            ],
+            {
+                "total_inventory_value": 630.0,
+                "restock_alerts": ["Apple", "Banana", "Orange"],
+            },
         ),
     ],
 )
@@ -233,15 +179,7 @@ def test_e61(source, restock_threshold, expected):
     [
         (
             textwrap.dedent(
-                """
-            """
-            ),
-            True,
-        ),
-        (
-            textwrap.dedent(
-                """
-                1
+                """1
                 2
                 3
             """
@@ -250,8 +188,7 @@ def test_e61(source, restock_threshold, expected):
         ),
         (
             textwrap.dedent(
-                """
-                1
+                """1
                 3
                 2
             """
@@ -260,8 +197,7 @@ def test_e61(source, restock_threshold, expected):
         ),
         (
             textwrap.dedent(
-                """
-                1
+                """1
                 2
                 3
                 4

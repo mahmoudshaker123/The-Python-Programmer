@@ -17,6 +17,10 @@
 
 
 def is_file_sorted(file_name: str) -> bool:
-    # Your code should go here.
-
-    ...
+    numbers = []
+    with open(file_name) as file:
+        for line in file:
+            if not line.strip().isdigit():
+                continue
+            numbers.append(int(line))
+    return numbers == sorted(numbers)

@@ -10,3 +10,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - First unofficial version of the course exercises and tests.
+
+## [0.2.0] - 2024-08-31
+
+### Added
+
+- Updated all exercises and tests after solving them.

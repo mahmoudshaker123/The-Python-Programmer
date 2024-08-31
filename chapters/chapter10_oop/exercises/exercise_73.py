@@ -26,8 +26,8 @@
 # assert library.is_book_in_library(Book("Non Existing Book", author, 2021, Genre.Fiction)) is False
 # library.remove_shelf(shelf1)
 # assert library.get_books() == [book2]
-from .exercise_71 import Book, Genre
-from .exercise_72 import BookShelf
+from .exercise_71 import Book, Genre  # noqa: F401
+from .exercise_72 import BookShelf  # noqa: F401
 
 
 class Library:

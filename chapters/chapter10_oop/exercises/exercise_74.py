@@ -24,7 +24,7 @@
 # 5. total_balance (a float)
 
 from __future__ import annotations
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field  # noqa: F401
 
 
 @dataclass

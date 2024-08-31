@@ -5,7 +5,7 @@
 
 # Can you fix this?
 
-import logging
+import logging  # noqa: F401
 
 
 class RateInterestCalculator:

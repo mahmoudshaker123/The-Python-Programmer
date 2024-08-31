@@ -1,6 +1,8 @@
 # Exercise 98 - Asynchronous Processing
 # Write an asynchronous function that fetches data from multiple sources and processes it concurrently.
 # The function should take a list of sources and return a list of processed data.
+# NOTE: To run the unit tests for this exercise, you need to install the following:
+# $ pip install pytest pytest-asyncio
 
 import asyncio
 import random

@@ -3,7 +3,7 @@
 # and withdraw operations.
 # Modify the class to make it thread-safe so that it can handle
 # concurrent deposits and withdrawals correctly.
-import threading
+import threading  # noqa
 
 
 class BankAccount:

@@ -21,7 +21,7 @@
 # assert shelf.get_books_by_genre(Genre.Fiction) == [book1, book2]
 # shelf.remove_book(book1)
 
-from .exercise_71 import Book, Genre
+from .exercise_71 import Book, Genre  # noqa: F401
 
 
 class BookShelf:

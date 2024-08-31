@@ -4,7 +4,7 @@
 # The timestamp should be converted to a `datetime` object.
 #
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import datetime  # noqa: F401
 
 # Example:
 # 2024-09-01,Sold 100 shares of AAPL

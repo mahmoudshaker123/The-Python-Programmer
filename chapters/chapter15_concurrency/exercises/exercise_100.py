@@ -1,5 +1,7 @@
 # Exercise 100 - Decorator for Async Functions
 # Given the following `time_it` decorator, extend it to support async functions.
+# NOTE: To run the unit tests for this exercise, you need to install the following:
+# $ pip install pytest pytest-asyncio
 
 import asyncio
 from functools import wraps

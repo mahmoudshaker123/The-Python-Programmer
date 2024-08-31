@@ -10,7 +10,7 @@
 # circle = Circle(5)
 # assert circle.area() == 78.54
 
-from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod  # noqa: F401
 
 PI = 3.14159
 

@@ -3,7 +3,7 @@
 # NOTE: To run the unit tests for this exercise, you need to install the following:
 # $ pip install pytest pytest-asyncio
 
-import asyncio
+import asyncio  # noqa: F401
 from functools import wraps
 import timeit
 from typing import Callable, Any
@@ -21,15 +21,13 @@ def time_it(
             print(f"Time taken for {func.__name__}: {end - start:.4f} seconds")
             return result
 
-        @wraps(func)
-        async def async_wrapper(*args, **kwargs) -> Any:
-            start = timeit.default_timer()
-            result = await func(*args, **kwargs)
-            end = timeit.default_timer()
-            print(f"Time taken for {func.__name__}: {end - start:.4f} seconds")
-            return result
+        # Your code should go here.
+        # Add an `async_wrapper` function to handle async functions
+        ...
 
-        return async_wrapper if asyncio.iscoroutinefunction(func) else wrapper
+        # Hint: Check if the function is a coroutine function using `asyncio.iscoroutinefunction()`
+        # before returning the appropriate wrapper function.
+        return wrapper
 
     if _func is None:
         return decorator

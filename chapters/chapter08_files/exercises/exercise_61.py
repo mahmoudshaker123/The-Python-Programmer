@@ -24,34 +24,6 @@
 def inventory_management(
     file_name: str, restock_threshold: int
 ) -> dict[str, list[dict[str, str]]]:
-    total_inventory_value = 0.0
-    restock_alerts = []
+    # Your code should go here.
 
-    with open(file_name, "r") as file:
-        # Read the header line
-        header = file.readline().strip().split(",")
-
-        # Check if header is correct
-        if header != ["item_name", "quantity", "price"]:
-            raise ValueError("Incorrect CSV format")
-
-        for line in file:
-            # Split each line into columns
-            columns = line.strip().split(",")
-
-            # Extract data from columns
-            item_name = columns[0]
-            quantity = int(columns[1])
-            price = float(columns[2])
-
-            # Calculate the total inventory value
-            total_inventory_value += quantity * price
-
-            # Check if restock is needed
-            if quantity < restock_threshold:
-                restock_alerts.append(item_name)
-
-    return {
-        "total_inventory_value": total_inventory_value,
-        "restock_alerts": restock_alerts,
-    }
+    ...

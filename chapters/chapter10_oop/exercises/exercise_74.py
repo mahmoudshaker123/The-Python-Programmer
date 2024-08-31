@@ -37,3 +37,9 @@ class Card:
 class Account:
     # Your code should go here.
     ...
+
+
+@dataclass
+class Customer:
+    # Your code should go here.
+    ...

@@ -1,5 +1,7 @@
 # Exercise 78 - Simple University System
-# Given the following
+# Given the following class definitions.
+# Implement the `Student` and `Professor` classes to inherit from the `Person` class.
+
 from __future__ import annotations
 
 
@@ -7,8 +9,8 @@ class Course:
     def __init__(self, course_name: str, course_code: str):
         self.course_name = course_name
         self.course_code = course_code
-        self.professor = None
-        self.students = []
+        self.professor: Professor | None = None
+        self.students: list[Student] = []
 
     def add_student(self, student: Student):
         self.students.append(student)
@@ -26,29 +28,32 @@ class Person:
         self.email = email
 
 
-class Student(Person):
+# Implement the `Student` and `Professor` classes to inherit from the `Person` class.
+class Student:
     def __init__(self, name: str, email: str, student_id: str):
         super().__init__(name, email)
         self.student_id = student_id
         self.enrolled_courses: list[Course] = []
 
-    def enroll(self, course: Course):
-        self.enrolled_courses.append(course)
-        course.add_student(self)
+    def enroll(self, course: Course) -> None:
+        # Your code should go here.
+        ...
 
-    def list_courses(self):
-        return [course.course_name for course in self.enrolled_courses]
+    def list_courses(self) -> list[str]:
+        # Your code should go here.
+        ...
 
 
-class Professor(Person):
+class Professor:
     def __init__(self, name: str, email: str, professor_id: str):
         super().__init__(name, email)
         self.professor_id = professor_id
         self.taught_courses: list[Course] = []
 
-    def assign_course(self, course: Course):
-        self.taught_courses.append(course)
-        course.assign_professor(self)
+    def assign_course(self, course: Course) -> None:
+        # Your code should go here.
+        ...
 
-    def list_courses(self):
-        return [course.course_name for course in self.taught_courses]
+    def list_courses(self) -> list[str]:
+        # Your code should go here.
+        ...

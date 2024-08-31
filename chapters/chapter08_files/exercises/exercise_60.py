@@ -13,11 +13,6 @@
 
 
 def course_grades_summary(file_name: str) -> list[tuple[str, float]]:
-    with open(file_name) as file:
-        summary = []
-        for line in file:
-            course, *grades = line.strip().split(":")
-            grades = [int(grade) for grade in grades[0].split(",")]
-            average = sum(grades) / len(grades)
-            summary.append((course, average))
-    return summary
+    # Your code should go here.
+
+    ...

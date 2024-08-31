@@ -1,5 +1,5 @@
 # Exercise 98 - Asynchronous Processing
-# Write an asynchronous function that fetches data from multiple sources and processes it concurrently.
+# Write an asynchronous function `process_data()` that fetches data from multiple sources and processes it concurrently.
 # The function should take a list of sources and return a list of processed data.
 # NOTE: To run the unit tests for this exercise, you need to install the following:
 # $ pip install pytest pytest-asyncio
@@ -13,7 +13,7 @@ async def fetch_data(source: str) -> str:
     return f"Data from {source}"
 
 
-async def process_data(sources: list[str]) -> list[str]:
-    tasks = [fetch_data(source) for source in sources]
-    results = await asyncio.gather(*tasks)
-    return results
+# Update the function signature and implementation.
+def process_data(sources: list[str]) -> list[str]:
+    # Your code should go here.
+    ...

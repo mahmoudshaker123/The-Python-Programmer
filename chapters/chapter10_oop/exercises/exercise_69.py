@@ -19,14 +19,6 @@ class TaxCalculator:
         self.income = 0
 
     def calculate_tax(self, income: int) -> float:
-        self.income = income
-        if self.income <= 10000:
-            return 0
-        elif self.income <= 50000:
-            return self.income * 0.1
-        elif self.income <= 100000:
-            return self.income * 0.2
-        elif self.income > 100000:
-            return self.income * 0.3
-        else:
-            return 0
+        # Your code should go here.
+
+        ...

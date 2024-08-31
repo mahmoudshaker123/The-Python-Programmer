@@ -18,7 +18,7 @@
 # 2. NonFiction
 # 3. Biography
 # 4. History
-
+from __future__ import annotations
 from dataclasses import dataclass
 
 

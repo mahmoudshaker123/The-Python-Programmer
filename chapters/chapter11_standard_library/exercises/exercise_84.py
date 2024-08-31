@@ -5,6 +5,8 @@
 
 # Can you fix this?
 
+import logging
+
 
 class RateInterestCalculator:
     def __init__(self) -> None:

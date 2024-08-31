@@ -1,16 +1,17 @@
-# Exercise 98 - URL Fetching With asyncio
-# Write a Python program that uses asyncio to download multiple web
-# pages concurrently.
+# Exercise 98 - Asynchronous Processing
+# Write an asynchronous function that fetches data from multiple sources and processes it concurrently.
+# The function should take a list of sources and return a list of processed data.
 
-# URLs to fetch concurrently
-urls = [
-    "https://www.example.com",
-    "https://www.example.net",
-    "https://www.example.org",
-]
+import asyncio
+import random
 
 
-def fetch_urls(urls: list[str]) -> None:
-    # Your code should go here.
+async def fetch_data(source: str) -> str:
+    await asyncio.sleep(random.uniform(0.1, 1.0))  # Simulate a network delay
+    return f"Data from {source}"
 
-    ...
+
+async def process_data(sources: list[str]) -> list[str]:
+    tasks = [fetch_data(source) for source in sources]
+    results = await asyncio.gather(*tasks)
+    return results

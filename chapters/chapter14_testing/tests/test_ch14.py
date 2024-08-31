@@ -1,6 +1,7 @@
-# from ..exercises.exercise_94 import clean_text
-# from ..exercises.exercise_95 import SalaryCalculator
-# from ..exercises.exercise_96 import ProductSalesCalculator
+import pytest
+from ..exercises.exercise_94 import clean_text
+from ..exercises.exercise_95 import SalaryCalculator
+from ..exercises.exercise_96 import ProductSalesCalculator, Discount
 
 
 def test_e94():

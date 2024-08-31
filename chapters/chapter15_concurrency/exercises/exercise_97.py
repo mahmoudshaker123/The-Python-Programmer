@@ -5,6 +5,7 @@
 # Spin up a new thread for each row in the matrix to calculate the
 #  sum of the two matrices.
 # Use the threading module to accomplish this task.
+import threading
 
 
 def add_matrices(matrix1: list[list[int]], matrix2: list[list[int]]) -> list[list[int]]:

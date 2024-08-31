@@ -2,8 +2,8 @@
 
 # Write a test for this class using Pytest. Make sure to test the class with the following inputs:
 # 1 - hourly_rate = 10, hours_worked = 40 - Expected output: 400
-# 2 - hourly_rate = 10, hours_worked = 50 - Expected output: 550
-# 3 - hourly_rate = 10, hours_worked = 60 - Expected output: 700
+# 2 - hourly_rate = 10, hours_worked = 50 - Expected output: 500
+# 3 - hourly_rate = 10, hours_worked = 60 - Expected output: 600
 # 4 - hourly_rate = 10, hours_worked = 0  - Expected output: ValueError
 # 5 - hourly_rate = 10, hours_worked = -1 - Expected output: ValueError
 

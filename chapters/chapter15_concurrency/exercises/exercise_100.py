@@ -1,32 +1,31 @@
-# Exercise 15_04 - Decorator for Async Functions
-# Given this
+# Exercise 100 - Decorator for Async Functions
+# Given the following `time_it` decorator, extend it to support async functions.
 
 import asyncio
 from functools import wraps
-from typing import Callable, Literal
-
-UnitType = Literal["h", "m", "s"]
-
-
-# Extend this decorator to support async functions.
+import timeit
+from typing import Callable, Any
 
 
 def time_it(
     _func: Callable | None = None,
-    *,
-    unit: UnitType = "s",
-    decimals: int = 4,
 ) -> Callable:
     def decorator(func: Callable) -> Callable:
         @wraps(func)
-        def wrapper(*args, **kwargs):
-            # with log_execution_time(func, unit, decimals):
-            return func(*args, **kwargs)
+        def wrapper(*args, **kwargs) -> Any:
+            start = timeit.default_timer()
+            result = func(*args, **kwargs)
+            end = timeit.default_timer()
+            print(f"Time taken for {func.__name__}: {end - start:.4f} seconds")
+            return result
 
         @wraps(func)
-        async def async_wrapper(*args, **kwargs):
-            # with log_execution_time(func, unit, decimals):
-            return await func(*args, **kwargs)
+        async def async_wrapper(*args, **kwargs) -> Any:
+            start = timeit.default_timer()
+            result = await func(*args, **kwargs)
+            end = timeit.default_timer()
+            print(f"Time taken for {func.__name__}: {end - start:.4f} seconds")
+            return result
 
         return async_wrapper if asyncio.iscoroutinefunction(func) else wrapper
 

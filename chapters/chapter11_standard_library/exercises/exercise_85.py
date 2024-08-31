@@ -4,6 +4,14 @@
 # The timestamp should be converted to a `datetime` object.
 #
 from dataclasses import dataclass
+from datetime import datetime
+
+# Example:
+# 2024-09-01,Sold 100 shares of AAPL
+# 2024-10-01,Bought 200 shares of MSFT
+# should return:
+# [ Transaction(datetime(2024, 9, 1), "Sold 100 shares of AAPL"),
+#   Transaction(datetime(2024, 10, 1), "Bought 200 shares of MSFT") ]
 
 
 @dataclass

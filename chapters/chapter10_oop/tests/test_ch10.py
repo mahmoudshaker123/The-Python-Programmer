@@ -9,8 +9,7 @@ from ..exercises.exercise_74 import Account, Card, Customer
 from ..exercises.exercise_75 import BankCustomer
 from ..exercises.exercise_76 import Box
 from ..exercises.exercise_77 import create_content, Blogger, Vlogger
-
-# from ..exercises.exercise_78 import
+from ..exercises.exercise_78 import Course, Student, Professor
 
 
 def test_e68():
@@ -118,8 +117,9 @@ def test_e74():
     customer = Customer("John", "Doe")
     card = Card(
         card_number="1234",
-        customer=customer,
-        expiry_date="2024-12-31",
+        card_holder="John Doe",
+        account_number="1234",
+        expiration_date="2024-12-31",
         pin="1234",
     )
     assert isinstance(card, Card)
@@ -130,10 +130,13 @@ def test_e74():
 
 def test_e75():
     customer = BankCustomer("John", "Doe")
-    card1 = Card("1234", customer, "2024-12-31", "1234")
-    card2 = Card("5678", customer, "2024-12-31", "5678")
-    account1 = Account("acc-1234", customer, 1000, [card1])
-    account2 = Account("acc-5678", customer, 2000, [card2])
+    account1 = Account("acc-1234", customer, 1000)
+    card1 = Card("1234", "John Doe", "acc-1234", "2024-12-31", "1234")
+    account1.add_card(card1)
+
+    account2 = Account("acc-5678", customer, 2000)
+    card2 = Card("5678", "John Doe", "acc-5678", "2024-12-31", "5678")
+    account2.add_card(card2)
 
     assert customer.get_total_balance() == 0.0
     customer.add_account(account1)
@@ -172,5 +175,44 @@ def test_e76():
 
 
 def test_e77():
-    assert create_content(Blogger()) == "Blogger is creating content"
-    assert create_content(Vlogger()) == "Vlogger is creating content"
+    assert create_content(Blogger(), "New Post") == "Creating a new post: New Post"
+    assert (
+        create_content(Vlogger(), "New Video")
+        == "Creating a new video: New Video with path: /videos/New Video.mp4"
+    )
+
+    class NotAContentCreator:
+        pass
+
+    with pytest.raises(AttributeError):
+        create_content(NotAContentCreator(), "New Content")
+
+
+def test_e78():
+    course = Course("Python Programming", "CS101")
+    assert course.course_name == "Python Programming"
+    assert course.course_code == "CS101"
+    assert course.professor is None
+    assert course.students == []
+
+    professor = Professor("Dr. Clark", "clark@uni.edu", "1234")
+    course.assign_professor(professor)
+
+    student_names = ["Alice", "Bob", "Charlie"]
+    students = [
+        Student(name, f"{name.lower()}@uni.edu", f"{name.lower()}1234")
+        for name in student_names
+    ]
+    for student in students:
+        student.enroll(course)
+
+    assert course.professor == professor
+    assert set(course.list_students()) == set(student_names)
+
+    course2 = Course("Mathematics", "MATH101")
+    assert course2.professor is None
+    assert course2.students == []
+    professor2 = Professor("Dr. Smith", "smith@uni.edu", "5678")
+    course2.assign_professor(professor2)
+    assert course2.professor == professor2
+    assert course2.students == []

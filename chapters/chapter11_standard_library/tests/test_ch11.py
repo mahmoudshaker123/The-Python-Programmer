@@ -1,3 +1,4 @@
+import logging
 import textwrap
 from pathlib import Path
 import pytest
@@ -13,19 +14,9 @@ from ..exercises.exercise_85 import parse_transactions, Transaction
 
 
 def test_e79():
-    assert (
-        days_until_next_birthday(birthday=date(2021, 1, 1), now=date(2021, 1, 1)) == 364
-    )
-    assert (
-        days_until_next_birthday(birthday=date(1994, 12, 18), now=date(2024, 8, 15))
-        == 120
-    )
-    assert (
-        days_until_next_birthday(birthday=date(1990, 1, 15), now=date(2025, 1, 1)) == 14
-    )
-    assert (
-        days_until_next_birthday(birthday=date(1992, 1, 2), now=date(2025, 1, 2)) == 0
-    )
+    assert days_until_next_birthday(date(2024, 1, 1), date(2024, 1, 1)) == 0
+    assert days_until_next_birthday(date(2024, 1, 1), date(2024, 1, 2)) == 365
+    assert days_until_next_birthday(date(2024, 1, 1), date(2024, 12, 31)) == 1
 
 
 def test_e80():
@@ -78,15 +69,40 @@ def test_e82():
 
 
 def test_e83():
-    assert compute_fibonacci(3) == 2
-    assert compute_fibonacci(4) == 3
-    assert compute_fibonacci(5) == 5
-    assert compute_fibonacci(6) == 8
-    assert compute_fibonacci(7) == 13
+    assert compute_fibonacci.cache_info().hits == 0, "Cache hits should be 0 initially"
+    assert compute_fibonacci(2) == 1, "First call should not be cached"
+    assert compute_fibonacci(2) == 1, "Second call should use cache"
+    assert (
+        compute_fibonacci.cache_info().hits == 1
+    ), "Cache hits should be 1 after second call"
+    assert compute_fibonacci(3) == 2, "Third call should not be cached"
+    assert compute_fibonacci(10) == 55
 
 
-def test_e84():
-    assert RateInterestCalculator().calculate_total() == 0
+@pytest.fixture
+def caplog_setup(caplog):
+    # Set up the logger to capture log messages
+    caplog.set_level(logging.INFO)
+    return caplog
+
+
+def test_e84(caplog_setup):
+    calculator = RateInterestCalculator()
+    calculator.calculate_rate()
+    assert any(
+        record.levelname == "INFO" and "Calculating rate" in record.message
+        for record in caplog_setup.records
+    )
+    assert any(
+        record.levelname == "ERROR" and "An error occurred" in record.message
+        for record in caplog_setup.records
+    )
+
+    calculator.calculate_interest()
+    assert any(
+        record.levelname == "INFO" and "Calculating interest" in record.message
+        for record in caplog_setup.records
+    )
 
 
 @pytest.fixture
@@ -102,10 +118,9 @@ def source(file_content):
     [
         (
             textwrap.dedent(
-                """
-                2021-01-01, Sold 100 shares of AAPL
-                2021-01-02, Bought 200 shares of MSFT
-                2021-01-03, Sold 50 shares of AAPL
+                """2021-01-01,Sold 100 shares of AAPL
+                2021-01-02,Bought 200 shares of MSFT
+                2021-01-03,Sold 50 shares of AAPL
             """
             ),
             [
@@ -124,11 +139,10 @@ def source(file_content):
         ),
         (
             textwrap.dedent(
-                """
-                2024-09-01, Sold 100 shares of AAPL
-                2024-10-01, Bought 200 shares of MSFT
-                2024-11-01, Sold 50 shares of AAPL
-                2024-12-01, Bought 100 shares of TSLA
+                """2024-09-01,Sold 100 shares of AAPL
+                2024-10-01,Bought 200 shares of MSFT
+                2024-11-01,Sold 50 shares of AAPL
+                2024-12-01,Bought 100 shares of TSLA
             """
             ),
             [

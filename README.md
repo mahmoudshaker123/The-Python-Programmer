@@ -4,6 +4,10 @@ This repository contains exercises and tests for the Udemy course [The Python Pr
 
 The course is divided into chapters, each containing exercises and tests. The exercises are designed to help students practice Python programming concepts, while the tests are used to verify the correctness of their solutions.
 
+<div style="text-align: center;">
+    <img src="./_assets/udemy-banner.png" alt="drawing" width="500"/>
+</div>
+
 ## 1. Structure
 
 The repository has the following structure:

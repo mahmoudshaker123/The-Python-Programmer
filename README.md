@@ -1,6 +1,6 @@
 # Udemy - The Python Programmer
 
-This repository contains exercises and tests for the Udemy course [The Python Programmer]() designed and maintained by Shehab Abdel-Salam.
+This repository contains exercises for the Udemy course [The Python Programmer](https://www.udemy.com/course/the-python-programmer) designed and maintained by [Shehab Abdel-Salam](https://www.udemy.com/user/shehab-abdel-salam-2/).
 
 The course is divided into chapters, each containing exercises and tests. The exercises are designed to help students practice Python programming concepts, while the tests are used to verify the correctness of their solutions.
 
@@ -163,6 +163,8 @@ cd The-Python-Programmer
 ---
 
 ## 3. [Optional] Running the Ninja Challenges
+
+> Problems are inspired by [EPI](https://elementsofprogramminginterviews.com/) book and [LeetCode](https://leetcode.com/).
 
 1. Navigate to the ninja challenges directory:
 

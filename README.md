@@ -1,4 +1,4 @@
-# Udemy - The Python Programmer
+# 100 Exercises - The Python Programmer Course
 
 This repository contains exercises for the Udemy course [The Python Programmer](https://www.udemy.com/course/the-python-programmer) designed and maintained by [Shehab Abdel-Salam](https://www.udemy.com/user/shehab-abdel-salam-2/).
 

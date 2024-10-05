@@ -89,13 +89,13 @@ This will install the latest version of `pytest` on your machine.
 First, make sure to clone the repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/shehab-as/Udemy-Complete-Python.git
+git clone https://github.com/shehab-as/The-Python-Programmer.git
 ```
 
 Afterwards, navigate to the repository directory:
 
 ```bash
-cd The-Python-Programmer
+cd The-Python-Programmer/
 ```
 
 ---
@@ -188,9 +188,8 @@ cd The-Python-Programmer
 
 ---
 
-## 4. Contributing
+## 4. Reporting Issues
 
-If you have any questions or would like to report an issue, feel free to raise an issue on the repository.
-Contributions are always welcome! If you would like to contribute, you can submit a pull request with your proposed changes and improvements and I'll make sure to review them as soon as possible.
+If you have any questions or would like to report an issue, you can [click here to raise an issue](https://github.com/shehab-as/The-Python-Programmer/issues/new) on the repository and I'll make sure to review them as soon as possible.
 
 Happy coding! 🐍

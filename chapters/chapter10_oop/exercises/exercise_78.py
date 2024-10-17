@@ -1,7 +1,7 @@
 # Exercise 78 - Simple University System
 # Given the following class definitions.
 # Implement the `Student` and `Professor` classes to inherit from the `Person` class.
-
+# See `test_e78()` in `tests/test_ch10.py` for the expected behavior.
 from __future__ import annotations
 
 

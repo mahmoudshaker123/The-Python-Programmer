@@ -23,6 +23,8 @@
 # 4. cards (a list of `Card` instances)
 # 5. total_balance (a float)
 
+# See `test_e74()` in `tests/test_ch10.py` for the expected behavior.
+
 from __future__ import annotations
 from dataclasses import dataclass, field  # noqa: F401
 

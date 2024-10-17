@@ -11,21 +11,8 @@
 # Note: Feel free to define any additional methods or attributes that
 # you think are necessary for the `BookShelf` class.
 
+# See `test_e73()` in `tests/test_ch10.py` for the expected behavior.
 
-# Example:
-# author = Author("John", "Doe")
-# book1 = Book("The Book", author, 2021, Genre.Fiction)
-# shelf1 = BookShelf([book1])
-# book2 = Book("Another Book", author, 2022, Genre.Fiction)
-# shelf2 = BookShelf([book2])
-# library = Library()
-# library.add_shelf(shelf1)
-# library.add_shelf(shelf2)
-# assert library.get_books() == [book1, book2]
-# assert library.is_book_in_library(book1) is True
-# assert library.is_book_in_library(Book("Non Existing Book", author, 2021, Genre.Fiction)) is False
-# library.remove_shelf(shelf1)
-# assert library.get_books() == [book2]
 from .exercise_71 import Book, Genre  # noqa: F401
 from .exercise_72 import BookShelf  # noqa: F401
 

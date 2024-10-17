@@ -3,12 +3,7 @@
 # Create two subclasses called `Square` and `Circle` that inherit from `Shape` and implement the `area` method.
 # Modify the `Square` and `Circle` classes to accept whichever attributes are necessary to calculate the area.
 
-
-# Example:
-# square = Square(5)
-# assert square.area() == 25
-# circle = Circle(5)
-# assert circle.area() == 78.54
+# See `test_e70()` in `tests/test_ch10.py` for the expected behavior.
 
 from abc import ABC, abstractmethod  # noqa: F401
 

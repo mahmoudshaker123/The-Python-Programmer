@@ -2,6 +2,7 @@
 # We have two types of Content Creators: Bloggers and Vloggers.
 # Both of them should have a method called `create_content` that calls the appropriate method to create content.
 # We want to define a protocol called `ContentCreator` that has the `create_content` method.
+# See `test_e77()` in `tests/test_ch10.py` for the expected behavior.
 
 from typing import Protocol
 

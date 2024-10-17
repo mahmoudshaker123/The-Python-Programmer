@@ -7,11 +7,7 @@
 # - 20% tax for income greater than 50,000 and less than or equal to 100,000
 # - 30% tax for income greater than 100,000
 
-# Example:
-# tax_calculator = TaxCalculator()
-# tax_calculator.calculate_tax(5000) => 0
-# tax_calculator.calculate_tax(15000) => 500
-# tax_calculator.calculate_tax(75000) => 10000
+# See `test_e69()` in `tests/test_ch10.py` for the expected behavior.
 
 
 class TaxCalculator:

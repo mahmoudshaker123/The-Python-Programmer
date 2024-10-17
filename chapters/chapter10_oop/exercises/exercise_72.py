@@ -11,15 +11,7 @@
 # Note: Feel free to define any additional methods or attributes that
 # you think are necessary for the `BookShelf` class.
 
-# Example:
-# author = Author("John", "Doe")
-# book1 = Book("The Book", author, 2021, Genre.Fiction)
-# shelf = BookShelf([book1])
-# book2 = Book("Another Book", author, 2022, Genre.Fiction)
-# shelf.add_book(book2)
-# assert shelf.get_books() == [book1, book2]
-# assert shelf.get_books_by_genre(Genre.Fiction) == [book1, book2]
-# shelf.remove_book(book1)
+# See `test_e72()` in `tests/test_ch10.py` for the expected behavior.
 
 from .exercise_71 import Book, Genre  # noqa: F401
 

@@ -15,10 +15,9 @@ def test_e01():
 
 
 def test_e02():
-    assert compute_average_grade(100, 100, 100) == 100
-    assert compute_average_grade(94, 94, 95) == 94.33
-    assert compute_average_grade(88, 77, 66) == 77
-    assert compute_average_grade(72.5, 66.8, 50.5) == 63.27
+    assert celsius_to_fahrenheit(0) == 32
+    assert celsius_to_fahrenheit(100) == 212
+    assert celsius_to_fahrenheit(37) == 98.6
 
 
 def test_e03():
@@ -36,9 +35,10 @@ def test_e04():
 
 
 def test_e05():
-    assert celsius_to_fahrenheit(0) == 32
-    assert celsius_to_fahrenheit(100) == 212
-    assert celsius_to_fahrenheit(37) == 98.6
+    assert compute_average_grade(100, 100, 100) == 100
+    assert compute_average_grade(94, 94, 95) == 94.33
+    assert compute_average_grade(88, 77, 66) == 77
+    assert compute_average_grade(72.5, 66.8, 50.5) == 63.27
 
 
 def test_e06():

@@ -5,6 +5,4 @@
 
 
 def hours_to_seconds(hours):
-    # Your code should go here.
-
-    return ...
+    return hours * 3600

@@ -15,5 +15,9 @@
 
 def calculate_midpoint(x1, y1, x2, y2):
     # Your code should go here.
+    midpoint_x = (x1 + x2) / 2
+    midpoint_y = (y1 + y2) / 2
+    return midpoint_x, midpoint_y
 
-    return ...
+
+  

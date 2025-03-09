@@ -7,5 +7,4 @@
 
 def convert_binary_to_decimal(binary):
     # Your code should go here.
-
-    return ...
+    return int(binary, 2)

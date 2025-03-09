@@ -3,4 +3,4 @@
 
 
 def hello_python():
-    return "I am ready to learn ______!"
+    return "I am ready to learn Python!"

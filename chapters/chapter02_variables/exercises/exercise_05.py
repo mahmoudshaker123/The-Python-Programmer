@@ -5,5 +5,6 @@
 
 def compute_average_grade(grade1, grade2, grade3):
     # Your code should go here.
+    return round((grade1 +grade2 + grade3) / 3, 2)
 
-    return ...
+    

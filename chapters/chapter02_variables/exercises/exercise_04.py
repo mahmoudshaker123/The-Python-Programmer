@@ -7,5 +7,6 @@
 
 def compute_length_difference(word1, word2):
     # Your code should go here.
+    return abs(len(word1)-len(word2))
 
     return -1

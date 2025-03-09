@@ -6,4 +6,4 @@
 def celsius_to_fahrenheit(celsius):
     # Your code should go here.
 
-    return ...
+    return celsius * 9/5 + 32

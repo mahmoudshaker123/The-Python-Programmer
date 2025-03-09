@@ -6,5 +6,6 @@
 
 def add_numbers(num1, num2):
     # Your code should go here.
+    return str(int(num1) + int(num2))
 
-    return ...
+

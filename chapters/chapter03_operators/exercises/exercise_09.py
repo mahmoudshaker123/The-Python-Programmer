@@ -4,5 +4,4 @@
 
 def compute_slope(x1, y1, x2, y2):
     # Your code should go here.
-
-    return ...
+    return (y2-y1)/(x2-x1)

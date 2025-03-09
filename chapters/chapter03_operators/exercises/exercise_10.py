@@ -6,5 +6,8 @@
 
 def bitwise_operations(num1, num2):
     # Your code should go here.
-
-    return ...
+    bitwise_and = num1 & num2
+    bitwise_or = num1 | num2
+    bitwise_xor = num1 ^ num2
+    return f"{bitwise_and} {bitwise_or} {bitwise_xor}"
+    
